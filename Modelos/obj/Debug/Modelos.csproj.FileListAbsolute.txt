@@ -1,0 +1,9 @@
+C:\Users\toto6\OneDrive\Desktop\Proyecto PTC Futura FC OFICIAL\Modelos\bin\Debug\Modelos.exe.config
+C:\Users\toto6\OneDrive\Desktop\Proyecto PTC Futura FC OFICIAL\Modelos\bin\Debug\Modelos.exe
+C:\Users\toto6\OneDrive\Desktop\Proyecto PTC Futura FC OFICIAL\Modelos\bin\Debug\Modelos.pdb
+C:\Users\toto6\OneDrive\Desktop\Proyecto PTC Futura FC OFICIAL\Modelos\obj\Debug\Modelos.csproj.AssemblyReference.cache
+C:\Users\toto6\OneDrive\Desktop\Proyecto PTC Futura FC OFICIAL\Modelos\obj\Debug\Modelos.Properties.Resources.resources
+C:\Users\toto6\OneDrive\Desktop\Proyecto PTC Futura FC OFICIAL\Modelos\obj\Debug\Modelos.csproj.GenerateResource.cache
+C:\Users\toto6\OneDrive\Desktop\Proyecto PTC Futura FC OFICIAL\Modelos\obj\Debug\Modelos.csproj.CoreCompileInputs.cache
+C:\Users\toto6\OneDrive\Desktop\Proyecto PTC Futura FC OFICIAL\Modelos\obj\Debug\Modelos.exe
+C:\Users\toto6\OneDrive\Desktop\Proyecto PTC Futura FC OFICIAL\Modelos\obj\Debug\Modelos.pdb

@@ -1,0 +1,9 @@
+C:\Users\toto6\OneDrive\Desktop\Proyecto PTC Futura FC OFICIAL\PTC_Grupal\bin\Debug\PTC_Grupal.dll
+C:\Users\toto6\OneDrive\Desktop\Proyecto PTC Futura FC OFICIAL\PTC_Grupal\bin\Debug\PTC_Grupal.pdb
+C:\Users\toto6\OneDrive\Desktop\Proyecto PTC Futura FC OFICIAL\PTC_Grupal\obj\Debug\PTC_Grupal.csproj.AssemblyReference.cache
+C:\Users\toto6\OneDrive\Desktop\Proyecto PTC Futura FC OFICIAL\PTC_Grupal\obj\Debug\PTC_Grupal.FmlLogin.resources
+C:\Users\toto6\OneDrive\Desktop\Proyecto PTC Futura FC OFICIAL\PTC_Grupal\obj\Debug\PTC_Grupal.Properties.Resources.resources
+C:\Users\toto6\OneDrive\Desktop\Proyecto PTC Futura FC OFICIAL\PTC_Grupal\obj\Debug\PTC_Grupal.csproj.GenerateResource.cache
+C:\Users\toto6\OneDrive\Desktop\Proyecto PTC Futura FC OFICIAL\PTC_Grupal\obj\Debug\PTC_Grupal.csproj.CoreCompileInputs.cache
+C:\Users\toto6\OneDrive\Desktop\Proyecto PTC Futura FC OFICIAL\PTC_Grupal\obj\Debug\PTC_Grupal.dll
+C:\Users\toto6\OneDrive\Desktop\Proyecto PTC Futura FC OFICIAL\PTC_Grupal\obj\Debug\PTC_Grupal.pdb
