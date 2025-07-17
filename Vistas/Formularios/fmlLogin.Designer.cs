@@ -48,10 +48,10 @@
             // 
             // btnSailr
             // 
-            this.btnSailr.Location = new System.Drawing.Point(685, 408);
-            this.btnSailr.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSailr.Location = new System.Drawing.Point(685, 402);
+            this.btnSailr.Margin = new System.Windows.Forms.Padding(4);
             this.btnSailr.Name = "btnSailr";
-            this.btnSailr.Size = new System.Drawing.Size(161, 40);
+            this.btnSailr.Size = new System.Drawing.Size(161, 46);
             this.btnSailr.TabIndex = 25;
             this.btnSailr.Text = "Salir";
             this.btnSailr.UseVisualStyleBackColor = true;
@@ -62,7 +62,7 @@
             this.btnIniciar.BackColor = System.Drawing.Color.Green;
             this.btnIniciar.ForeColor = System.Drawing.SystemColors.Control;
             this.btnIniciar.Location = new System.Drawing.Point(246, 402);
-            this.btnIniciar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnIniciar.Margin = new System.Windows.Forms.Padding(4);
             this.btnIniciar.Name = "btnIniciar";
             this.btnIniciar.Size = new System.Drawing.Size(245, 51);
             this.btnIniciar.TabIndex = 24;
@@ -72,19 +72,21 @@
             // 
             // txtPass
             // 
+            this.txtPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPass.Location = new System.Drawing.Point(210, 328);
-            this.txtPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPass.Margin = new System.Windows.Forms.Padding(4);
             this.txtPass.Name = "txtPass";
-            this.txtPass.Size = new System.Drawing.Size(378, 27);
+            this.txtPass.Size = new System.Drawing.Size(378, 20);
             this.txtPass.TabIndex = 23;
             this.txtPass.TextChanged += new System.EventHandler(this.txtPass_TextChanged);
             // 
             // txtUser
             // 
+            this.txtUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUser.Location = new System.Drawing.Point(206, 224);
-            this.txtUser.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtUser.Margin = new System.Windows.Forms.Padding(4);
             this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(382, 27);
+            this.txtUser.Size = new System.Drawing.Size(382, 20);
             this.txtUser.TabIndex = 22;
             this.txtUser.TextChanged += new System.EventHandler(this.txtUser_TextChanged);
             // 
@@ -113,10 +115,11 @@
             // lbl_Iniciar
             // 
             this.lbl_Iniciar.AutoSize = true;
+            this.lbl_Iniciar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Iniciar.Location = new System.Drawing.Point(294, 99);
             this.lbl_Iniciar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Iniciar.Name = "lbl_Iniciar";
-            this.lbl_Iniciar.Size = new System.Drawing.Size(118, 20);
+            this.lbl_Iniciar.Size = new System.Drawing.Size(198, 32);
             this.lbl_Iniciar.TabIndex = 19;
             this.lbl_Iniciar.Text = "Iniciar sesion";
             this.lbl_Iniciar.Click += new System.EventHandler(this.lbl_Iniciar_Click);
@@ -125,11 +128,12 @@
             // 
             this.lblCredencial.AutoSize = true;
             this.lblCredencial.BackColor = System.Drawing.Color.Green;
+            this.lblCredencial.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCredencial.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblCredencial.Location = new System.Drawing.Point(708, 285);
+            this.lblCredencial.Location = new System.Drawing.Point(707, 294);
             this.lblCredencial.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCredencial.Name = "lblCredencial";
-            this.lblCredencial.Size = new System.Drawing.Size(116, 20);
+            this.lblCredencial.Size = new System.Drawing.Size(126, 21);
             this.lblCredencial.TabIndex = 18;
             this.lblCredencial.Text = "credenciales";
             this.lblCredencial.Click += new System.EventHandler(this.lblCredencial_Click);
@@ -138,11 +142,12 @@
             // 
             this.lbliniciasecion.AutoSize = true;
             this.lbliniciasecion.BackColor = System.Drawing.Color.Green;
+            this.lbliniciasecion.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbliniciasecion.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbliniciasecion.Location = new System.Drawing.Point(672, 231);
+            this.lbliniciasecion.Location = new System.Drawing.Point(670, 247);
             this.lbliniciasecion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbliniciasecion.Name = "lbliniciasecion";
-            this.lbliniciasecion.Size = new System.Drawing.Size(174, 20);
+            this.lbliniciasecion.Size = new System.Drawing.Size(192, 21);
             this.lbliniciasecion.TabIndex = 17;
             this.lbliniciasecion.Text = "Inicia sesion con tus";
             this.lbliniciasecion.Click += new System.EventHandler(this.lbliniciasecion_Click);
@@ -151,17 +156,19 @@
             // 
             this.lblbienvenido.AutoSize = true;
             this.lblbienvenido.BackColor = System.Drawing.Color.Green;
+            this.lblbienvenido.Font = new System.Drawing.Font("Arial Rounded MT Bold", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblbienvenido.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblbienvenido.Location = new System.Drawing.Point(708, 99);
+            this.lblbienvenido.Location = new System.Drawing.Point(661, 134);
             this.lblbienvenido.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblbienvenido.Name = "lblbienvenido";
-            this.lblbienvenido.Size = new System.Drawing.Size(101, 20);
+            this.lblbienvenido.Size = new System.Drawing.Size(201, 39);
             this.lblbienvenido.TabIndex = 16;
             this.lblbienvenido.Text = "Bienvenido";
             this.lblbienvenido.Click += new System.EventHandler(this.lblbienvenido_Click);
             // 
             // pictureBox3
             // 
+            this.pictureBox3.BackColor = System.Drawing.SystemColors.ControlLight;
             this.pictureBox3.Location = new System.Drawing.Point(188, 82);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
@@ -173,10 +180,10 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Vistas.Properties.Resources.green;
-            this.pictureBox2.Location = new System.Drawing.Point(598, 82);
+            this.pictureBox2.Location = new System.Drawing.Point(596, 82);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(315, 402);
+            this.pictureBox2.Size = new System.Drawing.Size(317, 402);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 14;
             this.pictureBox2.TabStop = false;
@@ -214,7 +221,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "fmlLogin";
             this.Text = "fmlLogin";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

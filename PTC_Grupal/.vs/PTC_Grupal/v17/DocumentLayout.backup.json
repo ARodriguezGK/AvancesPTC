@@ -1,24 +1,27 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\toto6\\OneDrive\\Desktop\\Proyecto PTC Futura FC OFICIAL\\PTC_Grupal\\",
+  "WorkspaceRootPath": "C:\\Users\\toto6\\OneDrive\\Desktop\\AvancesPTC\\PTC_Grupal\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{242316FE-DBAC-4216-9D5B-08D63985E116}|..\\Vistas\\Vistas.csproj|c:\\users\\toto6\\onedrive\\desktop\\proyecto ptc futura fc oficial\\vistas\\formularios\\fmllogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{242316FE-DBAC-4216-9D5B-08D63985E116}|..\\Vistas\\Vistas.csproj|c:\\users\\toto6\\onedrive\\desktop\\avancesptc\\vistas\\formularios\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{242316FE-DBAC-4216-9D5B-08D63985E116}|..\\Vistas\\Vistas.csproj|c:\\users\\toto6\\onedrive\\desktop\\proyecto ptc futura fc oficial\\vistas\\formularios\\fmllogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{242316FE-DBAC-4216-9D5B-08D63985E116}|..\\Vistas\\Vistas.csproj|c:\\users\\toto6\\onedrive\\desktop\\avancesptc\\vistas\\formularios\\fmllogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|NewFolder1{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|Vistas||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{242316FE-DBAC-4216-9D5B-08D63985E116}|..\\Vistas\\Vistas.csproj|c:\\users\\toto6\\onedrive\\desktop\\avancesptc\\vistas\\formularios\\fmllogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{899CF41D-EA57-47ED-8D27-F120409D47BC}|..\\Modelo\\Modelo.csproj|c:\\users\\toto6\\onedrive\\desktop\\proyecto ptc futura fc oficial\\modelo\\conexion\\conexiondb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\toto6\\OneDrive\\Desktop\\Proyecto PTC Futura FC OFICIAL\\Vistas\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{242316FE-DBAC-4216-9D5B-08D63985E116}|..\\Vistas\\Vistas.csproj|c:\\users\\toto6\\onedrive\\desktop\\proyecto ptc futura fc oficial\\vistas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\toto6\\OneDrive\\Desktop\\Proyecto PTC Futura FC OFICIAL\\Modelo\\Conexion\\ConexionDB.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{242316FE-DBAC-4216-9D5B-08D63985E116}|..\\Vistas\\Vistas.csproj|c:\\users\\toto6\\onedrive\\desktop\\proyecto ptc futura fc oficial\\vistas\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
+      "AbsoluteMoniker": "D:0:0:{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|Vistas{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|Vistas||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{242316FE-DBAC-4216-9D5B-08D63985E116}|..\\Vistas\\Vistas.csproj|c:\\users\\toto6\\onedrive\\desktop\\avancesptc\\vistas\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
     }
   ],
   "DocumentGroupContainers": [
@@ -28,41 +31,66 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmPrincipal.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\toto6\\OneDrive\\Desktop\\AvancesPTC\\Vistas\\Formularios\\frmPrincipal.cs",
+              "RelativeDocumentMoniker": "..\\Vistas\\Formularios\\frmPrincipal.cs",
+              "ToolTip": "C:\\Users\\toto6\\OneDrive\\Desktop\\AvancesPTC\\Vistas\\Formularios\\frmPrincipal.cs [Dise\u00F1o]*",
+              "RelativeToolTip": "..\\Vistas\\Formularios\\frmPrincipal.cs [Dise\u00F1o]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T07:05:58.527Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Vistas",
-              "DocumentMoniker": "C:\\Users\\toto6\\OneDrive\\Desktop\\Proyecto PTC Futura FC OFICIAL\\Vistas\\Vistas.csproj",
-              "RelativeDocumentMoniker": "..\\Vistas\\Vistas.csproj",
-              "ToolTip": "C:\\Users\\toto6\\OneDrive\\Desktop\\Proyecto PTC Futura FC OFICIAL\\Vistas\\Vistas.csproj",
-              "RelativeToolTip": "..\\Vistas\\Vistas.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-07-15T05:10:12.609Z",
+              "Title": "fmlLogin.cs",
+              "DocumentMoniker": "C:\\Users\\toto6\\OneDrive\\Desktop\\AvancesPTC\\Vistas\\Formularios\\fmlLogin.cs",
+              "RelativeDocumentMoniker": "..\\Vistas\\Formularios\\fmlLogin.cs",
+              "ToolTip": "C:\\Users\\toto6\\OneDrive\\Desktop\\AvancesPTC\\Vistas\\Formularios\\fmlLogin.cs",
+              "RelativeToolTip": "..\\Vistas\\Formularios\\fmlLogin.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAowDsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T05:18:48.579Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "fmlLogin.cs",
-              "DocumentMoniker": "C:\\Users\\toto6\\OneDrive\\Desktop\\Proyecto PTC Futura FC OFICIAL\\Vistas\\Formularios\\fmlLogin.cs",
+              "Title": "fmlLogin.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\toto6\\OneDrive\\Desktop\\AvancesPTC\\Vistas\\Formularios\\fmlLogin.cs",
               "RelativeDocumentMoniker": "..\\Vistas\\Formularios\\fmlLogin.cs",
-              "ToolTip": "C:\\Users\\toto6\\OneDrive\\Desktop\\Proyecto PTC Futura FC OFICIAL\\Vistas\\Formularios\\fmlLogin.cs",
-              "RelativeToolTip": "..\\Vistas\\Formularios\\fmlLogin.cs",
-              "ViewState": "AgIAAEkAAAAAAAAAAAArwFEAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\toto6\\OneDrive\\Desktop\\AvancesPTC\\Vistas\\Formularios\\fmlLogin.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\Vistas\\Formularios\\fmlLogin.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-15T04:40:44.221Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-17T05:07:18.478Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\toto6\\OneDrive\\Desktop\\Proyecto PTC Futura FC OFICIAL\\Vistas\\Program.cs",
+              "RelativeDocumentMoniker": "..\\..\\Proyecto PTC Futura FC OFICIAL\\Vistas\\Program.cs",
+              "ToolTip": "C:\\Users\\toto6\\OneDrive\\Desktop\\Proyecto PTC Futura FC OFICIAL\\Vistas\\Program.cs",
+              "RelativeToolTip": "..\\..\\Proyecto PTC Futura FC OFICIAL\\Vistas\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAswAwAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T04:13:40.675Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "ConexionDB.cs",
               "DocumentMoniker": "C:\\Users\\toto6\\OneDrive\\Desktop\\Proyecto PTC Futura FC OFICIAL\\Modelo\\Conexion\\ConexionDB.cs",
-              "RelativeDocumentMoniker": "..\\Modelo\\Conexion\\ConexionDB.cs",
+              "RelativeDocumentMoniker": "..\\..\\Proyecto PTC Futura FC OFICIAL\\Modelo\\Conexion\\ConexionDB.cs",
               "ToolTip": "C:\\Users\\toto6\\OneDrive\\Desktop\\Proyecto PTC Futura FC OFICIAL\\Modelo\\Conexion\\ConexionDB.cs",
-              "RelativeToolTip": "..\\Modelo\\Conexion\\ConexionDB.cs",
+              "RelativeToolTip": "..\\..\\Proyecto PTC Futura FC OFICIAL\\Modelo\\Conexion\\ConexionDB.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-15T04:30:57.765Z",
@@ -70,27 +98,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "fmlLogin.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\toto6\\OneDrive\\Desktop\\Proyecto PTC Futura FC OFICIAL\\Vistas\\Formularios\\fmlLogin.cs",
-              "RelativeDocumentMoniker": "..\\Vistas\\Formularios\\fmlLogin.cs",
-              "ToolTip": "C:\\Users\\toto6\\OneDrive\\Desktop\\Proyecto PTC Futura FC OFICIAL\\Vistas\\Formularios\\fmlLogin.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\Vistas\\Formularios\\fmlLogin.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-15T04:25:06.138Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\toto6\\OneDrive\\Desktop\\Proyecto PTC Futura FC OFICIAL\\Vistas\\Program.cs",
-              "RelativeDocumentMoniker": "..\\Vistas\\Program.cs",
-              "ToolTip": "C:\\Users\\toto6\\OneDrive\\Desktop\\Proyecto PTC Futura FC OFICIAL\\Vistas\\Program.cs",
-              "RelativeToolTip": "..\\Vistas\\Program.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAswAwAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-15T04:13:40.675Z",
+              "DocumentIndex": 5,
+              "Title": "Vistas",
+              "DocumentMoniker": "C:\\Users\\toto6\\OneDrive\\Desktop\\AvancesPTC\\Vistas\\Vistas.csproj",
+              "RelativeDocumentMoniker": "..\\Vistas\\Vistas.csproj",
+              "ToolTip": "C:\\Users\\toto6\\OneDrive\\Desktop\\AvancesPTC\\Vistas\\Vistas.csproj",
+              "RelativeToolTip": "..\\Vistas\\Vistas.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-07-15T05:10:12.609Z",
               "EditorCaption": ""
             }
           ]

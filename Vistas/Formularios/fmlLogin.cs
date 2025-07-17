@@ -29,12 +29,35 @@ namespace Vistas.Formularios
 
         private void btnIniciar_Click(object sender, EventArgs e)
         {
+            // credenciales fijas
+            string usuarioCorrecto = "admin";
+            string contraseñaCorrecta = "1234";
 
+            // valores de los txtbox
+            string usuarioIngresado = txtUser.Text;
+            string contraseñaIngresada = txtPass.Text;
+
+            // validando de las credenciales
+            if (usuarioIngresado == usuarioCorrecto && contraseñaIngresada == contraseñaCorrecta)
+            {
+                // cerramos el formulario despues de iniciar sesión
+                this.Hide();
+
+                // entrelazar el formulario principal
+                frmPrincipal principal = new frmPrincipal();
+                principal.Show();
+            }
+            else
+            {
+                //mensaje de error
+                MessageBox.Show("Usuario o contraseña incorrectos", "Error de inicio de sesión", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void txtPass_TextChanged(object sender, EventArgs e)
         {
-
+            //UseSistemPasswordChar = true; // Esto oculta el texto ingresado en el TextBox
+            
         }
 
         private void txtUser_TextChanged(object sender, EventArgs e)

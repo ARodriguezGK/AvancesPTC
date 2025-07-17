@@ -7,3 +7,12 @@ C:\Users\toto6\OneDrive\Desktop\Proyecto PTC Futura FC OFICIAL\Modelo\obj\Debug\
 C:\Users\toto6\OneDrive\Desktop\Proyecto PTC Futura FC OFICIAL\Modelo\bin\Debug\System.Data.SqlClient.dll
 C:\Users\toto6\OneDrive\Desktop\Proyecto PTC Futura FC OFICIAL\Modelo\bin\Debug\System.Data.SqlClient.xml
 C:\Users\toto6\OneDrive\Desktop\Proyecto PTC Futura FC OFICIAL\Modelo\obj\Debug\Modelo.csproj.Up2Date
+C:\Users\toto6\OneDrive\Desktop\AvancesPTC\Modelo\bin\Debug\Modelo.dll
+C:\Users\toto6\OneDrive\Desktop\AvancesPTC\Modelo\bin\Debug\Modelo.pdb
+C:\Users\toto6\OneDrive\Desktop\AvancesPTC\Modelo\bin\Debug\System.Data.SqlClient.dll
+C:\Users\toto6\OneDrive\Desktop\AvancesPTC\Modelo\bin\Debug\System.Data.SqlClient.xml
+C:\Users\toto6\OneDrive\Desktop\AvancesPTC\Modelo\obj\Debug\Modelo.csproj.AssemblyReference.cache
+C:\Users\toto6\OneDrive\Desktop\AvancesPTC\Modelo\obj\Debug\Modelo.csproj.CoreCompileInputs.cache
+C:\Users\toto6\OneDrive\Desktop\AvancesPTC\Modelo\obj\Debug\Modelo.csproj.Up2Date
+C:\Users\toto6\OneDrive\Desktop\AvancesPTC\Modelo\obj\Debug\Modelo.dll
+C:\Users\toto6\OneDrive\Desktop\AvancesPTC\Modelo\obj\Debug\Modelo.pdb
