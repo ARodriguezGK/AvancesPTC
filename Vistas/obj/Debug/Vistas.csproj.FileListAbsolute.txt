@@ -27,3 +27,4 @@ C:\Users\toto6\OneDrive\Desktop\AvancesPTC\Vistas\obj\Debug\Vistas.csproj.Up2Dat
 C:\Users\toto6\OneDrive\Desktop\AvancesPTC\Vistas\obj\Debug\Vistas.exe
 C:\Users\toto6\OneDrive\Desktop\AvancesPTC\Vistas\obj\Debug\Vistas.pdb
 C:\Users\toto6\OneDrive\Desktop\AvancesPTC\Vistas\obj\Debug\Vistas.Formularios.frmPrincipal.resources
+C:\Users\toto6\OneDrive\Desktop\AvancesPTC\Vistas\obj\Debug\Vistas.Formularios.fmlinventario.resources

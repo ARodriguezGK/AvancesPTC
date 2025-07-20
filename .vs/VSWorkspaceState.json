@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\PTC_Grupal"
+    "\\PTC_Grupal",
+    "\\Vistas",
+    "\\Vistas\\Formularios"
   ],
-  "SelectedNode": "\\PTC_Grupal\\PTC_Grupal.sln",
+  "SelectedNode": "\\Vistas\\Formularios\\frmPrincipal.cs",
   "PreviewInSolutionExplorer": false
 }

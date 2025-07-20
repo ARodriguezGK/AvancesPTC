@@ -49,6 +49,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Formularios\fmlinventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\fmlinventario.Designer.cs">
+      <DependentUpon>fmlinventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\fmlJugadores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\fmlJugadores.Designer.cs">
+      <DependentUpon>fmlJugadores.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\fmlLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +75,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\fmlinventario.resx">
+      <DependentUpon>fmlinventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\fmlJugadores.resx">
+      <DependentUpon>fmlJugadores.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\fmlLogin.resx">
       <DependentUpon>fmlLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -103,6 +121,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\fondo logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -107,9 +107,9 @@
             this.lblUsuario.Location = new System.Drawing.Point(201, 172);
             this.lblUsuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(73, 20);
+            this.lblUsuario.Size = new System.Drawing.Size(66, 20);
             this.lblUsuario.TabIndex = 20;
-            this.lblUsuario.Text = "Usuario";
+            this.lblUsuario.Text = "Correo";
             this.lblUsuario.Click += new System.EventHandler(this.lblUsuario_Click);
             // 
             // lbl_Iniciar
@@ -161,7 +161,7 @@
             this.lblbienvenido.Location = new System.Drawing.Point(661, 134);
             this.lblbienvenido.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblbienvenido.Name = "lblbienvenido";
-            this.lblbienvenido.Size = new System.Drawing.Size(201, 39);
+            this.lblbienvenido.Size = new System.Drawing.Size(198, 38);
             this.lblbienvenido.TabIndex = 16;
             this.lblbienvenido.Text = "Bienvenido";
             this.lblbienvenido.Click += new System.EventHandler(this.lblbienvenido_Click);
