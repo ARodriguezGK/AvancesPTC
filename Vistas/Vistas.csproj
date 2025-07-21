@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Formularios\fmlGestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\fmlGestion.Designer.cs">
+      <DependentUpon>fmlGestion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\fmlinventario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +73,12 @@
     <Compile Include="Formularios\fmlLogin.Designer.cs">
       <DependentUpon>fmlLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\fmlPartidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\fmlPartidos.Designer.cs">
+      <DependentUpon>fmlPartidos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\frmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +87,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\fmlGestion.resx">
+      <DependentUpon>fmlGestion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\fmlinventario.resx">
       <DependentUpon>fmlinventario.cs</DependentUpon>
     </EmbeddedResource>
@@ -83,6 +98,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\fmlLogin.resx">
       <DependentUpon>fmlLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\fmlPartidos.resx">
+      <DependentUpon>fmlPartidos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>

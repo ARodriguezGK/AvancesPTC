@@ -28,8 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fmlJugadores));
             this.pnlBarraEstado = new System.Windows.Forms.Panel();
             this.pnlBarraTitulo = new System.Windows.Forms.Panel();
+            this.lblJugadoresBasic = new System.Windows.Forms.Label();
             this.pnlMenu = new System.Windows.Forms.Panel();
             this.btnPartidos = new System.Windows.Forms.Button();
             this.btnGestion = new System.Windows.Forms.Button();
@@ -37,27 +39,52 @@
             this.picBoxUser = new System.Windows.Forms.PictureBox();
             this.btnInventario = new System.Windows.Forms.Button();
             this.pnlLogo = new System.Windows.Forms.Panel();
+            this.btnQuitarJugador = new System.Windows.Forms.Button();
+            this.dgvJugadores = new System.Windows.Forms.DataGridView();
+            this.btnAñaJugador = new System.Windows.Forms.Button();
+            this.btnActualizarJugador = new System.Windows.Forms.Button();
+            this.lblAdmin = new System.Windows.Forms.Label();
+            this.pnlBarraTitulo.SuspendLayout();
             this.pnlMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxUser)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvJugadores)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlBarraEstado
             // 
             this.pnlBarraEstado.BackColor = System.Drawing.Color.Silver;
             this.pnlBarraEstado.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlBarraEstado.Location = new System.Drawing.Point(182, 555);
+            this.pnlBarraEstado.Location = new System.Drawing.Point(182, 672);
             this.pnlBarraEstado.Name = "pnlBarraEstado";
-            this.pnlBarraEstado.Size = new System.Drawing.Size(878, 57);
+            this.pnlBarraEstado.Size = new System.Drawing.Size(1094, 57);
             this.pnlBarraEstado.TabIndex = 5;
+            this.pnlBarraEstado.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlBarraEstado_Paint);
             // 
             // pnlBarraTitulo
             // 
             this.pnlBarraTitulo.BackgroundImage = global::Vistas.Properties.Resources.green;
+            this.pnlBarraTitulo.Controls.Add(this.lblAdmin);
+            this.pnlBarraTitulo.Controls.Add(this.lblJugadoresBasic);
             this.pnlBarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlBarraTitulo.Location = new System.Drawing.Point(182, 0);
             this.pnlBarraTitulo.Name = "pnlBarraTitulo";
-            this.pnlBarraTitulo.Size = new System.Drawing.Size(878, 115);
+            this.pnlBarraTitulo.Size = new System.Drawing.Size(1094, 115);
             this.pnlBarraTitulo.TabIndex = 4;
+            this.pnlBarraTitulo.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlBarraTitulo_Paint);
+            // 
+            // lblJugadoresBasic
+            // 
+            this.lblJugadoresBasic.AutoSize = true;
+            this.lblJugadoresBasic.BackColor = System.Drawing.Color.Green;
+            this.lblJugadoresBasic.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblJugadoresBasic.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblJugadoresBasic.Image = global::Vistas.Properties.Resources.green;
+            this.lblJugadoresBasic.Location = new System.Drawing.Point(28, 46);
+            this.lblJugadoresBasic.Name = "lblJugadoresBasic";
+            this.lblJugadoresBasic.Size = new System.Drawing.Size(337, 34);
+            this.lblJugadoresBasic.TabIndex = 0;
+            this.lblJugadoresBasic.Text = "Gestion de Jugadores";
+            this.lblJugadoresBasic.Click += new System.EventHandler(this.lblJugadoresBasic_Click);
             // 
             // pnlMenu
             // 
@@ -71,8 +98,9 @@
             this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlMenu.Location = new System.Drawing.Point(0, 0);
             this.pnlMenu.Name = "pnlMenu";
-            this.pnlMenu.Size = new System.Drawing.Size(182, 612);
+            this.pnlMenu.Size = new System.Drawing.Size(182, 729);
             this.pnlMenu.TabIndex = 3;
+            this.pnlMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlMenu_Paint);
             // 
             // btnPartidos
             // 
@@ -87,6 +115,7 @@
             this.btnPartidos.TabIndex = 8;
             this.btnPartidos.Text = "Partidos";
             this.btnPartidos.UseVisualStyleBackColor = true;
+            this.btnPartidos.Click += new System.EventHandler(this.btnPartidos_Click);
             // 
             // btnGestion
             // 
@@ -101,20 +130,21 @@
             this.btnGestion.TabIndex = 7;
             this.btnGestion.Text = "Gestion";
             this.btnGestion.UseVisualStyleBackColor = true;
+            this.btnGestion.Click += new System.EventHandler(this.btnGestion_Click);
             // 
             // btnJugadores
             // 
-            this.btnJugadores.BackgroundImage = global::Vistas.Properties.Resources.green;
             this.btnJugadores.FlatAppearance.BorderSize = 0;
             this.btnJugadores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnJugadores.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnJugadores.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnJugadores.Location = new System.Drawing.Point(6, 218);
+            this.btnJugadores.ForeColor = System.Drawing.Color.Green;
+            this.btnJugadores.Location = new System.Drawing.Point(0, 218);
             this.btnJugadores.Name = "btnJugadores";
-            this.btnJugadores.Size = new System.Drawing.Size(176, 91);
+            this.btnJugadores.Size = new System.Drawing.Size(182, 91);
             this.btnJugadores.TabIndex = 6;
             this.btnJugadores.Text = "Jugadores";
             this.btnJugadores.UseVisualStyleBackColor = true;
+            this.btnJugadores.Click += new System.EventHandler(this.btnJugadores_Click);
             // 
             // picBoxUser
             // 
@@ -127,6 +157,7 @@
             this.picBoxUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBoxUser.TabIndex = 5;
             this.picBoxUser.TabStop = false;
+            this.picBoxUser.Click += new System.EventHandler(this.picBoxUser_Click);
             // 
             // btnInventario
             // 
@@ -141,6 +172,7 @@
             this.btnInventario.TabIndex = 1;
             this.btnInventario.Text = "Inventario";
             this.btnInventario.UseVisualStyleBackColor = true;
+            this.btnInventario.Click += new System.EventHandler(this.btnInventario_Click);
             // 
             // pnlLogo
             // 
@@ -150,19 +182,96 @@
             this.pnlLogo.Name = "pnlLogo";
             this.pnlLogo.Size = new System.Drawing.Size(182, 115);
             this.pnlLogo.TabIndex = 0;
+            this.pnlLogo.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlLogo_Paint);
+            // 
+            // btnQuitarJugador
+            // 
+            this.btnQuitarJugador.BackColor = System.Drawing.Color.Crimson;
+            this.btnQuitarJugador.FlatAppearance.BorderSize = 0;
+            this.btnQuitarJugador.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnQuitarJugador.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQuitarJugador.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnQuitarJugador.Location = new System.Drawing.Point(1002, 563);
+            this.btnQuitarJugador.Name = "btnQuitarJugador";
+            this.btnQuitarJugador.Size = new System.Drawing.Size(206, 66);
+            this.btnQuitarJugador.TabIndex = 10;
+            this.btnQuitarJugador.Text = "- Quitar Jugador";
+            this.btnQuitarJugador.UseVisualStyleBackColor = false;
+            this.btnQuitarJugador.Click += new System.EventHandler(this.btnQuitarJugador_Click);
+            // 
+            // dgvJugadores
+            // 
+            this.dgvJugadores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvJugadores.Location = new System.Drawing.Point(248, 218);
+            this.dgvJugadores.Name = "dgvJugadores";
+            this.dgvJugadores.RowHeadersWidth = 51;
+            this.dgvJugadores.RowTemplate.Height = 24;
+            this.dgvJugadores.Size = new System.Drawing.Size(960, 307);
+            this.dgvJugadores.TabIndex = 9;
+            this.dgvJugadores.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvJugadores_CellContentClick);
+            // 
+            // btnAñaJugador
+            // 
+            this.btnAñaJugador.BackColor = System.Drawing.Color.Green;
+            this.btnAñaJugador.FlatAppearance.BorderSize = 0;
+            this.btnAñaJugador.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAñaJugador.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAñaJugador.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnAñaJugador.Location = new System.Drawing.Point(984, 121);
+            this.btnAñaJugador.Name = "btnAñaJugador";
+            this.btnAñaJugador.Size = new System.Drawing.Size(206, 66);
+            this.btnAñaJugador.TabIndex = 8;
+            this.btnAñaJugador.Text = "+ Añadir Jugador";
+            this.btnAñaJugador.UseVisualStyleBackColor = false;
+            this.btnAñaJugador.Click += new System.EventHandler(this.btnAñaJugador_Click);
+            // 
+            // btnActualizarJugador
+            // 
+            this.btnActualizarJugador.BackColor = System.Drawing.Color.Teal;
+            this.btnActualizarJugador.FlatAppearance.BorderSize = 0;
+            this.btnActualizarJugador.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnActualizarJugador.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActualizarJugador.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnActualizarJugador.Location = new System.Drawing.Point(248, 563);
+            this.btnActualizarJugador.Name = "btnActualizarJugador";
+            this.btnActualizarJugador.Size = new System.Drawing.Size(206, 66);
+            this.btnActualizarJugador.TabIndex = 11;
+            this.btnActualizarJugador.Text = "Actualizar Jugadores";
+            this.btnActualizarJugador.UseVisualStyleBackColor = false;
+            this.btnActualizarJugador.Click += new System.EventHandler(this.btnActualizarJugador_Click);
+            // 
+            // lblAdmin
+            // 
+            this.lblAdmin.AutoSize = true;
+            this.lblAdmin.BackColor = System.Drawing.Color.Green;
+            this.lblAdmin.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAdmin.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblAdmin.Location = new System.Drawing.Point(934, 46);
+            this.lblAdmin.Name = "lblAdmin";
+            this.lblAdmin.Size = new System.Drawing.Size(83, 27);
+            this.lblAdmin.TabIndex = 12;
+            this.lblAdmin.Text = "Admin";
             // 
             // fmlJugadores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1060, 612);
+            this.ClientSize = new System.Drawing.Size(1276, 729);
+            this.Controls.Add(this.btnActualizarJugador);
+            this.Controls.Add(this.btnQuitarJugador);
+            this.Controls.Add(this.dgvJugadores);
+            this.Controls.Add(this.btnAñaJugador);
             this.Controls.Add(this.pnlBarraEstado);
             this.Controls.Add(this.pnlBarraTitulo);
             this.Controls.Add(this.pnlMenu);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "fmlJugadores";
             this.Text = "fmlJugadores";
+            this.pnlBarraTitulo.ResumeLayout(false);
+            this.pnlBarraTitulo.PerformLayout();
             this.pnlMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picBoxUser)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvJugadores)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -178,5 +287,11 @@
         private System.Windows.Forms.PictureBox picBoxUser;
         private System.Windows.Forms.Button btnInventario;
         private System.Windows.Forms.Panel pnlLogo;
+        private System.Windows.Forms.Label lblJugadoresBasic;
+        private System.Windows.Forms.Button btnQuitarJugador;
+        private System.Windows.Forms.DataGridView dgvJugadores;
+        private System.Windows.Forms.Button btnAñaJugador;
+        private System.Windows.Forms.Button btnActualizarJugador;
+        private System.Windows.Forms.Label lblAdmin;
     }
 }

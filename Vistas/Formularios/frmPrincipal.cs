@@ -24,7 +24,10 @@ namespace Vistas.Formularios
 
         private void btnJugadores_Click(object sender, EventArgs e)
         {
+            fmlJugadores fmlJugadores = new fmlJugadores();
+            fmlJugadores.Show();
 
+            this.Hide();
         }
 
         private void pnlBarraTitulo_Paint(object sender, PaintEventArgs e)
@@ -65,12 +68,18 @@ namespace Vistas.Formularios
 
         private void btnGestion_Click(object sender, EventArgs e)
         {
+            fmlGestion fmlGestion = new fmlGestion();
+            fmlGestion.Show();
 
+            this.Hide();
         }
 
         private void btnPartidos_Click(object sender, EventArgs e)
         {
+            fmlPartidos fmlParidos = new fmlPartidos();
+            fmlParidos.Show();
 
+            this.Hide();
         }
     }
 }

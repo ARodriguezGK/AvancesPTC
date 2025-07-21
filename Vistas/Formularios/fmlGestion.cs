@@ -10,17 +10,17 @@ using System.Windows.Forms;
 
 namespace Vistas.Formularios
 {
-    public partial class fmlJugadores : Form
+    public partial class fmlGestion : Form
     {
-        public fmlJugadores()
+        public fmlGestion()
         {
             InitializeComponent();
         }
 
-        private void btnGestion_Click(object sender, EventArgs e)
+        private void btnJugadores_Click(object sender, EventArgs e)
         {
-            fmlGestion fmlGestion = new fmlGestion();
-            fmlGestion.Show();
+            fmlJugadores fmlJugadores = new fmlJugadores();
+            fmlJugadores.Show();
 
             this.Hide();
         }
@@ -44,13 +44,12 @@ namespace Vistas.Formularios
         {
             fmlPartidos fmlPartidos = new fmlPartidos();
             fmlPartidos.Show();
-
             this.Hide();
         }
 
-        private void btnJugadores_Click(object sender, EventArgs e)
+        private void btnGestion_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void picBoxUser_Click(object sender, EventArgs e)
@@ -63,7 +62,6 @@ namespace Vistas.Formularios
             fmlinventario fmlinventario = new fmlinventario();
             fmlinventario.Show();
 
-           
             this.Hide();
         }
 
@@ -72,27 +70,47 @@ namespace Vistas.Formularios
 
         }
 
-        private void dgvJugadores_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void btnGestEntrenadores_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void lblJugadoresBasic_Click(object sender, EventArgs e)
+        private void btnGestEquipos_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void btnAñaJugador_Click(object sender, EventArgs e)
+        private void btnGestCategoria_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void btnActualizarJugador_Click(object sender, EventArgs e)
+        private void btnQuitarEntrenador_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void btnQuitarJugador_Click(object sender, EventArgs e)
+        private void lblGestionEntrenadores_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnActualizarEntrenador_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvEntrenadores_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnAñaEntrenador_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblAdmin_Click(object sender, EventArgs e)
         {
 
         }

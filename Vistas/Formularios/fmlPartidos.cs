@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Vistas.Formularios
 {
-    public partial class fmlJugadores : Form
+    public partial class fmlPartidos : Form
     {
-        public fmlJugadores()
+        public fmlPartidos()
         {
             InitializeComponent();
         }
@@ -21,6 +21,14 @@ namespace Vistas.Formularios
         {
             fmlGestion fmlGestion = new fmlGestion();
             fmlGestion.Show();
+
+            this.Hide();
+        }
+
+        private void btnInventario_Click(object sender, EventArgs e)
+        {
+            fmlinventario fmlinventario = new fmlinventario();
+            fmlinventario.Show();
 
             this.Hide();
         }
@@ -50,7 +58,10 @@ namespace Vistas.Formularios
 
         private void btnJugadores_Click(object sender, EventArgs e)
         {
+            fmlJugadores fmlJugadores = new fmlJugadores();
+            fmlJugadores.Show();
 
+            this.Hide();
         }
 
         private void picBoxUser_Click(object sender, EventArgs e)
@@ -58,41 +69,52 @@ namespace Vistas.Formularios
 
         }
 
-        private void btnInventario_Click(object sender, EventArgs e)
-        {
-            fmlinventario fmlinventario = new fmlinventario();
-            fmlinventario.Show();
-
-           
-            this.Hide();
-        }
-
         private void pnlLogo_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void dgvJugadores_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void btnActualizarPartido_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void lblJugadoresBasic_Click(object sender, EventArgs e)
+        private void lblAdmin_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void btnAñaJugador_Click(object sender, EventArgs e)
+        private void btnQuitarPartido_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void btnActualizarJugador_Click(object sender, EventArgs e)
+        private void dgvEntrenadores_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
 
-        private void btnQuitarJugador_Click(object sender, EventArgs e)
+        private void btnAñaPartido_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPartEncuentros_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPartEstadisticas_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPartResultados_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblProximosEncuentros_Click(object sender, EventArgs e)
         {
 
         }
