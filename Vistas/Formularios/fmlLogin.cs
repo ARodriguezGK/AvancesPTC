@@ -1,7 +1,9 @@
-﻿using System;
+﻿using Modelo.Conexion;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -29,29 +31,44 @@ namespace Vistas.Formularios
 
         private void btnIniciar_Click(object sender, EventArgs e)
         {
-            // credenciales fijas
-            string usuarioCorrecto = "admin";
-            string contraseñaCorrecta = "1234";
-
             // valores de los txtbox
             string usuarioIngresado = txtUser.Text;
             string contraseñaIngresada = txtPass.Text;
-
-            // validando de las credenciales
-            if (usuarioIngresado == usuarioCorrecto && contraseñaIngresada == contraseñaCorrecta)
+            SqlConnection conexionPTC = ConexionDB.AbrirConexion();
+            String consulta = "SELECT COUNT(*) FROM dbo.Usuario WHERE correo = @correo AND contraseña = @contraseña";
+            String mensajeError = "Error al iniciar sesión. Por favor, verifique sus credenciales.";
+            // Crear el comando SQL con la consulta y la conexión
+            SqlCommand comando = new SqlCommand(consulta, conexionPTC);
+            // Agregar los parámetros a la consulta
+            comando.Parameters.AddWithValue("@correo", usuarioIngresado);
+            comando.Parameters.AddWithValue("@contraseña", contraseñaIngresada);
+            try
             {
-                // cerramos el formulario despues de iniciar sesión
-                this.Hide();
-
-                // entrelazar el formulario principal
-                frmPrincipal principal = new frmPrincipal();
-                principal.Show();
+                int count = (int)comando.ExecuteScalar();
+                if (count > 0)
+                {
+                    // cerramos el formulario despues de iniciar sesión
+                    this.Hide();
+                    // entrelazar el formulario principal
+                    frmPrincipal principal = new frmPrincipal();
+                    principal.Show();
+                }
+                else
+                {
+                    // mensaje de error si las credenciales son incorrectas
+                    MessageBox.Show(mensajeError, "Error de inicio de sesión", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-            else
+            catch (Exception ex)
             {
-                //mensaje de error
-                MessageBox.Show("Usuario o contraseña incorrectos", "Error de inicio de sesión", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Ocurrió un error al intentar iniciar sesión: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            finally
+            {
+                conexionPTC.Close();
+            }
+
+
         }
 
         private void txtPass_TextChanged(object sender, EventArgs e)

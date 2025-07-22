@@ -1,7 +1,9 @@
-﻿using System;
+﻿using Modelo.Conexion;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Linq;
@@ -13,6 +15,9 @@ namespace Vistas.Formularios
 {
     public partial class fmlinventario : Form
     {
+        int idInventarioSeleccionado = 0; // Variable para almacenar el ID del jugador seleccionado
+
+
         public fmlinventario()
         {
             InitializeComponent();
@@ -74,30 +79,71 @@ namespace Vistas.Formularios
 
         private void btnAñaObjeto_Click(object sender, EventArgs e)
         {
-            Button btn = (Button)sender;
-            Rectangle rect = btn.ClientRectangle;
-            int radius = 20;
+            SqlConnection conexionPTC = ConexionDB.AbrirConexion();
+             String sqlGuardarJugador = "INSERT INTO dbo.Herramienta(nombre,cantidad,estado,fechaIntegracion,idInventario)" +
+                "VALUES (@nombre,@cantidad,@estado,@fechaIntegracion,@idInventario)";
+            
+            SqlCommand insertar = new SqlCommand(sqlGuardarJugador, conexionPTC);
 
-            using (GraphicsPath path = new GraphicsPath())
+            insertar.Parameters.AddWithValue("@nombre", txtHerramientaInventario.Text);
+            insertar.Parameters.AddWithValue("@cantidad", txtCantidadInventario.Text);
+            insertar.Parameters.AddWithValue("@estado", txtEstadoInventario.Text);
+            DateTime fecha = DateTime.Parse(txtFechaInventario.Text);
+            insertar.Parameters.AddWithValue("@fechaIntegracion", fecha);
+            insertar.Parameters.AddWithValue("@idInventario", 1);
+
+            try
             {
-                path.AddArc(rect.X, rect.Y, radius, radius, 180, 90);
-                path.AddArc(rect.Right - radius, rect.Y, radius, radius, 270, 90);
-                path.AddArc(rect.Right - radius, rect.Bottom - radius, radius, radius, 0, 90);
-                path.AddArc(rect.X, rect.Bottom - radius, radius, radius, 90, 90);
-                path.CloseFigure();
+                insertar.ExecuteNonQuery();
+                LimpiarFormulario();
+                LlenarDataGridView();
 
-                btn.Region = new Region(path);
+                MessageBox.Show("Inventario guardado correctamente");
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al guardar: " + ex.Message);
+            }
+            finally
+            {
+                conexionPTC.Close();
+            }
+
+            
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            int idJugadorSeleccionado = txtFechaInventario.Text.Length > 0 ? Convert.ToInt32(dgvInventario.Rows[e.RowIndex].Cells["idHerramienta"].Value) : 0;
         }
 
         private void btnQuitarObje_Click(object sender, EventArgs e)
         {
-
+            String mensaje = "¿Está seguro de que desea eliminar este jugador?";
+            String titulo = "Confirmación de eliminación";
+            DialogResult resultado = MessageBox.Show(mensaje, titulo, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (resultado == DialogResult.Yes)
+            {
+                SqlConnection conexionPTC = ConexionDB.AbrirConexion();
+                String sqlEliminarJugador = "DELETE FROM dbo.Herramienta WHERE idHerramienta = @idHerramienta";
+                SqlCommand eliminar = new SqlCommand(sqlEliminarJugador, conexionPTC);
+                eliminar.Parameters.AddWithValue("@idHerramienta", idInventarioSeleccionado);
+                try
+                {
+                    eliminar.ExecuteNonQuery();
+                    LlenarDataGridView();
+                    LimpiarFormulario();
+                    MessageBox.Show("Inventario eliminado correctamente");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error al eliminar: " + ex.Message);
+                }
+                finally
+                {
+                    conexionPTC.Close();
+                }
+            }
         }
 
         private void txtFechaInventario_TextChanged(object sender, EventArgs e)
@@ -139,5 +185,44 @@ namespace Vistas.Formularios
         {
 
         }
+
+        private void LlenarDataGridView()
+        {
+
+
+            using (SqlConnection conexionPTC = ConexionDB.AbrirConexion())
+            {
+                try
+                {
+                    SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM dbo.Herramienta", conexionPTC);
+                    DataTable dt = new DataTable();
+                    da.Fill(dt);
+                    dgvInventario.DataSource = dt;
+                    dgvInventario.Columns["idInventario"].Visible = false;
+
+                    LimpiarFormulario();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error al llenar el DataGridView: " + ex.Message);
+                }
+            }
+        }
+        private void fmlInventario_Load(object sender, EventArgs e)
+        {
+            LlenarDataGridView();
+        }
+
+        private void LimpiarFormulario()
+        {
+            txtCantidadInventario.Clear();
+            txtHerramientaInventario.Clear();
+            txtCantidadInventario.Clear();
+            txtFechaInventario.Clear();
+          
+        }
+
+
+
     }
 }

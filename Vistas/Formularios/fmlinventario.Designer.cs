@@ -215,7 +215,7 @@
             this.dgvInventario.RowTemplate.Height = 24;
             this.dgvInventario.Size = new System.Drawing.Size(879, 292);
             this.dgvInventario.TabIndex = 6;
-            this.dgvInventario.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dgvInventario.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // btnQuitarObje
             // 
@@ -234,7 +234,7 @@
             // 
             // txtFechaInventario
             // 
-            this.txtFechaInventario.Location = new System.Drawing.Point(796, 271);
+            this.txtFechaInventario.Location = new System.Drawing.Point(792, 277);
             this.txtFechaInventario.Name = "txtFechaInventario";
             this.txtFechaInventario.Size = new System.Drawing.Size(296, 22);
             this.txtFechaInventario.TabIndex = 43;
@@ -325,6 +325,8 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "fmlinventario";
             this.Text = "fmlinventario";
+            this.Load += new System.EventHandler(this.fmlInventario_Load);
+
             this.pnlBarraTitulo_inventario.ResumeLayout(false);
             this.pnlBarraTitulo_inventario.PerformLayout();
             this.pnlMenu_inventario.ResumeLayout(false);

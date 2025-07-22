@@ -230,7 +230,7 @@
             this.dgvJugadores.RowTemplate.Height = 24;
             this.dgvJugadores.Size = new System.Drawing.Size(960, 307);
             this.dgvJugadores.TabIndex = 9;
-            this.dgvJugadores.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvJugadores_CellContentClick);
+            this.dgvJugadores.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvJugadores_CellClick);
             // 
             // btnAñaJugador
             // 
