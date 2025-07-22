@@ -96,5 +96,65 @@ namespace Vistas.Formularios
         {
 
         }
+
+        private void lblEstadoInventario_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fmlJugadores_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtEdadJugadores_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblPosicionJugadores_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPosicionJugadores_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtDorsalJugadores_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtApellidoJugadores_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblDorsalJugadores_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblEdadJugadores_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblApellidoJugadores_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblNombreJugadores_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNombreJugadores_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

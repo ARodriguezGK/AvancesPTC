@@ -30,7 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fmlGestion));
             this.pnlBarraEstado = new System.Windows.Forms.Panel();
+            this.btnGestCategoria = new System.Windows.Forms.Button();
+            this.btnGestEquipos = new System.Windows.Forms.Button();
+            this.btnGestEntrenadores = new System.Windows.Forms.Button();
             this.pnlBarraTitulo = new System.Windows.Forms.Panel();
+            this.lblAdmin = new System.Windows.Forms.Label();
+            this.lblGestionEntrenadores = new System.Windows.Forms.Label();
             this.pnlMenu = new System.Windows.Forms.Panel();
             this.btnPartidos = new System.Windows.Forms.Button();
             this.btnGestion = new System.Windows.Forms.Button();
@@ -38,15 +43,18 @@
             this.picBoxUser = new System.Windows.Forms.PictureBox();
             this.btnInventario = new System.Windows.Forms.Button();
             this.pnlLogo = new System.Windows.Forms.Panel();
-            this.lblGestionEntrenadores = new System.Windows.Forms.Label();
             this.btnActualizarEntrenador = new System.Windows.Forms.Button();
             this.btnQuitarEntrenador = new System.Windows.Forms.Button();
             this.dgvEntrenadores = new System.Windows.Forms.DataGridView();
             this.btnAñaEntrenador = new System.Windows.Forms.Button();
-            this.lblAdmin = new System.Windows.Forms.Label();
-            this.btnGestEntrenadores = new System.Windows.Forms.Button();
-            this.btnGestEquipos = new System.Windows.Forms.Button();
-            this.btnGestCategoria = new System.Windows.Forms.Button();
+            this.txtContraseñaGestionEntrenadores = new System.Windows.Forms.TextBox();
+            this.lblContraseñaGestionEntrenadores = new System.Windows.Forms.Label();
+            this.txtEstadoGestionEntrenadores = new System.Windows.Forms.TextBox();
+            this.txtCorreoGestionEntrenadores = new System.Windows.Forms.TextBox();
+            this.txtNombreGestionEntrenador = new System.Windows.Forms.TextBox();
+            this.lblCorreoGestionEntrenadores = new System.Windows.Forms.Label();
+            this.lblEstadoGestionEntrenadores = new System.Windows.Forms.Label();
+            this.lblNombreGestionEntrenador = new System.Windows.Forms.Label();
             this.pnlBarraEstado.SuspendLayout();
             this.pnlBarraTitulo.SuspendLayout();
             this.pnlMenu.SuspendLayout();
@@ -61,11 +69,48 @@
             this.pnlBarraEstado.Controls.Add(this.btnGestEquipos);
             this.pnlBarraEstado.Controls.Add(this.btnGestEntrenadores);
             this.pnlBarraEstado.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlBarraEstado.Location = new System.Drawing.Point(182, 644);
+            this.pnlBarraEstado.Location = new System.Drawing.Point(182, 816);
             this.pnlBarraEstado.Name = "pnlBarraEstado";
             this.pnlBarraEstado.Size = new System.Drawing.Size(1046, 57);
             this.pnlBarraEstado.TabIndex = 5;
             this.pnlBarraEstado.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlBarraEstado_Paint);
+            // 
+            // btnGestCategoria
+            // 
+            this.btnGestCategoria.BackColor = System.Drawing.Color.LightGray;
+            this.btnGestCategoria.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGestCategoria.Location = new System.Drawing.Point(733, 3);
+            this.btnGestCategoria.Name = "btnGestCategoria";
+            this.btnGestCategoria.Size = new System.Drawing.Size(276, 51);
+            this.btnGestCategoria.TabIndex = 2;
+            this.btnGestCategoria.Text = "Categorias";
+            this.btnGestCategoria.UseVisualStyleBackColor = false;
+            this.btnGestCategoria.Click += new System.EventHandler(this.btnGestCategoria_Click);
+            // 
+            // btnGestEquipos
+            // 
+            this.btnGestEquipos.BackColor = System.Drawing.Color.LightGray;
+            this.btnGestEquipos.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGestEquipos.Location = new System.Drawing.Point(385, 3);
+            this.btnGestEquipos.Name = "btnGestEquipos";
+            this.btnGestEquipos.Size = new System.Drawing.Size(276, 51);
+            this.btnGestEquipos.TabIndex = 1;
+            this.btnGestEquipos.Text = "Equipos";
+            this.btnGestEquipos.UseVisualStyleBackColor = false;
+            this.btnGestEquipos.Click += new System.EventHandler(this.btnGestEquipos_Click);
+            // 
+            // btnGestEntrenadores
+            // 
+            this.btnGestEntrenadores.BackColor = System.Drawing.Color.LightGray;
+            this.btnGestEntrenadores.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGestEntrenadores.ForeColor = System.Drawing.Color.Green;
+            this.btnGestEntrenadores.Location = new System.Drawing.Point(37, 3);
+            this.btnGestEntrenadores.Name = "btnGestEntrenadores";
+            this.btnGestEntrenadores.Size = new System.Drawing.Size(276, 51);
+            this.btnGestEntrenadores.TabIndex = 0;
+            this.btnGestEntrenadores.Text = "Entrenadores";
+            this.btnGestEntrenadores.UseVisualStyleBackColor = false;
+            this.btnGestEntrenadores.Click += new System.EventHandler(this.btnGestEntrenadores_Click);
             // 
             // pnlBarraTitulo
             // 
@@ -79,6 +124,32 @@
             this.pnlBarraTitulo.TabIndex = 4;
             this.pnlBarraTitulo.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlBarraTitulo_Paint);
             // 
+            // lblAdmin
+            // 
+            this.lblAdmin.AutoSize = true;
+            this.lblAdmin.BackColor = System.Drawing.Color.Green;
+            this.lblAdmin.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAdmin.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblAdmin.Location = new System.Drawing.Point(926, 45);
+            this.lblAdmin.Name = "lblAdmin";
+            this.lblAdmin.Size = new System.Drawing.Size(83, 27);
+            this.lblAdmin.TabIndex = 7;
+            this.lblAdmin.Text = "Admin";
+            this.lblAdmin.Click += new System.EventHandler(this.lblAdmin_Click);
+            // 
+            // lblGestionEntrenadores
+            // 
+            this.lblGestionEntrenadores.AutoSize = true;
+            this.lblGestionEntrenadores.BackColor = System.Drawing.Color.Green;
+            this.lblGestionEntrenadores.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGestionEntrenadores.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblGestionEntrenadores.Location = new System.Drawing.Point(32, 45);
+            this.lblGestionEntrenadores.Name = "lblGestionEntrenadores";
+            this.lblGestionEntrenadores.Size = new System.Drawing.Size(281, 27);
+            this.lblGestionEntrenadores.TabIndex = 6;
+            this.lblGestionEntrenadores.Text = "Gestion de Entenadores";
+            this.lblGestionEntrenadores.Click += new System.EventHandler(this.lblGestionEntrenadores_Click);
+            // 
             // pnlMenu
             // 
             this.pnlMenu.BackgroundImage = global::Vistas.Properties.Resources.green;
@@ -91,7 +162,7 @@
             this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlMenu.Location = new System.Drawing.Point(0, 0);
             this.pnlMenu.Name = "pnlMenu";
-            this.pnlMenu.Size = new System.Drawing.Size(182, 701);
+            this.pnlMenu.Size = new System.Drawing.Size(182, 873);
             this.pnlMenu.TabIndex = 3;
             this.pnlMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlMenu_Paint);
             // 
@@ -177,19 +248,6 @@
             this.pnlLogo.TabIndex = 0;
             this.pnlLogo.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlLogo_Paint);
             // 
-            // lblGestionEntrenadores
-            // 
-            this.lblGestionEntrenadores.AutoSize = true;
-            this.lblGestionEntrenadores.BackColor = System.Drawing.Color.Green;
-            this.lblGestionEntrenadores.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGestionEntrenadores.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblGestionEntrenadores.Location = new System.Drawing.Point(32, 45);
-            this.lblGestionEntrenadores.Name = "lblGestionEntrenadores";
-            this.lblGestionEntrenadores.Size = new System.Drawing.Size(281, 27);
-            this.lblGestionEntrenadores.TabIndex = 6;
-            this.lblGestionEntrenadores.Text = "Gestion de Entenadores";
-            this.lblGestionEntrenadores.Click += new System.EventHandler(this.lblGestionEntrenadores_Click);
-            // 
             // btnActualizarEntrenador
             // 
             this.btnActualizarEntrenador.BackColor = System.Drawing.Color.Teal;
@@ -197,7 +255,7 @@
             this.btnActualizarEntrenador.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnActualizarEntrenador.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActualizarEntrenador.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnActualizarEntrenador.Location = new System.Drawing.Point(219, 563);
+            this.btnActualizarEntrenador.Location = new System.Drawing.Point(219, 721);
             this.btnActualizarEntrenador.Name = "btnActualizarEntrenador";
             this.btnActualizarEntrenador.Size = new System.Drawing.Size(206, 66);
             this.btnActualizarEntrenador.TabIndex = 15;
@@ -212,7 +270,7 @@
             this.btnQuitarEntrenador.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnQuitarEntrenador.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQuitarEntrenador.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnQuitarEntrenador.Location = new System.Drawing.Point(973, 563);
+            this.btnQuitarEntrenador.Location = new System.Drawing.Point(973, 721);
             this.btnQuitarEntrenador.Name = "btnQuitarEntrenador";
             this.btnQuitarEntrenador.Size = new System.Drawing.Size(206, 66);
             this.btnQuitarEntrenador.TabIndex = 14;
@@ -223,7 +281,7 @@
             // dgvEntrenadores
             // 
             this.dgvEntrenadores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvEntrenadores.Location = new System.Drawing.Point(219, 218);
+            this.dgvEntrenadores.Location = new System.Drawing.Point(219, 389);
             this.dgvEntrenadores.Name = "dgvEntrenadores";
             this.dgvEntrenadores.RowHeadersWidth = 51;
             this.dgvEntrenadores.RowTemplate.Height = 24;
@@ -246,61 +304,83 @@
             this.btnAñaEntrenador.UseVisualStyleBackColor = false;
             this.btnAñaEntrenador.Click += new System.EventHandler(this.btnAñaEntrenador_Click);
             // 
-            // lblAdmin
+            // txtContraseñaGestionEntrenadores
             // 
-            this.lblAdmin.AutoSize = true;
-            this.lblAdmin.BackColor = System.Drawing.Color.Green;
-            this.lblAdmin.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAdmin.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblAdmin.Location = new System.Drawing.Point(926, 45);
-            this.lblAdmin.Name = "lblAdmin";
-            this.lblAdmin.Size = new System.Drawing.Size(83, 27);
-            this.lblAdmin.TabIndex = 7;
-            this.lblAdmin.Text = "Admin";
-            this.lblAdmin.Click += new System.EventHandler(this.lblAdmin_Click);
+            this.txtContraseñaGestionEntrenadores.Location = new System.Drawing.Point(821, 303);
+            this.txtContraseñaGestionEntrenadores.Name = "txtContraseñaGestionEntrenadores";
+            this.txtContraseñaGestionEntrenadores.Size = new System.Drawing.Size(296, 22);
+            this.txtContraseñaGestionEntrenadores.TabIndex = 61;
             // 
-            // btnGestEntrenadores
+            // lblContraseñaGestionEntrenadores
             // 
-            this.btnGestEntrenadores.BackColor = System.Drawing.Color.LightGray;
-            this.btnGestEntrenadores.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGestEntrenadores.ForeColor = System.Drawing.Color.Green;
-            this.btnGestEntrenadores.Location = new System.Drawing.Point(37, 3);
-            this.btnGestEntrenadores.Name = "btnGestEntrenadores";
-            this.btnGestEntrenadores.Size = new System.Drawing.Size(276, 51);
-            this.btnGestEntrenadores.TabIndex = 0;
-            this.btnGestEntrenadores.Text = "Entrenadores";
-            this.btnGestEntrenadores.UseVisualStyleBackColor = false;
-            this.btnGestEntrenadores.Click += new System.EventHandler(this.btnGestEntrenadores_Click);
+            this.lblContraseñaGestionEntrenadores.AutoSize = true;
+            this.lblContraseñaGestionEntrenadores.Location = new System.Drawing.Point(699, 309);
+            this.lblContraseñaGestionEntrenadores.Name = "lblContraseñaGestionEntrenadores";
+            this.lblContraseñaGestionEntrenadores.Size = new System.Drawing.Size(76, 16);
+            this.lblContraseñaGestionEntrenadores.TabIndex = 60;
+            this.lblContraseñaGestionEntrenadores.Text = "Contraseña";
             // 
-            // btnGestEquipos
+            // txtEstadoGestionEntrenadores
             // 
-            this.btnGestEquipos.BackColor = System.Drawing.Color.LightGray;
-            this.btnGestEquipos.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGestEquipos.Location = new System.Drawing.Point(385, 3);
-            this.btnGestEquipos.Name = "btnGestEquipos";
-            this.btnGestEquipos.Size = new System.Drawing.Size(276, 51);
-            this.btnGestEquipos.TabIndex = 1;
-            this.btnGestEquipos.Text = "Equipos";
-            this.btnGestEquipos.UseVisualStyleBackColor = false;
-            this.btnGestEquipos.Click += new System.EventHandler(this.btnGestEquipos_Click);
+            this.txtEstadoGestionEntrenadores.Location = new System.Drawing.Point(821, 256);
+            this.txtEstadoGestionEntrenadores.Name = "txtEstadoGestionEntrenadores";
+            this.txtEstadoGestionEntrenadores.Size = new System.Drawing.Size(296, 22);
+            this.txtEstadoGestionEntrenadores.TabIndex = 59;
             // 
-            // btnGestCategoria
+            // txtCorreoGestionEntrenadores
             // 
-            this.btnGestCategoria.BackColor = System.Drawing.Color.LightGray;
-            this.btnGestCategoria.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGestCategoria.Location = new System.Drawing.Point(733, 3);
-            this.btnGestCategoria.Name = "btnGestCategoria";
-            this.btnGestCategoria.Size = new System.Drawing.Size(276, 51);
-            this.btnGestCategoria.TabIndex = 2;
-            this.btnGestCategoria.Text = "Categorias";
-            this.btnGestCategoria.UseVisualStyleBackColor = false;
-            this.btnGestCategoria.Click += new System.EventHandler(this.btnGestCategoria_Click);
+            this.txtCorreoGestionEntrenadores.Location = new System.Drawing.Point(354, 306);
+            this.txtCorreoGestionEntrenadores.Name = "txtCorreoGestionEntrenadores";
+            this.txtCorreoGestionEntrenadores.Size = new System.Drawing.Size(296, 22);
+            this.txtCorreoGestionEntrenadores.TabIndex = 58;
+            // 
+            // txtNombreGestionEntrenador
+            // 
+            this.txtNombreGestionEntrenador.Location = new System.Drawing.Point(354, 256);
+            this.txtNombreGestionEntrenador.Name = "txtNombreGestionEntrenador";
+            this.txtNombreGestionEntrenador.Size = new System.Drawing.Size(296, 22);
+            this.txtNombreGestionEntrenador.TabIndex = 57;
+            // 
+            // lblCorreoGestionEntrenadores
+            // 
+            this.lblCorreoGestionEntrenadores.AutoSize = true;
+            this.lblCorreoGestionEntrenadores.Location = new System.Drawing.Point(239, 306);
+            this.lblCorreoGestionEntrenadores.Name = "lblCorreoGestionEntrenadores";
+            this.lblCorreoGestionEntrenadores.Size = new System.Drawing.Size(48, 16);
+            this.lblCorreoGestionEntrenadores.TabIndex = 56;
+            this.lblCorreoGestionEntrenadores.Text = "Correo";
+            // 
+            // lblEstadoGestionEntrenadores
+            // 
+            this.lblEstadoGestionEntrenadores.AutoSize = true;
+            this.lblEstadoGestionEntrenadores.Location = new System.Drawing.Point(699, 262);
+            this.lblEstadoGestionEntrenadores.Name = "lblEstadoGestionEntrenadores";
+            this.lblEstadoGestionEntrenadores.Size = new System.Drawing.Size(50, 16);
+            this.lblEstadoGestionEntrenadores.TabIndex = 55;
+            this.lblEstadoGestionEntrenadores.Text = "Estado";
+            // 
+            // lblNombreGestionEntrenador
+            // 
+            this.lblNombreGestionEntrenador.AutoSize = true;
+            this.lblNombreGestionEntrenador.Location = new System.Drawing.Point(232, 259);
+            this.lblNombreGestionEntrenador.Name = "lblNombreGestionEntrenador";
+            this.lblNombreGestionEntrenador.Size = new System.Drawing.Size(56, 16);
+            this.lblNombreGestionEntrenador.TabIndex = 54;
+            this.lblNombreGestionEntrenador.Text = "Nombre";
             // 
             // fmlGestion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1228, 701);
+            this.ClientSize = new System.Drawing.Size(1228, 873);
+            this.Controls.Add(this.txtContraseñaGestionEntrenadores);
+            this.Controls.Add(this.lblContraseñaGestionEntrenadores);
+            this.Controls.Add(this.txtEstadoGestionEntrenadores);
+            this.Controls.Add(this.txtCorreoGestionEntrenadores);
+            this.Controls.Add(this.txtNombreGestionEntrenador);
+            this.Controls.Add(this.lblCorreoGestionEntrenadores);
+            this.Controls.Add(this.lblEstadoGestionEntrenadores);
+            this.Controls.Add(this.lblNombreGestionEntrenador);
             this.Controls.Add(this.btnActualizarEntrenador);
             this.Controls.Add(this.btnQuitarEntrenador);
             this.Controls.Add(this.dgvEntrenadores);
@@ -318,6 +398,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picBoxUser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEntrenadores)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -341,5 +422,13 @@
         private System.Windows.Forms.Button btnGestEntrenadores;
         private System.Windows.Forms.Button btnGestCategoria;
         private System.Windows.Forms.Button btnGestEquipos;
+        private System.Windows.Forms.TextBox txtContraseñaGestionEntrenadores;
+        private System.Windows.Forms.Label lblContraseñaGestionEntrenadores;
+        private System.Windows.Forms.TextBox txtEstadoGestionEntrenadores;
+        private System.Windows.Forms.TextBox txtCorreoGestionEntrenadores;
+        private System.Windows.Forms.TextBox txtNombreGestionEntrenador;
+        private System.Windows.Forms.Label lblCorreoGestionEntrenadores;
+        private System.Windows.Forms.Label lblEstadoGestionEntrenadores;
+        private System.Windows.Forms.Label lblNombreGestionEntrenador;
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Vistas.Formularios
 {
-    partial class frmPrincipal
+    partial class Principal_entrenadores
     {
         /// <summary>
         /// Required designer variable.
@@ -28,20 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
             this.pnlBarraEstado = new System.Windows.Forms.Panel();
             this.pnlBarraTitulo = new System.Windows.Forms.Panel();
-            this.lblAdmin = new System.Windows.Forms.Label();
             this.pnlMenu = new System.Windows.Forms.Panel();
             this.btnPartidos = new System.Windows.Forms.Button();
-            this.btnGestion = new System.Windows.Forms.Button();
             this.btnJugadores = new System.Windows.Forms.Button();
             this.picBoxUser = new System.Windows.Forms.PictureBox();
             this.btnInventario = new System.Windows.Forms.Button();
             this.pnlLogo = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblBienvenido = new System.Windows.Forms.Label();
-            this.pnlBarraTitulo.SuspendLayout();
             this.pnlMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -51,41 +47,24 @@
             // 
             this.pnlBarraEstado.BackColor = System.Drawing.Color.Silver;
             this.pnlBarraEstado.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlBarraEstado.Location = new System.Drawing.Point(182, 534);
+            this.pnlBarraEstado.Location = new System.Drawing.Point(182, 544);
             this.pnlBarraEstado.Name = "pnlBarraEstado";
-            this.pnlBarraEstado.Size = new System.Drawing.Size(846, 57);
-            this.pnlBarraEstado.TabIndex = 2;
-            this.pnlBarraEstado.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlBarraEstado_Paint);
+            this.pnlBarraEstado.Size = new System.Drawing.Size(933, 57);
+            this.pnlBarraEstado.TabIndex = 5;
             // 
             // pnlBarraTitulo
             // 
             this.pnlBarraTitulo.BackgroundImage = global::Vistas.Properties.Resources.green;
-            this.pnlBarraTitulo.Controls.Add(this.lblAdmin);
             this.pnlBarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlBarraTitulo.Location = new System.Drawing.Point(182, 0);
             this.pnlBarraTitulo.Name = "pnlBarraTitulo";
-            this.pnlBarraTitulo.Size = new System.Drawing.Size(846, 115);
-            this.pnlBarraTitulo.TabIndex = 1;
-            this.pnlBarraTitulo.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlBarraTitulo_Paint);
-            // 
-            // lblAdmin
-            // 
-            this.lblAdmin.AutoSize = true;
-            this.lblAdmin.BackColor = System.Drawing.Color.Green;
-            this.lblAdmin.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAdmin.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblAdmin.Location = new System.Drawing.Point(751, 43);
-            this.lblAdmin.Name = "lblAdmin";
-            this.lblAdmin.Size = new System.Drawing.Size(83, 27);
-            this.lblAdmin.TabIndex = 14;
-            this.lblAdmin.Text = "Admin";
-            this.lblAdmin.Click += new System.EventHandler(this.lblAdmin_Click);
+            this.pnlBarraTitulo.Size = new System.Drawing.Size(933, 115);
+            this.pnlBarraTitulo.TabIndex = 4;
             // 
             // pnlMenu
             // 
             this.pnlMenu.BackgroundImage = global::Vistas.Properties.Resources.green;
             this.pnlMenu.Controls.Add(this.btnPartidos);
-            this.pnlMenu.Controls.Add(this.btnGestion);
             this.pnlMenu.Controls.Add(this.btnJugadores);
             this.pnlMenu.Controls.Add(this.picBoxUser);
             this.pnlMenu.Controls.Add(this.btnInventario);
@@ -93,9 +72,8 @@
             this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlMenu.Location = new System.Drawing.Point(0, 0);
             this.pnlMenu.Name = "pnlMenu";
-            this.pnlMenu.Size = new System.Drawing.Size(182, 591);
-            this.pnlMenu.TabIndex = 0;
-            this.pnlMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlMenu_Paint);
+            this.pnlMenu.Size = new System.Drawing.Size(182, 601);
+            this.pnlMenu.TabIndex = 3;
             // 
             // btnPartidos
             // 
@@ -104,28 +82,12 @@
             this.btnPartidos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPartidos.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPartidos.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnPartidos.Location = new System.Drawing.Point(6, 412);
+            this.btnPartidos.Location = new System.Drawing.Point(3, 381);
             this.btnPartidos.Name = "btnPartidos";
             this.btnPartidos.Size = new System.Drawing.Size(176, 91);
             this.btnPartidos.TabIndex = 8;
             this.btnPartidos.Text = "Partidos";
             this.btnPartidos.UseVisualStyleBackColor = true;
-            this.btnPartidos.Click += new System.EventHandler(this.btnPartidos_Click);
-            // 
-            // btnGestion
-            // 
-            this.btnGestion.BackgroundImage = global::Vistas.Properties.Resources.green;
-            this.btnGestion.FlatAppearance.BorderSize = 0;
-            this.btnGestion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGestion.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGestion.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnGestion.Location = new System.Drawing.Point(6, 315);
-            this.btnGestion.Name = "btnGestion";
-            this.btnGestion.Size = new System.Drawing.Size(176, 91);
-            this.btnGestion.TabIndex = 7;
-            this.btnGestion.Text = "Gestion";
-            this.btnGestion.UseVisualStyleBackColor = true;
-            this.btnGestion.Click += new System.EventHandler(this.btnGestion_Click);
             // 
             // btnJugadores
             // 
@@ -134,13 +96,12 @@
             this.btnJugadores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnJugadores.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnJugadores.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnJugadores.Location = new System.Drawing.Point(6, 218);
+            this.btnJugadores.Location = new System.Drawing.Point(3, 243);
             this.btnJugadores.Name = "btnJugadores";
             this.btnJugadores.Size = new System.Drawing.Size(176, 91);
             this.btnJugadores.TabIndex = 6;
             this.btnJugadores.Text = "Jugadores";
             this.btnJugadores.UseVisualStyleBackColor = true;
-            this.btnJugadores.Click += new System.EventHandler(this.btnJugadores_Click);
             // 
             // picBoxUser
             // 
@@ -153,7 +114,6 @@
             this.picBoxUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBoxUser.TabIndex = 5;
             this.picBoxUser.TabStop = false;
-            this.picBoxUser.Click += new System.EventHandler(this.picBoxUser_Click);
             // 
             // btnInventario
             // 
@@ -168,7 +128,6 @@
             this.btnInventario.TabIndex = 1;
             this.btnInventario.Text = "Inventario";
             this.btnInventario.UseVisualStyleBackColor = true;
-            this.btnInventario.Click += new System.EventHandler(this.btnInventario_Click);
             // 
             // pnlLogo
             // 
@@ -178,7 +137,6 @@
             this.pnlLogo.Name = "pnlLogo";
             this.pnlLogo.Size = new System.Drawing.Size(182, 115);
             this.pnlLogo.TabIndex = 0;
-            this.pnlLogo.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlLogo_Paint);
             // 
             // pictureBox1
             // 
@@ -186,11 +144,10 @@
             this.pictureBox1.Image = global::Vistas.Properties.Resources.fondo_logo;
             this.pictureBox1.Location = new System.Drawing.Point(182, 115);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(846, 419);
+            this.pictureBox1.Size = new System.Drawing.Size(933, 429);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // lblBienvenido
             // 
@@ -198,32 +155,24 @@
             this.lblBienvenido.BackColor = System.Drawing.Color.Green;
             this.lblBienvenido.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBienvenido.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblBienvenido.Location = new System.Drawing.Point(253, 315);
+            this.lblBienvenido.Location = new System.Drawing.Point(340, 300);
             this.lblBienvenido.Name = "lblBienvenido";
-            this.lblBienvenido.Size = new System.Drawing.Size(674, 34);
-            this.lblBienvenido.TabIndex = 17;
-            this.lblBienvenido.Text = "Bienvenido Administrador Que Desea hacer?";
-            this.lblBienvenido.Click += new System.EventHandler(this.lblBienvenido_Click_1);
+            this.lblBienvenido.Size = new System.Drawing.Size(630, 34);
+            this.lblBienvenido.TabIndex = 16;
+            this.lblBienvenido.Text = "Bienvenido Entrenador Que Desea hacer?";
             // 
-            // frmPrincipal
+            // Principal_entrenadores
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1028, 591);
+            this.ClientSize = new System.Drawing.Size(1115, 601);
             this.Controls.Add(this.lblBienvenido);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pnlBarraEstado);
             this.Controls.Add(this.pnlBarraTitulo);
             this.Controls.Add(this.pnlMenu);
-            this.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.MaximizeBox = false;
-            this.Name = "frmPrincipal";
-            this.Text = "FuturaFC_Principal";
-            this.Load += new System.EventHandler(this.frmPrincipal_Load);
-            this.pnlBarraTitulo.ResumeLayout(false);
-            this.pnlBarraTitulo.PerformLayout();
+            this.Name = "Principal_entrenadores";
+            this.Text = "Principal_entrenadores";
             this.pnlMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picBoxUser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -234,16 +183,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel pnlMenu;
-        private System.Windows.Forms.Panel pnlBarraTitulo;
-        private System.Windows.Forms.Panel pnlBarraEstado;
-        private System.Windows.Forms.Panel pnlLogo;
         private System.Windows.Forms.Button btnInventario;
-        private System.Windows.Forms.PictureBox picBoxUser;
+        private System.Windows.Forms.Panel pnlBarraEstado;
+        private System.Windows.Forms.Panel pnlBarraTitulo;
+        private System.Windows.Forms.Panel pnlMenu;
         private System.Windows.Forms.Button btnPartidos;
-        private System.Windows.Forms.Button btnGestion;
         private System.Windows.Forms.Button btnJugadores;
-        private System.Windows.Forms.Label lblAdmin;
+        private System.Windows.Forms.PictureBox picBoxUser;
+        private System.Windows.Forms.Panel pnlLogo;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblBienvenido;
     }

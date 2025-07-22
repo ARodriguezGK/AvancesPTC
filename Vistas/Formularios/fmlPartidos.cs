@@ -118,5 +118,75 @@ namespace Vistas.Formularios
         {
 
         }
+
+        private void txtEquipoVisitantePart_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtHorarioPart_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtCategoriaPartidos_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtEquipoLocalPartidos_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtResultadoPart_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblLugar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblEquipVisitantePartidos_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblEquipLocalPartidos_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblHorarioPartido_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblCategoriaPartido_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblResultadoPartido_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblTipoPartido_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTipoPartido_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtLugarPart_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

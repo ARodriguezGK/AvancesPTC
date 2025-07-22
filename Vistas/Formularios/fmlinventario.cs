@@ -99,5 +99,45 @@ namespace Vistas.Formularios
         {
 
         }
+
+        private void txtFechaInventario_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtEstadoInventario_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtCantidadInventario_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblEstadoInventario_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblFechaInventario_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblCantidadInventario_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblNombreInventario_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtHerramientaInventario_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fmlinventario));
             this.pnlBarraTitulo_inventario = new System.Windows.Forms.Panel();
+            this.lblAdmin = new System.Windows.Forms.Label();
             this.lblinventario = new System.Windows.Forms.Label();
             this.pnlMenu_inventario = new System.Windows.Forms.Panel();
             this.btnPartidos_inventario = new System.Windows.Forms.Button();
@@ -40,7 +42,14 @@
             this.btnAñaObjeto = new System.Windows.Forms.Button();
             this.dgvInventario = new System.Windows.Forms.DataGridView();
             this.btnQuitarObje = new System.Windows.Forms.Button();
-            this.lblAdmin = new System.Windows.Forms.Label();
+            this.txtFechaInventario = new System.Windows.Forms.TextBox();
+            this.txtEstadoInventario = new System.Windows.Forms.TextBox();
+            this.txtCantidadInventario = new System.Windows.Forms.TextBox();
+            this.lblEstadoInventario = new System.Windows.Forms.Label();
+            this.lblFechaInventario = new System.Windows.Forms.Label();
+            this.lblCantidadInventario = new System.Windows.Forms.Label();
+            this.lblNombreInventario = new System.Windows.Forms.Label();
+            this.txtHerramientaInventario = new System.Windows.Forms.TextBox();
             this.pnlBarraTitulo_inventario.SuspendLayout();
             this.pnlMenu_inventario.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxUser_inventario)).BeginInit();
@@ -58,6 +67,18 @@
             this.pnlBarraTitulo_inventario.Size = new System.Drawing.Size(975, 115);
             this.pnlBarraTitulo_inventario.TabIndex = 4;
             this.pnlBarraTitulo_inventario.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlBarraTitulo_inventario_Paint);
+            // 
+            // lblAdmin
+            // 
+            this.lblAdmin.AutoSize = true;
+            this.lblAdmin.BackColor = System.Drawing.Color.Green;
+            this.lblAdmin.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAdmin.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblAdmin.Location = new System.Drawing.Point(871, 43);
+            this.lblAdmin.Name = "lblAdmin";
+            this.lblAdmin.Size = new System.Drawing.Size(83, 27);
+            this.lblAdmin.TabIndex = 8;
+            this.lblAdmin.Text = "Admin";
             // 
             // lblinventario
             // 
@@ -84,7 +105,7 @@
             this.pnlMenu_inventario.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlMenu_inventario.Location = new System.Drawing.Point(0, 0);
             this.pnlMenu_inventario.Name = "pnlMenu_inventario";
-            this.pnlMenu_inventario.Size = new System.Drawing.Size(182, 633);
+            this.pnlMenu_inventario.Size = new System.Drawing.Size(182, 793);
             this.pnlMenu_inventario.TabIndex = 3;
             this.pnlMenu_inventario.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlMenu_inventario_Paint);
             // 
@@ -188,11 +209,11 @@
             // dgvInventario
             // 
             this.dgvInventario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvInventario.Location = new System.Drawing.Point(256, 232);
+            this.dgvInventario.Location = new System.Drawing.Point(224, 388);
             this.dgvInventario.Name = "dgvInventario";
             this.dgvInventario.RowHeadersWidth = 51;
             this.dgvInventario.RowTemplate.Height = 24;
-            this.dgvInventario.Size = new System.Drawing.Size(808, 307);
+            this.dgvInventario.Size = new System.Drawing.Size(879, 292);
             this.dgvInventario.TabIndex = 6;
             this.dgvInventario.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -203,7 +224,7 @@
             this.btnQuitarObje.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnQuitarObje.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQuitarObje.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnQuitarObje.Location = new System.Drawing.Point(930, 555);
+            this.btnQuitarObje.Location = new System.Drawing.Point(939, 715);
             this.btnQuitarObje.Name = "btnQuitarObje";
             this.btnQuitarObje.Size = new System.Drawing.Size(206, 66);
             this.btnQuitarObje.TabIndex = 7;
@@ -211,28 +232,97 @@
             this.btnQuitarObje.UseVisualStyleBackColor = false;
             this.btnQuitarObje.Click += new System.EventHandler(this.btnQuitarObje_Click);
             // 
-            // lblAdmin
+            // txtFechaInventario
             // 
-            this.lblAdmin.AutoSize = true;
-            this.lblAdmin.BackColor = System.Drawing.Color.Green;
-            this.lblAdmin.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAdmin.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblAdmin.Location = new System.Drawing.Point(871, 43);
-            this.lblAdmin.Name = "lblAdmin";
-            this.lblAdmin.Size = new System.Drawing.Size(83, 27);
-            this.lblAdmin.TabIndex = 8;
-            this.lblAdmin.Text = "Admin";
+            this.txtFechaInventario.Location = new System.Drawing.Point(796, 271);
+            this.txtFechaInventario.Name = "txtFechaInventario";
+            this.txtFechaInventario.Size = new System.Drawing.Size(296, 22);
+            this.txtFechaInventario.TabIndex = 43;
+            this.txtFechaInventario.TextChanged += new System.EventHandler(this.txtFechaInventario_TextChanged);
+            // 
+            // txtEstadoInventario
+            // 
+            this.txtEstadoInventario.Location = new System.Drawing.Point(329, 321);
+            this.txtEstadoInventario.Name = "txtEstadoInventario";
+            this.txtEstadoInventario.Size = new System.Drawing.Size(296, 22);
+            this.txtEstadoInventario.TabIndex = 42;
+            this.txtEstadoInventario.TextChanged += new System.EventHandler(this.txtEstadoInventario_TextChanged);
+            // 
+            // txtCantidadInventario
+            // 
+            this.txtCantidadInventario.Location = new System.Drawing.Point(329, 271);
+            this.txtCantidadInventario.Name = "txtCantidadInventario";
+            this.txtCantidadInventario.Size = new System.Drawing.Size(296, 22);
+            this.txtCantidadInventario.TabIndex = 41;
+            this.txtCantidadInventario.TextChanged += new System.EventHandler(this.txtCantidadInventario_TextChanged);
+            // 
+            // lblEstadoInventario
+            // 
+            this.lblEstadoInventario.AutoSize = true;
+            this.lblEstadoInventario.Location = new System.Drawing.Point(214, 321);
+            this.lblEstadoInventario.Name = "lblEstadoInventario";
+            this.lblEstadoInventario.Size = new System.Drawing.Size(50, 16);
+            this.lblEstadoInventario.TabIndex = 39;
+            this.lblEstadoInventario.Text = "Estado";
+            this.lblEstadoInventario.Click += new System.EventHandler(this.lblEstadoInventario_Click);
+            // 
+            // lblFechaInventario
+            // 
+            this.lblFechaInventario.AutoSize = true;
+            this.lblFechaInventario.Location = new System.Drawing.Point(674, 277);
+            this.lblFechaInventario.Name = "lblFechaInventario";
+            this.lblFechaInventario.Size = new System.Drawing.Size(112, 16);
+            this.lblFechaInventario.TabIndex = 37;
+            this.lblFechaInventario.Text = "Fecha de registro";
+            this.lblFechaInventario.Click += new System.EventHandler(this.lblFechaInventario_Click);
+            // 
+            // lblCantidadInventario
+            // 
+            this.lblCantidadInventario.AutoSize = true;
+            this.lblCantidadInventario.Location = new System.Drawing.Point(214, 274);
+            this.lblCantidadInventario.Name = "lblCantidadInventario";
+            this.lblCantidadInventario.Size = new System.Drawing.Size(61, 16);
+            this.lblCantidadInventario.TabIndex = 36;
+            this.lblCantidadInventario.Text = "Cantidad";
+            this.lblCantidadInventario.Click += new System.EventHandler(this.lblCantidadInventario_Click);
+            // 
+            // lblNombreInventario
+            // 
+            this.lblNombreInventario.AutoSize = true;
+            this.lblNombreInventario.Location = new System.Drawing.Point(208, 227);
+            this.lblNombreInventario.Name = "lblNombreInventario";
+            this.lblNombreInventario.Size = new System.Drawing.Size(81, 16);
+            this.lblNombreInventario.TabIndex = 35;
+            this.lblNombreInventario.Text = "Herramienta";
+            this.lblNombreInventario.Click += new System.EventHandler(this.lblNombreInventario_Click);
+            // 
+            // txtHerramientaInventario
+            // 
+            this.txtHerramientaInventario.Location = new System.Drawing.Point(329, 224);
+            this.txtHerramientaInventario.Name = "txtHerramientaInventario";
+            this.txtHerramientaInventario.Size = new System.Drawing.Size(296, 22);
+            this.txtHerramientaInventario.TabIndex = 34;
+            this.txtHerramientaInventario.TextChanged += new System.EventHandler(this.txtHerramientaInventario_TextChanged);
             // 
             // fmlinventario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1157, 633);
+            this.ClientSize = new System.Drawing.Size(1157, 793);
+            this.Controls.Add(this.txtFechaInventario);
+            this.Controls.Add(this.txtEstadoInventario);
+            this.Controls.Add(this.txtCantidadInventario);
+            this.Controls.Add(this.lblEstadoInventario);
+            this.Controls.Add(this.lblFechaInventario);
+            this.Controls.Add(this.lblCantidadInventario);
+            this.Controls.Add(this.lblNombreInventario);
+            this.Controls.Add(this.txtHerramientaInventario);
             this.Controls.Add(this.btnQuitarObje);
             this.Controls.Add(this.dgvInventario);
             this.Controls.Add(this.btnAñaObjeto);
             this.Controls.Add(this.pnlBarraTitulo_inventario);
             this.Controls.Add(this.pnlMenu_inventario);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "fmlinventario";
             this.Text = "fmlinventario";
             this.pnlBarraTitulo_inventario.ResumeLayout(false);
@@ -241,6 +331,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picBoxUser_inventario)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInventario)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -259,5 +350,13 @@
         private System.Windows.Forms.DataGridView dgvInventario;
         private System.Windows.Forms.Button btnQuitarObje;
         private System.Windows.Forms.Label lblAdmin;
+        private System.Windows.Forms.TextBox txtFechaInventario;
+        private System.Windows.Forms.TextBox txtEstadoInventario;
+        private System.Windows.Forms.TextBox txtCantidadInventario;
+        private System.Windows.Forms.Label lblEstadoInventario;
+        private System.Windows.Forms.Label lblFechaInventario;
+        private System.Windows.Forms.Label lblCantidadInventario;
+        private System.Windows.Forms.Label lblNombreInventario;
+        private System.Windows.Forms.TextBox txtHerramientaInventario;
     }
 }
