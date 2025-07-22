@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Modelo.Conexion;
 
 namespace Vistas.Formularios
 {
@@ -84,6 +86,33 @@ namespace Vistas.Formularios
 
         private void btnAñaJugador_Click(object sender, EventArgs e)
         {
+            SqlConnection conexionPTC = ConexionDB.AbrirConexion();
+
+            String sqlGuardarJugador = "Insert into dbo.Jugador( nombre , apellido , edad , dorsal , posicion , idUsuario )" +
+                " values ( @nombre , @apellido, @edad , @dorsal , @posicion , @idUsuario )";
+
+            SqlCommand insertar = new SqlCommand(sqlGuardarJugador, conexionPTC);
+
+            insertar.Parameters.AddWithValue("@nombre", txtNombreJugadores.Text);
+            insertar.Parameters.AddWithValue("@apellido", txtApellidoJugadores.Text);
+            insertar.Parameters.AddWithValue("@edad", txtEdadJugadores.Text);
+            insertar.Parameters.AddWithValue("@dorsal", txtDorsalJugadores.Text);
+            insertar.Parameters.AddWithValue("@posicion", txtPosicionJugadores.Text);
+            insertar.Parameters.AddWithValue("@idUsuario", 1 );
+
+            try
+            {
+                insertar.ExecuteNonQuery();
+                MessageBox.Show("Jugador guardado correctamente");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al guardar: " + ex.Message);
+            }
+            finally
+            {
+                conexionPTC.Close();
+            }
 
         }
 
