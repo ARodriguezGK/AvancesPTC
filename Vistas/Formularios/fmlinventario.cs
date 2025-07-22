@@ -112,14 +112,19 @@ namespace Vistas.Formularios
             
         }
 
-        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void dgvInventario_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            int idJugadorSeleccionado = txtFechaInventario.Text.Length > 0 ? Convert.ToInt32(dgvInventario.Rows[e.RowIndex].Cells["idHerramienta"].Value) : 0;
+            if (e.RowIndex >= 0) // evitar encabezado
+            {
+                DataGridViewRow fila = dgvInventario.Rows[e.RowIndex];
+                idInventarioSeleccionado = Convert.ToInt32(fila.Cells["idHerramienta"].Value); 
+                
+            }
         }
 
         private void btnQuitarObje_Click(object sender, EventArgs e)
         {
-            String mensaje = "¿Está seguro de que desea eliminar este jugador?";
+            String mensaje = "¿Está seguro de que desea eliminar este inventario?";
             String titulo = "Confirmación de eliminación";
             DialogResult resultado = MessageBox.Show(mensaje, titulo, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (resultado == DialogResult.Yes)

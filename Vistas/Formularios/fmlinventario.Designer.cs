@@ -215,7 +215,7 @@
             this.dgvInventario.RowTemplate.Height = 24;
             this.dgvInventario.Size = new System.Drawing.Size(879, 292);
             this.dgvInventario.TabIndex = 6;
-            this.dgvInventario.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dgvInventario.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInventario_CellClick);
             // 
             // btnQuitarObje
             // 
@@ -326,7 +326,6 @@
             this.Name = "fmlinventario";
             this.Text = "fmlinventario";
             this.Load += new System.EventHandler(this.fmlInventario_Load);
-
             this.pnlBarraTitulo_inventario.ResumeLayout(false);
             this.pnlBarraTitulo_inventario.PerformLayout();
             this.pnlMenu_inventario.ResumeLayout(false);
