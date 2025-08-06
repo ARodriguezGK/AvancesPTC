@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Formularios\fmlEstadisticasPartidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\fmlEstadisticasPartidos.Designer.cs">
+      <DependentUpon>fmlEstadisticasPartidos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\fmlGestion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,11 +67,23 @@
     <Compile Include="Formularios\fmlinventario.Designer.cs">
       <DependentUpon>fmlinventario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\fmlInventario_ENTRENADORES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\fmlInventario_ENTRENADORES.Designer.cs">
+      <DependentUpon>fmlInventario_ENTRENADORES.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\fmlJugadores.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\fmlJugadores.Designer.cs">
       <DependentUpon>fmlJugadores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\fmlJugadores_ENTRENADORES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\fmlJugadores_ENTRENADORES.Designer.cs">
+      <DependentUpon>fmlJugadores_ENTRENADORES.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\fmlLogin.cs">
       <SubType>Form</SubType>
@@ -79,28 +97,49 @@
     <Compile Include="Formularios\fmlPartidos.Designer.cs">
       <DependentUpon>fmlPartidos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\fmlPartidos_ENTRENADORES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\fmlPartidos_ENTRENADORES.Designer.cs">
+      <DependentUpon>fmlPartidos_ENTRENADORES.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\frmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\frmPrincipal.Designer.cs">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Principal_entrenadores.cs">
+    <Compile Include="Formularios\Principal_ENTRENADORES.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Principal_entrenadores.Designer.cs">
-      <DependentUpon>Principal_entrenadores.cs</DependentUpon>
+    <Compile Include="Formularios\Principal_ENTRENADORES.Designer.cs">
+      <DependentUpon>Principal_ENTRENADORES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Resultados_Partidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Resultados_Partidos.Designer.cs">
+      <DependentUpon>Resultados_Partidos.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\fmlEstadisticasPartidos.resx">
+      <DependentUpon>fmlEstadisticasPartidos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\fmlGestion.resx">
       <DependentUpon>fmlGestion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\fmlinventario.resx">
       <DependentUpon>fmlinventario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\fmlInventario_ENTRENADORES.resx">
+      <DependentUpon>fmlInventario_ENTRENADORES.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\fmlJugadores.resx">
       <DependentUpon>fmlJugadores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\fmlJugadores_ENTRENADORES.resx">
+      <DependentUpon>fmlJugadores_ENTRENADORES.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\fmlLogin.resx">
       <DependentUpon>fmlLogin.cs</DependentUpon>
@@ -108,11 +147,17 @@
     <EmbeddedResource Include="Formularios\fmlPartidos.resx">
       <DependentUpon>fmlPartidos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\fmlPartidos_ENTRENADORES.resx">
+      <DependentUpon>fmlPartidos_ENTRENADORES.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Principal_entrenadores.resx">
-      <DependentUpon>Principal_entrenadores.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\Principal_ENTRENADORES.resx">
+      <DependentUpon>Principal_ENTRENADORES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Resultados_Partidos.resx">
+      <DependentUpon>Resultados_Partidos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -154,6 +199,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\local.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\local1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\visita.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

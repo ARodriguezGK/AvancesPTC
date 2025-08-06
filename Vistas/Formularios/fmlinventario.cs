@@ -79,7 +79,7 @@ namespace Vistas.Formularios
 
         private void btnAñaObjeto_Click(object sender, EventArgs e)
         {
-            SqlConnection conexionPTC = ConexionDB.AbrirConexion();
+          /*  SqlConnection conexionPTC = ConexionDB.AbrirConexion();
              String sqlGuardarJugador = "INSERT INTO dbo.Herramienta(nombre,cantidad,estado,fechaIntegracion,idInventario)" +
                 "VALUES (@nombre,@cantidad,@estado,@fechaIntegracion,@idInventario)";
             
@@ -108,7 +108,7 @@ namespace Vistas.Formularios
             {
                 conexionPTC.Close();
             }
-
+          */
             
         }
 
@@ -149,21 +149,6 @@ namespace Vistas.Formularios
                     conexionPTC.Close();
                 }
             }
-        }
-
-        private void txtFechaInventario_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtEstadoInventario_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtCantidadInventario_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void lblEstadoInventario_Click(object sender, EventArgs e)
@@ -220,14 +205,35 @@ namespace Vistas.Formularios
 
         private void LimpiarFormulario()
         {
-            txtCantidadInventario.Clear();
+
             txtHerramientaInventario.Clear();
-            txtCantidadInventario.Clear();
-            txtFechaInventario.Clear();
+
           
         }
 
+        private void btnActObjeto_Click(object sender, EventArgs e)
+        {
 
+        }
 
+        private void numericUpDownCantidadObjeto_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void monthCalendarObjeto_DateChanged(object sender, DateRangeEventArgs e)
+        {
+
+        }
+
+        private void cbxEstadoObjeto_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvInventario_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

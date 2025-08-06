@@ -293,10 +293,27 @@ namespace Vistas.Formularios
         {
             txtNombreJugadores.Clear();
             txtApellidoJugadores.Clear();
-            txtEdadJugadores.Clear();
-            txtDorsalJugadores.Clear();
-            txtPosicionJugadores.Clear();
             idJugadorSeleccionado = 0; // Reiniciar el ID del jugador seleccionado}
+        }
+
+        private void numericUpDownDorsalJugador_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void numericUpDownEdadJugador_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbxPosicionJugador_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvJugadores_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

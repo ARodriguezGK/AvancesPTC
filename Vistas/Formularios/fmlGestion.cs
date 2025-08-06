@@ -114,5 +114,10 @@ namespace Vistas.Formularios
         {
 
         }
+
+        private void cbxEstadoGestionEntrenador_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

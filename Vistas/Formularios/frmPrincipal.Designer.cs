@@ -41,6 +41,7 @@
             this.pnlLogo = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblBienvenido = new System.Windows.Forms.Label();
+            this.lbltitle2 = new System.Windows.Forms.Label();
             this.pnlBarraTitulo.SuspendLayout();
             this.pnlMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxUser)).BeginInit();
@@ -51,9 +52,9 @@
             // 
             this.pnlBarraEstado.BackColor = System.Drawing.Color.Silver;
             this.pnlBarraEstado.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlBarraEstado.Location = new System.Drawing.Point(182, 534);
+            this.pnlBarraEstado.Location = new System.Drawing.Point(182, 577);
             this.pnlBarraEstado.Name = "pnlBarraEstado";
-            this.pnlBarraEstado.Size = new System.Drawing.Size(846, 57);
+            this.pnlBarraEstado.Size = new System.Drawing.Size(760, 57);
             this.pnlBarraEstado.TabIndex = 2;
             this.pnlBarraEstado.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlBarraEstado_Paint);
             // 
@@ -64,7 +65,7 @@
             this.pnlBarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlBarraTitulo.Location = new System.Drawing.Point(182, 0);
             this.pnlBarraTitulo.Name = "pnlBarraTitulo";
-            this.pnlBarraTitulo.Size = new System.Drawing.Size(846, 115);
+            this.pnlBarraTitulo.Size = new System.Drawing.Size(760, 115);
             this.pnlBarraTitulo.TabIndex = 1;
             this.pnlBarraTitulo.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlBarraTitulo_Paint);
             // 
@@ -74,9 +75,9 @@
             this.lblAdmin.BackColor = System.Drawing.Color.Green;
             this.lblAdmin.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAdmin.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblAdmin.Location = new System.Drawing.Point(751, 43);
+            this.lblAdmin.Location = new System.Drawing.Point(679, 46);
             this.lblAdmin.Name = "lblAdmin";
-            this.lblAdmin.Size = new System.Drawing.Size(83, 27);
+            this.lblAdmin.Size = new System.Drawing.Size(69, 22);
             this.lblAdmin.TabIndex = 14;
             this.lblAdmin.Text = "Admin";
             this.lblAdmin.Click += new System.EventHandler(this.lblAdmin_Click);
@@ -93,7 +94,7 @@
             this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlMenu.Location = new System.Drawing.Point(0, 0);
             this.pnlMenu.Name = "pnlMenu";
-            this.pnlMenu.Size = new System.Drawing.Size(182, 591);
+            this.pnlMenu.Size = new System.Drawing.Size(182, 634);
             this.pnlMenu.TabIndex = 0;
             this.pnlMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlMenu_Paint);
             // 
@@ -186,7 +187,7 @@
             this.pictureBox1.Image = global::Vistas.Properties.Resources.fondo_logo;
             this.pictureBox1.Location = new System.Drawing.Point(182, 115);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(846, 419);
+            this.pictureBox1.Size = new System.Drawing.Size(760, 462);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
@@ -196,20 +197,34 @@
             // 
             this.lblBienvenido.AutoSize = true;
             this.lblBienvenido.BackColor = System.Drawing.Color.Green;
-            this.lblBienvenido.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBienvenido.Font = new System.Drawing.Font("Arial Rounded MT Bold", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBienvenido.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblBienvenido.Location = new System.Drawing.Point(253, 315);
+            this.lblBienvenido.Location = new System.Drawing.Point(339, 237);
             this.lblBienvenido.Name = "lblBienvenido";
-            this.lblBienvenido.Size = new System.Drawing.Size(674, 34);
+            this.lblBienvenido.Size = new System.Drawing.Size(466, 40);
             this.lblBienvenido.TabIndex = 17;
-            this.lblBienvenido.Text = "Bienvenido Administrador Que Desea hacer?";
+            this.lblBienvenido.Text = "Bienvenido Administrador ";
             this.lblBienvenido.Click += new System.EventHandler(this.lblBienvenido_Click_1);
+            // 
+            // lbltitle2
+            // 
+            this.lbltitle2.AutoSize = true;
+            this.lbltitle2.BackColor = System.Drawing.Color.Green;
+            this.lbltitle2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltitle2.ForeColor = System.Drawing.SystemColors.Control;
+            this.lbltitle2.Location = new System.Drawing.Point(408, 346);
+            this.lbltitle2.Name = "lbltitle2";
+            this.lbltitle2.Size = new System.Drawing.Size(332, 40);
+            this.lbltitle2.TabIndex = 18;
+            this.lbltitle2.Text = "Que Desea hacer?";
+            this.lbltitle2.Click += new System.EventHandler(this.lbltitle2_Click);
             // 
             // frmPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1028, 591);
+            this.ClientSize = new System.Drawing.Size(942, 634);
+            this.Controls.Add(this.lbltitle2);
             this.Controls.Add(this.lblBienvenido);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pnlBarraEstado);
@@ -246,5 +261,6 @@
         private System.Windows.Forms.Label lblAdmin;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblBienvenido;
+        private System.Windows.Forms.Label lbltitle2;
     }
 }
