@@ -45,11 +45,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion\ConexionDB.cs" />
+    <Compile Include="Entidades\Articulos_Deportivos.cs" />
+    <Compile Include="Entidades\CategoriaEquipo.cs" />
+    <Compile Include="Entidades\Equipo.cs" />
+    <Compile Include="Entidades\Estadistica.cs" />
+    <Compile Include="Entidades\Estado.cs" />
+    <Compile Include="Entidades\Horario.cs" />
+    <Compile Include="Entidades\Inventario.cs" />
+    <Compile Include="Entidades\Jugador.cs" />
+    <Compile Include="Entidades\JugadorEquipo.cs" />
+    <Compile Include="Entidades\Lugar.cs" />
+    <Compile Include="Entidades\Partido.cs" />
+    <Compile Include="Entidades\Posicion.cs" />
+    <Compile Include="Entidades\Rol.cs" />
+    <Compile Include="Entidades\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Entidades\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
