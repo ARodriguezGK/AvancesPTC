@@ -49,6 +49,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Administracion_deportivaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Administracion_deportivaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion_deportivaDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Administracion_deportivaDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion_deportivaDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Administracion_deportivaDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\fmlEstadisticasPartidos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -169,6 +184,39 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Administracion_deportivaDataSet.xsc">
+      <DependentUpon>Administracion_deportivaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Administracion_deportivaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Administracion_deportivaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Administracion_deportivaDataSet.xss">
+      <DependentUpon>Administracion_deportivaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Administracion_deportivaDataSet1.xsc">
+      <DependentUpon>Administracion_deportivaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Administracion_deportivaDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Administracion_deportivaDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Administracion_deportivaDataSet1.xss">
+      <DependentUpon>Administracion_deportivaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Administracion_deportivaDataSet2.xsc">
+      <DependentUpon>Administracion_deportivaDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Administracion_deportivaDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Administracion_deportivaDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Administracion_deportivaDataSet2.xss">
+      <DependentUpon>Administracion_deportivaDataSet2.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

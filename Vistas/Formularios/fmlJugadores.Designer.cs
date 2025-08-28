@@ -233,7 +233,7 @@
             this.btnQuitarJugador.TabIndex = 10;
             this.btnQuitarJugador.Text = "- Quitar Jugador";
             this.btnQuitarJugador.UseVisualStyleBackColor = false;
-            this.btnQuitarJugador.Click += new System.EventHandler(this.btnQuitarJugador_Click);
+            //this.btnQuitarJugador.Click += new System.EventHandler(this.btnQuitarJugador_Click);
             // 
             // dgvJugadores
             // 

@@ -10,5 +10,8 @@ namespace Modelo.Entidades
     {
         private int idEstado;
         private string nombreEstado;
+
+        public int IdEstado { get => idEstado; set => idEstado = value; }
+        public string NombreEstado { get => nombreEstado; set => nombreEstado = value; }
     }
 }

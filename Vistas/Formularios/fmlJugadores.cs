@@ -82,12 +82,13 @@ namespace Vistas.Formularios
             {
                 DataGridViewRow fila = dgvJugadores.Rows[e.RowIndex];
 
-                // Asignar valores a los TextBox
+                // Asignar valores a los TextBox, numericUpdown y ComboBox
                 txtNombreJugadores.Text = fila.Cells["nombre"].Value.ToString();
                 txtApellidoJugadores.Text = fila.Cells["apellido"].Value.ToString();
-                txtEdadJugadores.Text = fila.Cells["edad"].Value.ToString();
-                txtDorsalJugadores.Text = fila.Cells["dorsal"].Value.ToString();
-                txtPosicionJugadores.Text = fila.Cells["posicion"].Value.ToString();
+                // Reemplaza la línea problemática en el método dgvJugadores_CellClick:
+                numericUpDownEdadJugador.Value = Convert.ToByte(fila.Cells["edad"].Value);
+                numericUpDownDorsalJugador.Value = Convert.ToByte(fila.Cells["dorsal"].Value);
+                cbxPosicionJugador.ValueMember = fila.Cells["posicion"].Value.ToString();
                 idJugadorSeleccionado = Convert.ToInt32(fila.Cells["idJugador"].Value); // Asignar el ID del jugador seleccionado
 
             }
@@ -101,108 +102,108 @@ namespace Vistas.Formularios
 
         private void btnAñaJugador_Click(object sender, EventArgs e)
         {
-            SqlConnection conexionPTC = ConexionDB.AbrirConexion();
+            //SqlConnection conexionPTC = ConexionDB.AbrirConexion();
 
-            String sqlGuardarJugador = "Insert into dbo.Jugador( nombre , apellido , edad , dorsal , posicion , idUsuario )" +
-                " values ( @nombre , @apellido, @edad , @dorsal , @posicion , @idUsuario )";
+            //String sqlGuardarJugador = "Insert into dbo.Jugador( nombre , apellido , edad , dorsal , posicion , idUsuario )" +
+            //    " values ( @nombre , @apellido, @edad , @dorsal , @posicion , @idUsuario )";
 
-            SqlCommand insertar = new SqlCommand(sqlGuardarJugador, conexionPTC);
+            //SqlCommand insertar = new SqlCommand(sqlGuardarJugador, conexionPTC);
 
-            insertar.Parameters.AddWithValue("@nombre", txtNombreJugadores.Text);
-            insertar.Parameters.AddWithValue("@apellido", txtApellidoJugadores.Text);
-            insertar.Parameters.AddWithValue("@edad", txtEdadJugadores.Text);
-            insertar.Parameters.AddWithValue("@dorsal", txtDorsalJugadores.Text);
-            insertar.Parameters.AddWithValue("@posicion", txtPosicionJugadores.Text);
-            insertar.Parameters.AddWithValue("@idUsuario", 1); // rsto es temporal
+            //insertar.Parameters.AddWithValue("@nombre", txtNombreJugadores.Text);
+            //insertar.Parameters.AddWithValue("@apellido", txtApellidoJugadores.Text);
+            //insertar.Parameters.AddWithValue("@edad", txtEdadJugadores.Text);
+            //insertar.Parameters.AddWithValue("@dorsal", txtDorsalJugadores.Text);
+            //insertar.Parameters.AddWithValue("@posicion", txtPosicionJugadores.Text);
+            //insertar.Parameters.AddWithValue("@idUsuario", 1); // rsto es temporal
 
 
 
-            try
-            {
-                insertar.ExecuteNonQuery();
-                LimpiarFormulario();
-                LlenarDataGridView();
+            //try
+            //{
+            //    insertar.ExecuteNonQuery();
+            //    LimpiarFormulario();
+            //    LlenarDataGridView();
 
-                MessageBox.Show("Jugador guardado correctamente");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error al guardar: " + ex.Message);
-            }
-            finally
-            {
-                conexionPTC.Close();
-            }
+            //    MessageBox.Show("Jugador guardado correctamente");
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show("Error al guardar: " + ex.Message);
+            //}
+            //finally
+            //{
+            //    conexionPTC.Close();
+            //}
 
         }
 
         private void btnActualizarJugador_Click(object sender, EventArgs e)
         {
-            SqlConnection conexionPTC = ConexionDB.AbrirConexion();
+        //    SqlConnection conexionPTC = ConexionDB.AbrirConexion();
 
-            String sqlGuardarJugador = "UPDATE dbo.Jugador " +
-                "   SET " +
-                "       nombre = @nombre " +
-                "      , apellido = @apellido " +
-                "      , edad = @edad " +
-                "      , dorsal = @dorsal " +
-                "      , posicion = @posicion " +
-                " WHERE idJugador = @idJugador";
+        //    String sqlGuardarJugador = "UPDATE dbo.Jugador " +
+        //        "   SET " +
+        //        "       nombre = @nombre " +
+        //        "      , apellido = @apellido " +
+        //        "      , edad = @edad " +
+        //        "      , dorsal = @dorsal " +
+        //        "      , posicion = @posicion " +
+        //        " WHERE idJugador = @idJugador";
 
 
-            SqlCommand actualizar = new SqlCommand(sqlGuardarJugador, conexionPTC);
+        //    SqlCommand actualizar = new SqlCommand(sqlGuardarJugador, conexionPTC);
 
-            actualizar.Parameters.AddWithValue("@idJugador", idJugadorSeleccionado);
-            actualizar.Parameters.AddWithValue("@nombre", txtNombreJugadores.Text);
-            actualizar.Parameters.AddWithValue("@apellido", txtApellidoJugadores.Text);
-            actualizar.Parameters.AddWithValue("@edad", txtEdadJugadores.Text);
-            actualizar.Parameters.AddWithValue("@dorsal", txtDorsalJugadores.Text);
-            actualizar.Parameters.AddWithValue("@posicion", txtPosicionJugadores.Text);
+        //    actualizar.Parameters.AddWithValue("@idJugador", idJugadorSeleccionado);
+        //    actualizar.Parameters.AddWithValue("@nombre", txtNombreJugadores.Text);
+        //    actualizar.Parameters.AddWithValue("@apellido", txtApellidoJugadores.Text);
+        //    actualizar.Parameters.AddWithValue("@edad", txtEdadJugadores.Text);
+        //    actualizar.Parameters.AddWithValue("@dorsal", txtDorsalJugadores.Text);
+        //    actualizar.Parameters.AddWithValue("@posicion", txtPosicionJugadores.Text);
 
-            try
-            {
-                actualizar.ExecuteNonQuery();
-                LlenarDataGridView();
-                LimpiarFormulario();
-                MessageBox.Show("Jugador ha sido editado correctamente");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error al guardar: " + ex.Message);
-            }
-            finally
-            {
-                conexionPTC.Close();
-            }
-        }
+        //    try
+        //    {
+        //        actualizar.ExecuteNonQuery();
+        //        LlenarDataGridView();
+        //        LimpiarFormulario();
+        //        MessageBox.Show("Jugador ha sido editado correctamente");
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show("Error al guardar: " + ex.Message);
+        //    }
+        //    finally
+        //    {
+        //        conexionPTC.Close();
+        //    }
+        //}
 
-        private void btnQuitarJugador_Click(object sender, EventArgs e)
-        {
-            String mensaje = "¿Está seguro de que desea eliminar este jugador?"; 
-            String titulo = "Confirmación de eliminación";
-            DialogResult resultado = MessageBox.Show(mensaje, titulo, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (resultado == DialogResult.Yes)
-            {
-                SqlConnection conexionPTC = ConexionDB.AbrirConexion();
-                String sqlEliminarJugador = "DELETE FROM dbo.Jugador WHERE idJugador = @idJugador";
-                SqlCommand eliminar = new SqlCommand(sqlEliminarJugador, conexionPTC);
-                eliminar.Parameters.AddWithValue("@idJugador", idJugadorSeleccionado);
-                try
-                {
-                    eliminar.ExecuteNonQuery();
-                    LlenarDataGridView();
-                    LimpiarFormulario();
-                    MessageBox.Show("Jugador eliminado correctamente");
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error al eliminar: " + ex.Message);
-                }
-                finally
-                {
-                    conexionPTC.Close();
-                }
-            }
+        //private void btnQuitarJugador_Click(object sender, EventArgs e)
+        //{
+        //    String mensaje = "¿Está seguro de que desea eliminar este jugador?"; 
+        //    String titulo = "Confirmación de eliminación";
+        //    DialogResult resultado = MessageBox.Show(mensaje, titulo, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+        //    if (resultado == DialogResult.Yes)
+        //    {
+        //        SqlConnection conexionPTC = ConexionDB.AbrirConexion();
+        //        String sqlEliminarJugador = "DELETE FROM dbo.Jugador WHERE idJugador = @idJugador";
+        //        SqlCommand eliminar = new SqlCommand(sqlEliminarJugador, conexionPTC);
+        //        eliminar.Parameters.AddWithValue("@idJugador", idJugadorSeleccionado);
+        //        try
+        //        {
+        //            eliminar.ExecuteNonQuery();
+        //            LlenarDataGridView();
+        //            LimpiarFormulario();
+        //            MessageBox.Show("Jugador eliminado correctamente");
+        //        }
+        //        catch (Exception ex)
+        //        {
+        //            MessageBox.Show("Error al eliminar: " + ex.Message);
+        //        }
+        //        finally
+        //        {
+        //            conexionPTC.Close();
+        //        }
+            ///  }
         }
 
         private void lblEstadoInventario_Click(object sender, EventArgs e)

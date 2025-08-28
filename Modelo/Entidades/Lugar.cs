@@ -12,5 +12,9 @@ namespace Modelo.Entidades
         private string nombreLugar;
         private string direccion;
 
+        public int IdLugar { get => idLugar; set => idLugar = value; }
+        public string NombreLugar { get => nombreLugar; set => nombreLugar = value; }
+        public string Direccion { get => direccion; set => direccion = value; }
+
     }
 }

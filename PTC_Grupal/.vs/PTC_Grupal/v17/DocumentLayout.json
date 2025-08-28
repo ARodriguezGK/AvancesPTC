@@ -3,52 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\toto6\\OneDrive\\Desktop\\ProyectoPTC\\AvancesPTC\\PTC_Grupal\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{899CF41D-EA57-47ED-8D27-F120409D47BC}|..\\Modelo\\Modelo.csproj|c:\\users\\toto6\\onedrive\\desktop\\proyectoptc\\avancesptc\\modelo\\entidades\\articulos_deportivos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{899CF41D-EA57-47ED-8D27-F120409D47BC}|..\\Modelo\\Modelo.csproj|c:\\users\\toto6\\onedrive\\desktop\\proyectoptc\\avancesptc\\modelo\\entidades\\estado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{899CF41D-EA57-47ED-8D27-F120409D47BC}|..\\Modelo\\Modelo.csproj|c:\\users\\toto6\\onedrive\\desktop\\proyectoptc\\avancesptc\\modelo\\entidades\\inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{899CF41D-EA57-47ED-8D27-F120409D47BC}|..\\Modelo\\Modelo.csproj|c:\\users\\toto6\\onedrive\\desktop\\proyectoptc\\avancesptc\\modelo\\entidades\\estadistica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{899CF41D-EA57-47ED-8D27-F120409D47BC}|..\\Modelo\\Modelo.csproj|c:\\users\\toto6\\onedrive\\desktop\\proyectoptc\\avancesptc\\modelo\\entidades\\jugador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{899CF41D-EA57-47ED-8D27-F120409D47BC}|..\\Modelo\\Modelo.csproj|c:\\users\\toto6\\onedrive\\desktop\\proyectoptc\\avancesptc\\modelo\\entidades\\partido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{899CF41D-EA57-47ED-8D27-F120409D47BC}|..\\Modelo\\Modelo.csproj|c:\\users\\toto6\\onedrive\\desktop\\proyectoptc\\avancesptc\\modelo\\entidades\\lugar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{899CF41D-EA57-47ED-8D27-F120409D47BC}|..\\Modelo\\Modelo.csproj|c:\\users\\toto6\\onedrive\\desktop\\proyectoptc\\avancesptc\\modelo\\entidades\\horario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{899CF41D-EA57-47ED-8D27-F120409D47BC}|..\\Modelo\\Modelo.csproj|c:\\users\\toto6\\onedrive\\desktop\\proyectoptc\\avancesptc\\modelo\\entidades\\jugadorequipo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{899CF41D-EA57-47ED-8D27-F120409D47BC}|..\\Modelo\\Modelo.csproj|c:\\users\\toto6\\onedrive\\desktop\\proyectoptc\\avancesptc\\modelo\\entidades\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{899CF41D-EA57-47ED-8D27-F120409D47BC}|..\\Modelo\\Modelo.csproj|c:\\users\\toto6\\onedrive\\desktop\\proyectoptc\\avancesptc\\modelo\\entidades\\categoriaequipo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{899CF41D-EA57-47ED-8D27-F120409D47BC}|..\\Modelo\\Modelo.csproj|c:\\users\\toto6\\onedrive\\desktop\\proyectoptc\\avancesptc\\modelo\\entidades\\equipo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{899CF41D-EA57-47ED-8D27-F120409D47BC}|..\\Modelo\\Modelo.csproj|c:\\users\\toto6\\onedrive\\desktop\\proyectoptc\\avancesptc\\modelo\\entidades\\posicion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{899CF41D-EA57-47ED-8D27-F120409D47BC}|..\\Modelo\\Modelo.csproj|c:\\users\\toto6\\onedrive\\desktop\\proyectoptc\\avancesptc\\modelo\\entidades\\rol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{242316FE-DBAC-4216-9D5B-08D63985E116}|..\\Vistas\\Vistas.csproj|c:\\users\\toto6\\onedrive\\desktop\\proyectoptc\\avancesptc\\vistas\\formularios\\fmlinventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{242316FE-DBAC-4216-9D5B-08D63985E116}|..\\Vistas\\Vistas.csproj|c:\\users\\toto6\\onedrive\\desktop\\proyectoptc\\avancesptc\\vistas\\formularios\\fmlinventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{242316FE-DBAC-4216-9D5B-08D63985E116}|..\\Vistas\\Vistas.csproj|c:\\users\\toto6\\onedrive\\desktop\\proyectoptc\\avancesptc\\vistas\\formularios\\fmlinventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{899CF41D-EA57-47ED-8D27-F120409D47BC}|..\\Modelo\\Modelo.csproj|c:\\users\\toto6\\onedrive\\desktop\\proyectoptc\\avancesptc\\modelo\\entidades\\articulos_deportivos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{899CF41D-EA57-47ED-8D27-F120409D47BC}|..\\Modelo\\Modelo.csproj|c:\\users\\toto6\\onedrive\\desktop\\proyectoptc\\avancesptc\\modelo\\entidades\\estado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,214 +22,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Articulos_Deportivos.cs",
               "DocumentMoniker": "C:\\Users\\toto6\\OneDrive\\Desktop\\ProyectoPTC\\AvancesPTC\\Modelo\\Entidades\\Articulos_Deportivos.cs",
               "RelativeDocumentMoniker": "..\\Modelo\\Entidades\\Articulos_Deportivos.cs",
               "ToolTip": "C:\\Users\\toto6\\OneDrive\\Desktop\\ProyectoPTC\\AvancesPTC\\Modelo\\Entidades\\Articulos_Deportivos.cs",
               "RelativeToolTip": "..\\Modelo\\Entidades\\Articulos_Deportivos.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAuwGcAAABYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-26T20:05:35.394Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Estado.cs",
-              "DocumentMoniker": "C:\\Users\\toto6\\OneDrive\\Desktop\\ProyectoPTC\\AvancesPTC\\Modelo\\Entidades\\Estado.cs",
-              "RelativeDocumentMoniker": "..\\Modelo\\Entidades\\Estado.cs",
-              "ToolTip": "C:\\Users\\toto6\\OneDrive\\Desktop\\ProyectoPTC\\AvancesPTC\\Modelo\\Entidades\\Estado.cs",
-              "RelativeToolTip": "..\\Modelo\\Entidades\\Estado.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-26T20:03:29.929Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Inventario.cs",
-              "DocumentMoniker": "C:\\Users\\toto6\\OneDrive\\Desktop\\ProyectoPTC\\AvancesPTC\\Modelo\\Entidades\\Inventario.cs",
-              "RelativeDocumentMoniker": "..\\Modelo\\Entidades\\Inventario.cs",
-              "ToolTip": "C:\\Users\\toto6\\OneDrive\\Desktop\\ProyectoPTC\\AvancesPTC\\Modelo\\Entidades\\Inventario.cs",
-              "RelativeToolTip": "..\\Modelo\\Entidades\\Inventario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-26T20:01:43.008Z",
+              "WhenOpened": "2025-08-28T02:40:00.577Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Estadistica.cs",
-              "DocumentMoniker": "C:\\Users\\toto6\\OneDrive\\Desktop\\ProyectoPTC\\AvancesPTC\\Modelo\\Entidades\\Estadistica.cs",
-              "RelativeDocumentMoniker": "..\\Modelo\\Entidades\\Estadistica.cs",
-              "ToolTip": "C:\\Users\\toto6\\OneDrive\\Desktop\\ProyectoPTC\\AvancesPTC\\Modelo\\Entidades\\Estadistica.cs",
-              "RelativeToolTip": "..\\Modelo\\Entidades\\Estadistica.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAjAAAAAAAAAA==",
+              "Title": "Estado.cs",
+              "DocumentMoniker": "C:\\Users\\toto6\\OneDrive\\Desktop\\ProyectoPTC\\AvancesPTC\\Modelo\\Entidades\\Estado.cs",
+              "RelativeDocumentMoniker": "..\\Modelo\\Entidades\\Estado.cs",
+              "ToolTip": "C:\\Users\\toto6\\OneDrive\\Desktop\\ProyectoPTC\\AvancesPTC\\Modelo\\Entidades\\Estado.cs",
+              "RelativeToolTip": "..\\Modelo\\Entidades\\Estado.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-26T19:59:05.648Z",
+              "WhenOpened": "2025-08-28T02:38:24.268Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Partido.cs",
-              "DocumentMoniker": "C:\\Users\\toto6\\OneDrive\\Desktop\\ProyectoPTC\\AvancesPTC\\Modelo\\Entidades\\Partido.cs",
-              "RelativeDocumentMoniker": "..\\Modelo\\Entidades\\Partido.cs",
-              "ToolTip": "C:\\Users\\toto6\\OneDrive\\Desktop\\ProyectoPTC\\AvancesPTC\\Modelo\\Entidades\\Partido.cs",
-              "RelativeToolTip": "..\\Modelo\\Entidades\\Partido.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-26T19:57:51.749Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Lugar.cs",
-              "DocumentMoniker": "C:\\Users\\toto6\\OneDrive\\Desktop\\ProyectoPTC\\AvancesPTC\\Modelo\\Entidades\\Lugar.cs",
-              "RelativeDocumentMoniker": "..\\Modelo\\Entidades\\Lugar.cs",
-              "ToolTip": "C:\\Users\\toto6\\OneDrive\\Desktop\\ProyectoPTC\\AvancesPTC\\Modelo\\Entidades\\Lugar.cs",
-              "RelativeToolTip": "..\\Modelo\\Entidades\\Lugar.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-26T19:57:02.713Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Horario.cs",
-              "DocumentMoniker": "C:\\Users\\toto6\\OneDrive\\Desktop\\ProyectoPTC\\AvancesPTC\\Modelo\\Entidades\\Horario.cs",
-              "RelativeDocumentMoniker": "..\\Modelo\\Entidades\\Horario.cs",
-              "ToolTip": "C:\\Users\\toto6\\OneDrive\\Desktop\\ProyectoPTC\\AvancesPTC\\Modelo\\Entidades\\Horario.cs",
-              "RelativeToolTip": "..\\Modelo\\Entidades\\Horario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-26T19:54:35.585Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "JugadorEquipo.cs",
-              "DocumentMoniker": "C:\\Users\\toto6\\OneDrive\\Desktop\\ProyectoPTC\\AvancesPTC\\Modelo\\Entidades\\JugadorEquipo.cs",
-              "RelativeDocumentMoniker": "..\\Modelo\\Entidades\\JugadorEquipo.cs",
-              "ToolTip": "C:\\Users\\toto6\\OneDrive\\Desktop\\ProyectoPTC\\AvancesPTC\\Modelo\\Entidades\\JugadorEquipo.cs",
-              "RelativeToolTip": "..\\Modelo\\Entidades\\JugadorEquipo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-26T19:50:30.723Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Jugador.cs",
-              "DocumentMoniker": "C:\\Users\\toto6\\OneDrive\\Desktop\\ProyectoPTC\\AvancesPTC\\Modelo\\Entidades\\Jugador.cs",
-              "RelativeDocumentMoniker": "..\\Modelo\\Entidades\\Jugador.cs",
-              "ToolTip": "C:\\Users\\toto6\\OneDrive\\Desktop\\ProyectoPTC\\AvancesPTC\\Modelo\\Entidades\\Jugador.cs",
-              "RelativeToolTip": "..\\Modelo\\Entidades\\Jugador.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAcwBgAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-26T12:38:16.81Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Posicion.cs",
-              "DocumentMoniker": "C:\\Users\\toto6\\OneDrive\\Desktop\\ProyectoPTC\\AvancesPTC\\Modelo\\Entidades\\Posicion.cs",
-              "RelativeDocumentMoniker": "..\\Modelo\\Entidades\\Posicion.cs",
-              "ToolTip": "C:\\Users\\toto6\\OneDrive\\Desktop\\ProyectoPTC\\AvancesPTC\\Modelo\\Entidades\\Posicion.cs",
-              "RelativeToolTip": "..\\Modelo\\Entidades\\Posicion.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-26T12:34:23.697Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Equipo.cs",
-              "DocumentMoniker": "C:\\Users\\toto6\\OneDrive\\Desktop\\ProyectoPTC\\AvancesPTC\\Modelo\\Entidades\\Equipo.cs",
-              "RelativeDocumentMoniker": "..\\Modelo\\Entidades\\Equipo.cs",
-              "ToolTip": "C:\\Users\\toto6\\OneDrive\\Desktop\\ProyectoPTC\\AvancesPTC\\Modelo\\Entidades\\Equipo.cs",
-              "RelativeToolTip": "..\\Modelo\\Entidades\\Equipo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-26T12:29:29.769Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CategoriaEquipo.cs",
-              "DocumentMoniker": "C:\\Users\\toto6\\OneDrive\\Desktop\\ProyectoPTC\\AvancesPTC\\Modelo\\Entidades\\CategoriaEquipo.cs",
-              "RelativeDocumentMoniker": "..\\Modelo\\Entidades\\CategoriaEquipo.cs",
-              "ToolTip": "C:\\Users\\toto6\\OneDrive\\Desktop\\ProyectoPTC\\AvancesPTC\\Modelo\\Entidades\\CategoriaEquipo.cs",
-              "RelativeToolTip": "..\\Modelo\\Entidades\\CategoriaEquipo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-26T12:26:33.784Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\toto6\\OneDrive\\Desktop\\ProyectoPTC\\AvancesPTC\\Modelo\\Entidades\\Usuario.cs",
-              "RelativeDocumentMoniker": "..\\Modelo\\Entidades\\Usuario.cs",
-              "ToolTip": "C:\\Users\\toto6\\OneDrive\\Desktop\\ProyectoPTC\\AvancesPTC\\Modelo\\Entidades\\Usuario.cs",
-              "RelativeToolTip": "..\\Modelo\\Entidades\\Usuario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-26T12:22:42.419Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 1,
               "Title": "fmlinventario.cs",
               "DocumentMoniker": "C:\\Users\\toto6\\OneDrive\\Desktop\\ProyectoPTC\\AvancesPTC\\Vistas\\Formularios\\fmlinventario.cs",
               "RelativeDocumentMoniker": "..\\Vistas\\Formularios\\fmlinventario.cs",
               "ToolTip": "C:\\Users\\toto6\\OneDrive\\Desktop\\ProyectoPTC\\AvancesPTC\\Vistas\\Formularios\\fmlinventario.cs",
               "RelativeToolTip": "..\\Vistas\\Formularios\\fmlinventario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIkAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAO8AAAAAAAAAAAAswP8AAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-26T12:12:35.533Z",
+              "WhenOpened": "2025-08-28T01:34:08.974Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 0,
               "Title": "fmlinventario.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\toto6\\OneDrive\\Desktop\\ProyectoPTC\\AvancesPTC\\Vistas\\Formularios\\fmlinventario.cs",
               "RelativeDocumentMoniker": "..\\Vistas\\Formularios\\fmlinventario.cs",
               "ToolTip": "C:\\Users\\toto6\\OneDrive\\Desktop\\ProyectoPTC\\AvancesPTC\\Vistas\\Formularios\\fmlinventario.cs [Dise\u00F1o]",
               "RelativeToolTip": "..\\Vistas\\Formularios\\fmlinventario.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-26T12:12:32.428Z",
+              "WhenOpened": "2025-08-28T01:33:55.827Z",
               "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Rol.cs",
-              "DocumentMoniker": "C:\\Users\\toto6\\OneDrive\\Desktop\\ProyectoPTC\\AvancesPTC\\Modelo\\Entidades\\Rol.cs",
-              "RelativeDocumentMoniker": "..\\Modelo\\Entidades\\Rol.cs",
-              "ToolTip": "C:\\Users\\toto6\\OneDrive\\Desktop\\ProyectoPTC\\AvancesPTC\\Modelo\\Entidades\\Rol.cs",
-              "RelativeToolTip": "..\\Modelo\\Entidades\\Rol.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-26T02:31:25.509Z",
-              "EditorCaption": ""
             }
           ]
         }
