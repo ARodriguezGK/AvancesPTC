@@ -3,16 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\toto6\\OneDrive\\Desktop\\ProyectoPTC\\AvancesPTC\\PTC_Grupal\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{242316FE-DBAC-4216-9D5B-08D63985E116}|..\\Vistas\\Vistas.csproj|c:\\users\\toto6\\onedrive\\desktop\\proyectoptc\\avancesptc\\vistas\\formularios\\fmlinventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{242316FE-DBAC-4216-9D5B-08D63985E116}|..\\Vistas\\Vistas.csproj|c:\\users\\toto6\\onedrive\\desktop\\proyectoptc\\avancesptc\\vistas\\formularios\\fmljugadores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{242316FE-DBAC-4216-9D5B-08D63985E116}|..\\Vistas\\Vistas.csproj|c:\\users\\toto6\\onedrive\\desktop\\proyectoptc\\avancesptc\\vistas\\formularios\\fmljugadores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{899CF41D-EA57-47ED-8D27-F120409D47BC}|..\\Modelo\\Modelo.csproj|c:\\users\\toto6\\onedrive\\desktop\\proyectoptc\\avancesptc\\modelo\\entidades\\posicion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{899CF41D-EA57-47ED-8D27-F120409D47BC}|..\\Modelo\\Modelo.csproj|c:\\users\\toto6\\onedrive\\desktop\\proyectoptc\\avancesptc\\modelo\\entidades\\jugador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{242316FE-DBAC-4216-9D5B-08D63985E116}|..\\Vistas\\Vistas.csproj|c:\\users\\toto6\\onedrive\\desktop\\proyectoptc\\avancesptc\\vistas\\formularios\\fmlinventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{899CF41D-EA57-47ED-8D27-F120409D47BC}|..\\Modelo\\Modelo.csproj|c:\\users\\toto6\\onedrive\\desktop\\proyectoptc\\avancesptc\\modelo\\entidades\\articulos_deportivos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{899CF41D-EA57-47ED-8D27-F120409D47BC}|..\\Modelo\\Modelo.csproj|c:\\users\\toto6\\onedrive\\desktop\\proyectoptc\\avancesptc\\modelo\\entidades\\estado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,58 +25,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Articulos_Deportivos.cs",
-              "DocumentMoniker": "C:\\Users\\toto6\\OneDrive\\Desktop\\ProyectoPTC\\AvancesPTC\\Modelo\\Entidades\\Articulos_Deportivos.cs",
-              "RelativeDocumentMoniker": "..\\Modelo\\Entidades\\Articulos_Deportivos.cs",
-              "ToolTip": "C:\\Users\\toto6\\OneDrive\\Desktop\\ProyectoPTC\\AvancesPTC\\Modelo\\Entidades\\Articulos_Deportivos.cs",
-              "RelativeToolTip": "..\\Modelo\\Entidades\\Articulos_Deportivos.cs",
-              "ViewState": "AgIAAFwAAAAAAAAAAAAuwGcAAABYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-28T02:40:00.577Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Estado.cs",
-              "DocumentMoniker": "C:\\Users\\toto6\\OneDrive\\Desktop\\ProyectoPTC\\AvancesPTC\\Modelo\\Entidades\\Estado.cs",
-              "RelativeDocumentMoniker": "..\\Modelo\\Entidades\\Estado.cs",
-              "ToolTip": "C:\\Users\\toto6\\OneDrive\\Desktop\\ProyectoPTC\\AvancesPTC\\Modelo\\Entidades\\Estado.cs",
-              "RelativeToolTip": "..\\Modelo\\Entidades\\Estado.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Title": "Jugador.cs",
+              "DocumentMoniker": "C:\\Users\\toto6\\OneDrive\\Desktop\\ProyectoPTC\\AvancesPTC\\Modelo\\Entidades\\Jugador.cs",
+              "RelativeDocumentMoniker": "..\\Modelo\\Entidades\\Jugador.cs",
+              "ToolTip": "C:\\Users\\toto6\\OneDrive\\Desktop\\ProyectoPTC\\AvancesPTC\\Modelo\\Entidades\\Jugador.cs",
+              "RelativeToolTip": "..\\Modelo\\Entidades\\Jugador.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAcwHsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-28T02:38:24.268Z",
+              "WhenOpened": "2025-08-29T03:36:47.679Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "fmlinventario.cs",
-              "DocumentMoniker": "C:\\Users\\toto6\\OneDrive\\Desktop\\ProyectoPTC\\AvancesPTC\\Vistas\\Formularios\\fmlinventario.cs",
-              "RelativeDocumentMoniker": "..\\Vistas\\Formularios\\fmlinventario.cs",
-              "ToolTip": "C:\\Users\\toto6\\OneDrive\\Desktop\\ProyectoPTC\\AvancesPTC\\Vistas\\Formularios\\fmlinventario.cs",
-              "RelativeToolTip": "..\\Vistas\\Formularios\\fmlinventario.cs",
-              "ViewState": "AgIAAO8AAAAAAAAAAAAswP8AAAAyAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Posicion.cs",
+              "DocumentMoniker": "C:\\Users\\toto6\\OneDrive\\Desktop\\ProyectoPTC\\AvancesPTC\\Modelo\\Entidades\\Posicion.cs",
+              "RelativeDocumentMoniker": "..\\Modelo\\Entidades\\Posicion.cs",
+              "ToolTip": "C:\\Users\\toto6\\OneDrive\\Desktop\\ProyectoPTC\\AvancesPTC\\Modelo\\Entidades\\Posicion.cs",
+              "RelativeToolTip": "..\\Modelo\\Entidades\\Posicion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-28T01:34:08.974Z",
+              "WhenOpened": "2025-08-29T02:58:17.206Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "fmlinventario.cs [Dise\u00F1o]",
+              "Title": "fmlJugadores.cs",
+              "DocumentMoniker": "C:\\Users\\toto6\\OneDrive\\Desktop\\ProyectoPTC\\AvancesPTC\\Vistas\\Formularios\\fmlJugadores.cs",
+              "RelativeDocumentMoniker": "..\\Vistas\\Formularios\\fmlJugadores.cs",
+              "ToolTip": "C:\\Users\\toto6\\OneDrive\\Desktop\\ProyectoPTC\\AvancesPTC\\Vistas\\Formularios\\fmlJugadores.cs",
+              "RelativeToolTip": "..\\Vistas\\Formularios\\fmlJugadores.cs",
+              "ViewState": "AgIAABYBAAAAAAAAAAAmwCIBAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-29T01:17:53.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "fmlJugadores.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\toto6\\OneDrive\\Desktop\\ProyectoPTC\\AvancesPTC\\Vistas\\Formularios\\fmlJugadores.cs",
+              "RelativeDocumentMoniker": "..\\Vistas\\Formularios\\fmlJugadores.cs",
+              "ToolTip": "C:\\Users\\toto6\\OneDrive\\Desktop\\ProyectoPTC\\AvancesPTC\\Vistas\\Formularios\\fmlJugadores.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\Vistas\\Formularios\\fmlJugadores.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-29T01:05:26.072Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "fmlinventario.cs",
               "DocumentMoniker": "C:\\Users\\toto6\\OneDrive\\Desktop\\ProyectoPTC\\AvancesPTC\\Vistas\\Formularios\\fmlinventario.cs",
               "RelativeDocumentMoniker": "..\\Vistas\\Formularios\\fmlinventario.cs",
-              "ToolTip": "C:\\Users\\toto6\\OneDrive\\Desktop\\ProyectoPTC\\AvancesPTC\\Vistas\\Formularios\\fmlinventario.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\Vistas\\Formularios\\fmlinventario.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\toto6\\OneDrive\\Desktop\\ProyectoPTC\\AvancesPTC\\Vistas\\Formularios\\fmlinventario.cs",
+              "RelativeToolTip": "..\\Vistas\\Formularios\\fmlinventario.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAF8AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-28T01:33:55.827Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-08-29T01:01:38.102Z",
+              "EditorCaption": ""
             }
           ]
         }

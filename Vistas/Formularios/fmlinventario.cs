@@ -83,11 +83,7 @@ namespace Vistas.Formularios
 
         private void btnAñaObjeto_Click(object sender, EventArgs e)
         {
-            if (idInventarioSeleccionado == 0)
-            {
-                MessageBox.Show("Selecciona un artículo primero");
-                return;
-            }
+            
 
             Articulos_Deportivos articulo = new Articulos_Deportivos
             {
@@ -99,7 +95,7 @@ namespace Vistas.Formularios
                 IdInventario = 1
             };
 
-            Articulos_Deportivos.ActualizarArticuloDeportivo(articulo);
+            Articulos_Deportivos.AgregarArticuloDeportivo(articulo);
             LlenarDataGridView();
 
 

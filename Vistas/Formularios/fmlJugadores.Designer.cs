@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fmlJugadores));
             this.pnlBarraEstado = new System.Windows.Forms.Panel();
             this.pnlBarraTitulo = new System.Windows.Forms.Panel();
@@ -54,22 +55,29 @@
             this.numericUpDownEdadJugador = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownDorsalJugador = new System.Windows.Forms.NumericUpDown();
             this.cbxPosicionJugador = new System.Windows.Forms.ComboBox();
+            this.administracion_deportivaDataSet3 = new Vistas.Administracion_deportivaDataSet3();
+            this.jugadorBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.jugadorTableAdapter = new Vistas.Administracion_deportivaDataSet3TableAdapters.JugadorTableAdapter();
+            this.txtBuscar = new System.Windows.Forms.TextBox();
+            this.lblBusqueda = new System.Windows.Forms.Label();
             this.pnlBarraTitulo.SuspendLayout();
             this.pnlMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvJugadores)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownEdadJugador)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDorsalJugador)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.administracion_deportivaDataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.jugadorBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlBarraEstado
             // 
             this.pnlBarraEstado.BackColor = System.Drawing.Color.Silver;
             this.pnlBarraEstado.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlBarraEstado.Location = new System.Drawing.Point(136, 632);
-            this.pnlBarraEstado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlBarraEstado.Location = new System.Drawing.Point(181, 777);
+            this.pnlBarraEstado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlBarraEstado.Name = "pnlBarraEstado";
-            this.pnlBarraEstado.Size = new System.Drawing.Size(787, 46);
+            this.pnlBarraEstado.Size = new System.Drawing.Size(1050, 57);
             this.pnlBarraEstado.TabIndex = 5;
             this.pnlBarraEstado.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlBarraEstado_Paint);
             // 
@@ -79,10 +87,10 @@
             this.pnlBarraTitulo.Controls.Add(this.lblAdmin);
             this.pnlBarraTitulo.Controls.Add(this.lblJugadoresBasic);
             this.pnlBarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlBarraTitulo.Location = new System.Drawing.Point(136, 0);
-            this.pnlBarraTitulo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlBarraTitulo.Location = new System.Drawing.Point(181, 0);
+            this.pnlBarraTitulo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlBarraTitulo.Name = "pnlBarraTitulo";
-            this.pnlBarraTitulo.Size = new System.Drawing.Size(787, 93);
+            this.pnlBarraTitulo.Size = new System.Drawing.Size(1050, 114);
             this.pnlBarraTitulo.TabIndex = 4;
             this.pnlBarraTitulo.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlBarraTitulo_Paint);
             // 
@@ -92,10 +100,9 @@
             this.lblAdmin.BackColor = System.Drawing.Color.Green;
             this.lblAdmin.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAdmin.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblAdmin.Location = new System.Drawing.Point(700, 37);
-            this.lblAdmin.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAdmin.Location = new System.Drawing.Point(933, 46);
             this.lblAdmin.Name = "lblAdmin";
-            this.lblAdmin.Size = new System.Drawing.Size(69, 22);
+            this.lblAdmin.Size = new System.Drawing.Size(83, 27);
             this.lblAdmin.TabIndex = 12;
             this.lblAdmin.Text = "Admin";
             // 
@@ -106,10 +113,9 @@
             this.lblJugadoresBasic.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblJugadoresBasic.ForeColor = System.Drawing.SystemColors.Control;
             this.lblJugadoresBasic.Image = global::Vistas.Properties.Resources.green;
-            this.lblJugadoresBasic.Location = new System.Drawing.Point(21, 37);
-            this.lblJugadoresBasic.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblJugadoresBasic.Location = new System.Drawing.Point(28, 46);
             this.lblJugadoresBasic.Name = "lblJugadoresBasic";
-            this.lblJugadoresBasic.Size = new System.Drawing.Size(266, 28);
+            this.lblJugadoresBasic.Size = new System.Drawing.Size(337, 34);
             this.lblJugadoresBasic.TabIndex = 0;
             this.lblJugadoresBasic.Text = "Gestion de Jugadores";
             this.lblJugadoresBasic.Click += new System.EventHandler(this.lblJugadoresBasic_Click);
@@ -125,9 +131,9 @@
             this.pnlMenu.Controls.Add(this.pnlLogo);
             this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlMenu.Location = new System.Drawing.Point(0, 0);
-            this.pnlMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlMenu.Name = "pnlMenu";
-            this.pnlMenu.Size = new System.Drawing.Size(136, 678);
+            this.pnlMenu.Size = new System.Drawing.Size(181, 834);
             this.pnlMenu.TabIndex = 3;
             this.pnlMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlMenu_Paint);
             // 
@@ -138,10 +144,10 @@
             this.btnPartidos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPartidos.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPartidos.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnPartidos.Location = new System.Drawing.Point(4, 335);
-            this.btnPartidos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPartidos.Location = new System.Drawing.Point(5, 412);
+            this.btnPartidos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPartidos.Name = "btnPartidos";
-            this.btnPartidos.Size = new System.Drawing.Size(132, 74);
+            this.btnPartidos.Size = new System.Drawing.Size(176, 91);
             this.btnPartidos.TabIndex = 8;
             this.btnPartidos.Text = "Partidos";
             this.btnPartidos.UseVisualStyleBackColor = true;
@@ -154,10 +160,10 @@
             this.btnGestion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGestion.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGestion.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnGestion.Location = new System.Drawing.Point(4, 256);
-            this.btnGestion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGestion.Location = new System.Drawing.Point(5, 315);
+            this.btnGestion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnGestion.Name = "btnGestion";
-            this.btnGestion.Size = new System.Drawing.Size(132, 74);
+            this.btnGestion.Size = new System.Drawing.Size(176, 91);
             this.btnGestion.TabIndex = 7;
             this.btnGestion.Text = "Gestion";
             this.btnGestion.UseVisualStyleBackColor = true;
@@ -169,10 +175,10 @@
             this.btnJugadores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnJugadores.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnJugadores.ForeColor = System.Drawing.Color.Green;
-            this.btnJugadores.Location = new System.Drawing.Point(0, 177);
-            this.btnJugadores.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnJugadores.Location = new System.Drawing.Point(0, 218);
+            this.btnJugadores.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnJugadores.Name = "btnJugadores";
-            this.btnJugadores.Size = new System.Drawing.Size(136, 74);
+            this.btnJugadores.Size = new System.Drawing.Size(181, 91);
             this.btnJugadores.TabIndex = 6;
             this.btnJugadores.Text = "Jugadores";
             this.btnJugadores.UseVisualStyleBackColor = true;
@@ -183,10 +189,10 @@
             this.picBoxUser.BackColor = System.Drawing.SystemColors.MenuText;
             this.picBoxUser.BackgroundImage = global::Vistas.Properties.Resources.green;
             this.picBoxUser.Image = global::Vistas.Properties.Resources.user;
-            this.picBoxUser.Location = new System.Drawing.Point(43, 414);
-            this.picBoxUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picBoxUser.Location = new System.Drawing.Point(57, 510);
+            this.picBoxUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picBoxUser.Name = "picBoxUser";
-            this.picBoxUser.Size = new System.Drawing.Size(56, 57);
+            this.picBoxUser.Size = new System.Drawing.Size(75, 70);
             this.picBoxUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBoxUser.TabIndex = 5;
             this.picBoxUser.TabStop = false;
@@ -199,10 +205,10 @@
             this.btnInventario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInventario.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInventario.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnInventario.Location = new System.Drawing.Point(2, 98);
-            this.btnInventario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnInventario.Location = new System.Drawing.Point(3, 121);
+            this.btnInventario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnInventario.Name = "btnInventario";
-            this.btnInventario.Size = new System.Drawing.Size(132, 74);
+            this.btnInventario.Size = new System.Drawing.Size(176, 91);
             this.btnInventario.TabIndex = 1;
             this.btnInventario.Text = "Inventario";
             this.btnInventario.UseVisualStyleBackColor = true;
@@ -213,9 +219,9 @@
             this.pnlLogo.BackgroundImage = global::Vistas.Properties.Resources.logo;
             this.pnlLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlLogo.Location = new System.Drawing.Point(0, 0);
-            this.pnlLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlLogo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlLogo.Name = "pnlLogo";
-            this.pnlLogo.Size = new System.Drawing.Size(136, 93);
+            this.pnlLogo.Size = new System.Drawing.Size(181, 114);
             this.pnlLogo.TabIndex = 0;
             this.pnlLogo.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlLogo_Paint);
             // 
@@ -226,24 +232,24 @@
             this.btnQuitarJugador.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnQuitarJugador.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQuitarJugador.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnQuitarJugador.Location = new System.Drawing.Point(745, 569);
-            this.btnQuitarJugador.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnQuitarJugador.Location = new System.Drawing.Point(993, 700);
+            this.btnQuitarJugador.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnQuitarJugador.Name = "btnQuitarJugador";
-            this.btnQuitarJugador.Size = new System.Drawing.Size(154, 54);
+            this.btnQuitarJugador.Size = new System.Drawing.Size(205, 66);
             this.btnQuitarJugador.TabIndex = 10;
             this.btnQuitarJugador.Text = "- Quitar Jugador";
             this.btnQuitarJugador.UseVisualStyleBackColor = false;
-            //this.btnQuitarJugador.Click += new System.EventHandler(this.btnQuitarJugador_Click);
+            this.btnQuitarJugador.Click += new System.EventHandler(this.btnQuitarJugador_Click);
             // 
             // dgvJugadores
             // 
             this.dgvJugadores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvJugadores.Location = new System.Drawing.Point(179, 294);
-            this.dgvJugadores.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvJugadores.Location = new System.Drawing.Point(239, 362);
+            this.dgvJugadores.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvJugadores.Name = "dgvJugadores";
             this.dgvJugadores.RowHeadersWidth = 51;
             this.dgvJugadores.RowTemplate.Height = 24;
-            this.dgvJugadores.Size = new System.Drawing.Size(720, 249);
+            this.dgvJugadores.Size = new System.Drawing.Size(960, 306);
             this.dgvJugadores.TabIndex = 9;
             this.dgvJugadores.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvJugadores_CellClick);
             this.dgvJugadores.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvJugadores_CellContentClick);
@@ -255,10 +261,10 @@
             this.btnAñaJugador.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAñaJugador.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAñaJugador.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnAñaJugador.Location = new System.Drawing.Point(745, 110);
-            this.btnAñaJugador.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAñaJugador.Location = new System.Drawing.Point(993, 135);
+            this.btnAñaJugador.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAñaJugador.Name = "btnAñaJugador";
-            this.btnAñaJugador.Size = new System.Drawing.Size(154, 54);
+            this.btnAñaJugador.Size = new System.Drawing.Size(205, 66);
             this.btnAñaJugador.TabIndex = 8;
             this.btnAñaJugador.Text = "+ Añadir Jugador";
             this.btnAñaJugador.UseVisualStyleBackColor = false;
@@ -271,10 +277,10 @@
             this.btnActualizarJugador.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnActualizarJugador.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActualizarJugador.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnActualizarJugador.Location = new System.Drawing.Point(179, 569);
-            this.btnActualizarJugador.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnActualizarJugador.Location = new System.Drawing.Point(239, 700);
+            this.btnActualizarJugador.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnActualizarJugador.Name = "btnActualizarJugador";
-            this.btnActualizarJugador.Size = new System.Drawing.Size(154, 54);
+            this.btnActualizarJugador.Size = new System.Drawing.Size(205, 66);
             this.btnActualizarJugador.TabIndex = 11;
             this.btnActualizarJugador.Text = "Actualizar Jugadores";
             this.btnActualizarJugador.UseVisualStyleBackColor = false;
@@ -282,20 +288,19 @@
             // 
             // txtApellidoJugadores
             // 
-            this.txtApellidoJugadores.Location = new System.Drawing.Point(290, 215);
-            this.txtApellidoJugadores.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtApellidoJugadores.Location = new System.Drawing.Point(387, 265);
+            this.txtApellidoJugadores.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtApellidoJugadores.Name = "txtApellidoJugadores";
-            this.txtApellidoJugadores.Size = new System.Drawing.Size(223, 20);
+            this.txtApellidoJugadores.Size = new System.Drawing.Size(296, 22);
             this.txtApellidoJugadores.TabIndex = 49;
             this.txtApellidoJugadores.TextChanged += new System.EventHandler(this.txtApellidoJugadores_TextChanged);
             // 
             // lblDorsalJugadores
             // 
             this.lblDorsalJugadores.AutoSize = true;
-            this.lblDorsalJugadores.Location = new System.Drawing.Point(204, 256);
-            this.lblDorsalJugadores.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDorsalJugadores.Location = new System.Drawing.Point(272, 315);
             this.lblDorsalJugadores.Name = "lblDorsalJugadores";
-            this.lblDorsalJugadores.Size = new System.Drawing.Size(37, 13);
+            this.lblDorsalJugadores.Size = new System.Drawing.Size(47, 16);
             this.lblDorsalJugadores.TabIndex = 48;
             this.lblDorsalJugadores.Text = "Dorsal";
             this.lblDorsalJugadores.Click += new System.EventHandler(this.lblDorsalJugadores_Click);
@@ -303,10 +308,9 @@
             // lblEdadJugadores
             // 
             this.lblEdadJugadores.AutoSize = true;
-            this.lblEdadJugadores.Location = new System.Drawing.Point(549, 220);
-            this.lblEdadJugadores.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEdadJugadores.Location = new System.Drawing.Point(732, 271);
             this.lblEdadJugadores.Name = "lblEdadJugadores";
-            this.lblEdadJugadores.Size = new System.Drawing.Size(32, 13);
+            this.lblEdadJugadores.Size = new System.Drawing.Size(40, 16);
             this.lblEdadJugadores.TabIndex = 47;
             this.lblEdadJugadores.Text = "Edad";
             this.lblEdadJugadores.Click += new System.EventHandler(this.lblEdadJugadores_Click);
@@ -314,10 +318,9 @@
             // lblApellidoJugadores
             // 
             this.lblApellidoJugadores.AutoSize = true;
-            this.lblApellidoJugadores.Location = new System.Drawing.Point(199, 218);
-            this.lblApellidoJugadores.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblApellidoJugadores.Location = new System.Drawing.Point(265, 268);
             this.lblApellidoJugadores.Name = "lblApellidoJugadores";
-            this.lblApellidoJugadores.Size = new System.Drawing.Size(44, 13);
+            this.lblApellidoJugadores.Size = new System.Drawing.Size(57, 16);
             this.lblApellidoJugadores.TabIndex = 46;
             this.lblApellidoJugadores.Text = "Apellido";
             this.lblApellidoJugadores.Click += new System.EventHandler(this.lblApellidoJugadores_Click);
@@ -325,64 +328,101 @@
             // lblNombreJugadores
             // 
             this.lblNombreJugadores.AutoSize = true;
-            this.lblNombreJugadores.Location = new System.Drawing.Point(200, 180);
-            this.lblNombreJugadores.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNombreJugadores.Location = new System.Drawing.Point(267, 222);
             this.lblNombreJugadores.Name = "lblNombreJugadores";
-            this.lblNombreJugadores.Size = new System.Drawing.Size(44, 13);
+            this.lblNombreJugadores.Size = new System.Drawing.Size(56, 16);
             this.lblNombreJugadores.TabIndex = 45;
             this.lblNombreJugadores.Text = "Nombre";
             this.lblNombreJugadores.Click += new System.EventHandler(this.lblNombreJugadores_Click);
             // 
             // txtNombreJugadores
             // 
-            this.txtNombreJugadores.Location = new System.Drawing.Point(290, 177);
-            this.txtNombreJugadores.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombreJugadores.Location = new System.Drawing.Point(387, 218);
+            this.txtNombreJugadores.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNombreJugadores.Name = "txtNombreJugadores";
-            this.txtNombreJugadores.Size = new System.Drawing.Size(223, 20);
+            this.txtNombreJugadores.Size = new System.Drawing.Size(296, 22);
             this.txtNombreJugadores.TabIndex = 44;
             this.txtNombreJugadores.TextChanged += new System.EventHandler(this.txtNombreJugadores_TextChanged);
             // 
             // lblPosicionJugadores
             // 
             this.lblPosicionJugadores.AutoSize = true;
-            this.lblPosicionJugadores.Location = new System.Drawing.Point(549, 258);
-            this.lblPosicionJugadores.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblPosicionJugadores.Location = new System.Drawing.Point(732, 318);
             this.lblPosicionJugadores.Name = "lblPosicionJugadores";
-            this.lblPosicionJugadores.Size = new System.Drawing.Size(47, 13);
+            this.lblPosicionJugadores.Size = new System.Drawing.Size(59, 16);
             this.lblPosicionJugadores.TabIndex = 52;
             this.lblPosicionJugadores.Text = "Posicion";
             this.lblPosicionJugadores.Click += new System.EventHandler(this.lblPosicionJugadores_Click);
             // 
             // numericUpDownEdadJugador
             // 
-            this.numericUpDownEdadJugador.Location = new System.Drawing.Point(623, 214);
+            this.numericUpDownEdadJugador.Location = new System.Drawing.Point(831, 263);
+            this.numericUpDownEdadJugador.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numericUpDownEdadJugador.Name = "numericUpDownEdadJugador";
-            this.numericUpDownEdadJugador.Size = new System.Drawing.Size(120, 20);
+            this.numericUpDownEdadJugador.Size = new System.Drawing.Size(160, 22);
             this.numericUpDownEdadJugador.TabIndex = 53;
             this.numericUpDownEdadJugador.ValueChanged += new System.EventHandler(this.numericUpDownEdadJugador_ValueChanged);
             // 
             // numericUpDownDorsalJugador
             // 
-            this.numericUpDownDorsalJugador.Location = new System.Drawing.Point(290, 258);
+            this.numericUpDownDorsalJugador.Location = new System.Drawing.Point(387, 318);
+            this.numericUpDownDorsalJugador.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numericUpDownDorsalJugador.Name = "numericUpDownDorsalJugador";
-            this.numericUpDownDorsalJugador.Size = new System.Drawing.Size(120, 20);
+            this.numericUpDownDorsalJugador.Size = new System.Drawing.Size(160, 22);
             this.numericUpDownDorsalJugador.TabIndex = 54;
             this.numericUpDownDorsalJugador.ValueChanged += new System.EventHandler(this.numericUpDownDorsalJugador_ValueChanged);
             // 
             // cbxPosicionJugador
             // 
+            this.cbxPosicionJugador.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxPosicionJugador.FormattingEnabled = true;
-            this.cbxPosicionJugador.Location = new System.Drawing.Point(623, 256);
+            this.cbxPosicionJugador.Location = new System.Drawing.Point(831, 315);
+            this.cbxPosicionJugador.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbxPosicionJugador.Name = "cbxPosicionJugador";
-            this.cbxPosicionJugador.Size = new System.Drawing.Size(121, 21);
+            this.cbxPosicionJugador.Size = new System.Drawing.Size(160, 24);
             this.cbxPosicionJugador.TabIndex = 55;
             this.cbxPosicionJugador.SelectedIndexChanged += new System.EventHandler(this.cbxPosicionJugador_SelectedIndexChanged);
             // 
+            // administracion_deportivaDataSet3
+            // 
+            this.administracion_deportivaDataSet3.DataSetName = "Administracion_deportivaDataSet3";
+            this.administracion_deportivaDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // jugadorBindingSource
+            // 
+            this.jugadorBindingSource.DataMember = "Jugador";
+            this.jugadorBindingSource.DataSource = this.administracion_deportivaDataSet3;
+            // 
+            // jugadorTableAdapter
+            // 
+            this.jugadorTableAdapter.ClearBeforeFill = true;
+            // 
+            // txtBuscar
+            // 
+            this.txtBuscar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBuscar.Location = new System.Drawing.Point(387, 135);
+            this.txtBuscar.Name = "txtBuscar";
+            this.txtBuscar.Size = new System.Drawing.Size(582, 22);
+            this.txtBuscar.TabIndex = 56;
+            this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
+            // 
+            // lblBusqueda
+            // 
+            this.lblBusqueda.AutoSize = true;
+            this.lblBusqueda.Location = new System.Drawing.Point(317, 137);
+            this.lblBusqueda.Name = "lblBusqueda";
+            this.lblBusqueda.Size = new System.Drawing.Size(49, 16);
+            this.lblBusqueda.TabIndex = 57;
+            this.lblBusqueda.Text = "Buscar";
+            this.lblBusqueda.Click += new System.EventHandler(this.lblBusqueda_Click);
+            // 
             // fmlJugadores
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(923, 678);
+            this.ClientSize = new System.Drawing.Size(1231, 834);
+            this.Controls.Add(this.lblBusqueda);
+            this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.cbxPosicionJugador);
             this.Controls.Add(this.numericUpDownDorsalJugador);
             this.Controls.Add(this.numericUpDownEdadJugador);
@@ -401,9 +441,9 @@
             this.Controls.Add(this.pnlBarraTitulo);
             this.Controls.Add(this.pnlMenu);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "fmlJugadores";
-            this.Text = "fmlJugadores";
+            this.Text = "s";
             this.Load += new System.EventHandler(this.fmlJugadores_Load);
             this.pnlBarraTitulo.ResumeLayout(false);
             this.pnlBarraTitulo.PerformLayout();
@@ -412,6 +452,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvJugadores)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownEdadJugador)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDorsalJugador)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.administracion_deportivaDataSet3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.jugadorBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -444,5 +486,10 @@
         private System.Windows.Forms.NumericUpDown numericUpDownEdadJugador;
         private System.Windows.Forms.NumericUpDown numericUpDownDorsalJugador;
         private System.Windows.Forms.ComboBox cbxPosicionJugador;
+        private Administracion_deportivaDataSet3 administracion_deportivaDataSet3;
+        private System.Windows.Forms.BindingSource jugadorBindingSource;
+        private Administracion_deportivaDataSet3TableAdapters.JugadorTableAdapter jugadorTableAdapter;
+        private System.Windows.Forms.TextBox txtBuscar;
+        private System.Windows.Forms.Label lblBusqueda;
     }
 }

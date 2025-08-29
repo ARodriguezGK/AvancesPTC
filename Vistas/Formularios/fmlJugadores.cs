@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Modelo.Conexion;
+using Modelo.Entidades;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,7 +10,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Modelo.Conexion;
 
 namespace Vistas.Formularios
 {
@@ -78,19 +79,21 @@ namespace Vistas.Formularios
 
         private void dgvJugadores_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0) // evitar encabezado
+            if (e.RowIndex >= 0)
             {
                 DataGridViewRow fila = dgvJugadores.Rows[e.RowIndex];
 
-                // Asignar valores a los TextBox, numericUpdown y ComboBox
+                // Guardar idJugador seleccionado (para update/delete)
+                idJugadorSeleccionado = Convert.ToInt32(fila.Cells["idJugador"].Value);
+
+                // Llenar controles
                 txtNombreJugadores.Text = fila.Cells["nombre"].Value.ToString();
                 txtApellidoJugadores.Text = fila.Cells["apellido"].Value.ToString();
-                // Reemplaza la línea problemática en el método dgvJugadores_CellClick:
-                numericUpDownEdadJugador.Value = Convert.ToByte(fila.Cells["edad"].Value);
-                numericUpDownDorsalJugador.Value = Convert.ToByte(fila.Cells["dorsal"].Value);
-                cbxPosicionJugador.ValueMember = fila.Cells["posicion"].Value.ToString();
-                idJugadorSeleccionado = Convert.ToInt32(fila.Cells["idJugador"].Value); // Asignar el ID del jugador seleccionado
+                numericUpDownEdadJugador.Value = Convert.ToInt32(fila.Cells["edad"].Value);
+                numericUpDownDorsalJugador.Value = Convert.ToInt32(fila.Cells["dorsal"].Value);
 
+                //ComboBox de posiciones
+                cbxPosicionJugador.SelectedValue = Convert.ToInt32(fila.Cells["idPosicion"].Value);
             }
 
         }
@@ -102,108 +105,33 @@ namespace Vistas.Formularios
 
         private void btnAñaJugador_Click(object sender, EventArgs e)
         {
-            //SqlConnection conexionPTC = ConexionDB.AbrirConexion();
-
-            //String sqlGuardarJugador = "Insert into dbo.Jugador( nombre , apellido , edad , dorsal , posicion , idUsuario )" +
-            //    " values ( @nombre , @apellido, @edad , @dorsal , @posicion , @idUsuario )";
-
-            //SqlCommand insertar = new SqlCommand(sqlGuardarJugador, conexionPTC);
-
-            //insertar.Parameters.AddWithValue("@nombre", txtNombreJugadores.Text);
-            //insertar.Parameters.AddWithValue("@apellido", txtApellidoJugadores.Text);
-            //insertar.Parameters.AddWithValue("@edad", txtEdadJugadores.Text);
-            //insertar.Parameters.AddWithValue("@dorsal", txtDorsalJugadores.Text);
-            //insertar.Parameters.AddWithValue("@posicion", txtPosicionJugadores.Text);
-            //insertar.Parameters.AddWithValue("@idUsuario", 1); // rsto es temporal
+            Jugador.InsertarJugador(
+            txtNombreJugadores.Text,
+            txtApellidoJugadores.Text,
+            (int)numericUpDownEdadJugador.Value,
+            (int)numericUpDownDorsalJugador.Value,
+            (int)cbxPosicionJugador.SelectedValue);
+            MostrarJugadores();
 
 
-
-            //try
-            //{
-            //    insertar.ExecuteNonQuery();
-            //    LimpiarFormulario();
-            //    LlenarDataGridView();
-
-            //    MessageBox.Show("Jugador guardado correctamente");
-            //}
-            //catch (Exception ex)
-            //{
-            //    MessageBox.Show("Error al guardar: " + ex.Message);
-            //}
-            //finally
-            //{
-            //    conexionPTC.Close();
-            //}
 
         }
 
         private void btnActualizarJugador_Click(object sender, EventArgs e)
         {
-        //    SqlConnection conexionPTC = ConexionDB.AbrirConexion();
+            if (idJugadorSeleccionado > 0)
+            {
+                Jugador.ActualizarJugador(
+                    idJugadorSeleccionado,
+                    txtNombreJugadores.Text,
+                    txtApellidoJugadores.Text,
+                    (int)numericUpDownEdadJugador.Value,
+                    (int)numericUpDownDorsalJugador.Value,
+                    (int)cbxPosicionJugador.SelectedValue
+                );
+                MostrarJugadores();
+            }
 
-        //    String sqlGuardarJugador = "UPDATE dbo.Jugador " +
-        //        "   SET " +
-        //        "       nombre = @nombre " +
-        //        "      , apellido = @apellido " +
-        //        "      , edad = @edad " +
-        //        "      , dorsal = @dorsal " +
-        //        "      , posicion = @posicion " +
-        //        " WHERE idJugador = @idJugador";
-
-
-        //    SqlCommand actualizar = new SqlCommand(sqlGuardarJugador, conexionPTC);
-
-        //    actualizar.Parameters.AddWithValue("@idJugador", idJugadorSeleccionado);
-        //    actualizar.Parameters.AddWithValue("@nombre", txtNombreJugadores.Text);
-        //    actualizar.Parameters.AddWithValue("@apellido", txtApellidoJugadores.Text);
-        //    actualizar.Parameters.AddWithValue("@edad", txtEdadJugadores.Text);
-        //    actualizar.Parameters.AddWithValue("@dorsal", txtDorsalJugadores.Text);
-        //    actualizar.Parameters.AddWithValue("@posicion", txtPosicionJugadores.Text);
-
-        //    try
-        //    {
-        //        actualizar.ExecuteNonQuery();
-        //        LlenarDataGridView();
-        //        LimpiarFormulario();
-        //        MessageBox.Show("Jugador ha sido editado correctamente");
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show("Error al guardar: " + ex.Message);
-        //    }
-        //    finally
-        //    {
-        //        conexionPTC.Close();
-        //    }
-        //}
-
-        //private void btnQuitarJugador_Click(object sender, EventArgs e)
-        //{
-        //    String mensaje = "¿Está seguro de que desea eliminar este jugador?"; 
-        //    String titulo = "Confirmación de eliminación";
-        //    DialogResult resultado = MessageBox.Show(mensaje, titulo, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-        //    if (resultado == DialogResult.Yes)
-        //    {
-        //        SqlConnection conexionPTC = ConexionDB.AbrirConexion();
-        //        String sqlEliminarJugador = "DELETE FROM dbo.Jugador WHERE idJugador = @idJugador";
-        //        SqlCommand eliminar = new SqlCommand(sqlEliminarJugador, conexionPTC);
-        //        eliminar.Parameters.AddWithValue("@idJugador", idJugadorSeleccionado);
-        //        try
-        //        {
-        //            eliminar.ExecuteNonQuery();
-        //            LlenarDataGridView();
-        //            LimpiarFormulario();
-        //            MessageBox.Show("Jugador eliminado correctamente");
-        //        }
-        //        catch (Exception ex)
-        //        {
-        //            MessageBox.Show("Error al eliminar: " + ex.Message);
-        //        }
-        //        finally
-        //        {
-        //            conexionPTC.Close();
-        //        }
-            ///  }
         }
 
         private void lblEstadoInventario_Click(object sender, EventArgs e)
@@ -213,7 +141,34 @@ namespace Vistas.Formularios
 
         private void fmlJugadores_Load(object sender, EventArgs e)
         {
+            //mostrar opciones/valores en el combobox
+            CargarPosicionesEnCombo();
+            // Llenar dgv jugadores
             LlenarDataGridView();
+            MostrarJugadores();
+        }
+
+        private void MostrarJugadores()
+        {
+            dgvJugadores.DataSource = Jugador.MostrarJugadores();
+
+            // ocultar columnas de IDs
+            dgvJugadores.Columns["idJugador"].Visible = false;
+            dgvJugadores.Columns["idPosicion"].Visible = false;
+        }
+
+        private void CargarPosicionesEnCombo()
+        {
+            using (SqlConnection cn = ConexionDB.AbrirConexion())
+            {
+                SqlDataAdapter da = new SqlDataAdapter("SELECT idPosicion, Nombre FROM Posicion", cn);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+
+                cbxPosicionJugador.DataSource = dt;
+                cbxPosicionJugador.DisplayMember = "Nombre";   // lo que ve el usuario
+                cbxPosicionJugador.ValueMember = "idPosicion"; // lo que se guarda
+            }
         }
 
         private void txtEdadJugadores_TextChanged(object sender, EventArgs e)
@@ -269,25 +224,17 @@ namespace Vistas.Formularios
 
         private void LlenarDataGridView()
         {
-
-
             using (SqlConnection conexionPTC = ConexionDB.AbrirConexion())
             {
-                try
-                {
-                    SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM dbo.Jugador", conexionPTC);
-                    DataTable dt = new DataTable();
-                    da.Fill(dt);
-                    dgvJugadores.DataSource = dt;
-                    dgvJugadores.Columns["idUsuario"].Visible = false;
-
-
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error al llenar el DataGridView: " + ex.Message);
-                }
+                string sql = @"SELECT j.idJugador, j.nombre, j.apellido, j.edad, j.dorsal, p.Nombre AS Posicion
+                       FROM Jugador j
+                       INNER JOIN Posicion p ON j.idPosicion = p.idPosicion";
+                var da = new SqlDataAdapter(sql, conexionPTC);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                dgvJugadores.DataSource = dt;
             }
+
         }
 
         private void LimpiarFormulario()
@@ -313,6 +260,38 @@ namespace Vistas.Formularios
         }
 
         private void dgvJugadores_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+            if (e.RowIndex < 0) return;
+            var fila = dgvJugadores.Rows[e.RowIndex];
+
+            idJugadorSeleccionado = Convert.ToInt32(fila.Cells["idJugador"].Value);
+            txtNombreJugadores.Text = fila.Cells["nombre"].Value?.ToString();
+            txtApellidoJugadores.Text = fila.Cells["apellido"].Value?.ToString();
+            numericUpDownEdadJugador.Value = Convert.ToDecimal(fila.Cells["edad"].Value);
+            numericUpDownDorsalJugador.Value = Convert.ToDecimal(fila.Cells["dorsal"].Value);
+
+            // Seleccionar posición por texto si el combo está poblado
+            string pos = fila.Cells["Posicion"].Value?.ToString();
+            int idx = cbxPosicionJugador.FindStringExact(pos);
+            if (idx >= 0) cbxPosicionJugador.SelectedIndex = idx;
+        }
+
+        private void btnQuitarJugador_Click(object sender, EventArgs e)
+        {
+            if (idJugadorSeleccionado > 0)
+            {
+                Jugador.EliminarJugador(idJugadorSeleccionado);
+                MostrarJugadores();
+            }
+        }
+
+        private void txtBuscar_TextChanged(object sender, EventArgs e)
+        {
+            dgvJugadores.DataSource = Jugador.BuscarJugadores(txtBuscar.Text);
+        }
+
+        private void lblBusqueda_Click(object sender, EventArgs e)
         {
 
         }
