@@ -19,7 +19,8 @@ namespace Vistas
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new frmPrincipal());
             //Application.Run(new fmlLogin());
-            Application.Run(new fmlinventario());
+            //Application.Run(new fmlinventario());
+            Application.Run(new fmlInventario_ENTRENADORES());
         }
     }
 }

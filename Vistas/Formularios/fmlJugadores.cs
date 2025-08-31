@@ -79,22 +79,7 @@ namespace Vistas.Formularios
 
         private void dgvJugadores_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0)
-            {
-                DataGridViewRow fila = dgvJugadores.Rows[e.RowIndex];
-
-                // Guardar idJugador seleccionado (para update/delete)
-                idJugadorSeleccionado = Convert.ToInt32(fila.Cells["idJugador"].Value);
-
-                // Llenar controles
-                txtNombreJugadores.Text = fila.Cells["nombre"].Value.ToString();
-                txtApellidoJugadores.Text = fila.Cells["apellido"].Value.ToString();
-                numericUpDownEdadJugador.Value = Convert.ToInt32(fila.Cells["edad"].Value);
-                numericUpDownDorsalJugador.Value = Convert.ToInt32(fila.Cells["dorsal"].Value);
-
-                //ComboBox de posiciones
-                cbxPosicionJugador.SelectedValue = Convert.ToInt32(fila.Cells["idPosicion"].Value);
-            }
+            
 
         }
 
@@ -119,18 +104,18 @@ namespace Vistas.Formularios
 
         private void btnActualizarJugador_Click(object sender, EventArgs e)
         {
-            if (idJugadorSeleccionado > 0)
-            {
-                Jugador.ActualizarJugador(
-                    idJugadorSeleccionado,
-                    txtNombreJugadores.Text,
-                    txtApellidoJugadores.Text,
-                    (int)numericUpDownEdadJugador.Value,
-                    (int)numericUpDownDorsalJugador.Value,
-                    (int)cbxPosicionJugador.SelectedValue
-                );
-                MostrarJugadores();
-            }
+                if (idJugadorSeleccionado > 0)
+                {
+                    Jugador.ActualizarJugador(
+                        idJugadorSeleccionado,
+                        txtNombreJugadores.Text,
+                        txtApellidoJugadores.Text,
+                        (int)numericUpDownEdadJugador.Value,
+                        (int)numericUpDownDorsalJugador.Value,
+                        (int)cbxPosicionJugador.SelectedValue
+                    );
+                    MostrarJugadores();
+                }
 
         }
 

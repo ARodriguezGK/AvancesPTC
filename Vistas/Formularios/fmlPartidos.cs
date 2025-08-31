@@ -188,5 +188,10 @@ namespace Vistas.Formularios
         {
 
         }
+
+        private void fmlPartidos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

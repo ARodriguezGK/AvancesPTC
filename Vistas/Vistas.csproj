@@ -69,6 +69,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Administracion_deportivaDataSet3.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Administracion_deportivaDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Administracion_deportivaDataSet4.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\fmlEstadisticasPartidos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -232,6 +237,17 @@
     </None>
     <None Include="Administracion_deportivaDataSet3.xss">
       <DependentUpon>Administracion_deportivaDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Administracion_deportivaDataSet4.xsc">
+      <DependentUpon>Administracion_deportivaDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Administracion_deportivaDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Administracion_deportivaDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Administracion_deportivaDataSet4.xss">
+      <DependentUpon>Administracion_deportivaDataSet4.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

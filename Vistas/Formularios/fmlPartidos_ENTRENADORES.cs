@@ -29,12 +29,16 @@ namespace Vistas.Formularios
 
         private void btnJugadores_Click(object sender, EventArgs e)
         {
-
+            fmlJugadores_ENTRENADORES frmJugadores = new fmlJugadores_ENTRENADORES();
+            frmJugadores.Show();
+            this.Hide();
         }
 
         private void btnInventario_Click(object sender, EventArgs e)
         {
-
+            fmlInventario_ENTRENADORES frmInventario = new fmlInventario_ENTRENADORES();
+            frmInventario.Show();
+            this.Hide();
         }
 
         private void lblProximosEncuentros_Click(object sender, EventArgs e)
@@ -153,6 +157,11 @@ namespace Vistas.Formularios
         }
 
         private void pnlMenu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void fmlPartidos_ENTRENADORES_Load(object sender, EventArgs e)
         {
 
         }

@@ -73,10 +73,10 @@
             this.pnlBarraEstado.Controls.Add(this.btnPartEncuentros);
             this.pnlBarraEstado.Controls.Add(this.btnPartEstadisticas);
             this.pnlBarraEstado.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlBarraEstado.Location = new System.Drawing.Point(136, 670);
-            this.pnlBarraEstado.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlBarraEstado.Location = new System.Drawing.Point(181, 825);
+            this.pnlBarraEstado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlBarraEstado.Name = "pnlBarraEstado";
-            this.pnlBarraEstado.Size = new System.Drawing.Size(792, 52);
+            this.pnlBarraEstado.Size = new System.Drawing.Size(1056, 64);
             this.pnlBarraEstado.TabIndex = 5;
             this.pnlBarraEstado.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlBarraEstado_Paint);
             // 
@@ -84,10 +84,10 @@
             // 
             this.btnPartResultados.BackColor = System.Drawing.Color.LightGray;
             this.btnPartResultados.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPartResultados.Location = new System.Drawing.Point(563, 5);
-            this.btnPartResultados.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPartResultados.Location = new System.Drawing.Point(751, 6);
+            this.btnPartResultados.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPartResultados.Name = "btnPartResultados";
-            this.btnPartResultados.Size = new System.Drawing.Size(207, 41);
+            this.btnPartResultados.Size = new System.Drawing.Size(276, 50);
             this.btnPartResultados.TabIndex = 2;
             this.btnPartResultados.Text = "Resultados ";
             this.btnPartResultados.UseVisualStyleBackColor = false;
@@ -98,10 +98,10 @@
             this.btnPartEncuentros.BackColor = System.Drawing.Color.LightGray;
             this.btnPartEncuentros.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPartEncuentros.ForeColor = System.Drawing.Color.Green;
-            this.btnPartEncuentros.Location = new System.Drawing.Point(23, 5);
-            this.btnPartEncuentros.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPartEncuentros.Location = new System.Drawing.Point(31, 6);
+            this.btnPartEncuentros.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPartEncuentros.Name = "btnPartEncuentros";
-            this.btnPartEncuentros.Size = new System.Drawing.Size(207, 41);
+            this.btnPartEncuentros.Size = new System.Drawing.Size(276, 50);
             this.btnPartEncuentros.TabIndex = 0;
             this.btnPartEncuentros.Text = "Proximo encuentro";
             this.btnPartEncuentros.UseVisualStyleBackColor = false;
@@ -111,10 +111,10 @@
             // 
             this.btnPartEstadisticas.BackColor = System.Drawing.Color.LightGray;
             this.btnPartEstadisticas.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPartEstadisticas.Location = new System.Drawing.Point(298, 5);
-            this.btnPartEstadisticas.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPartEstadisticas.Location = new System.Drawing.Point(397, 6);
+            this.btnPartEstadisticas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPartEstadisticas.Name = "btnPartEstadisticas";
-            this.btnPartEstadisticas.Size = new System.Drawing.Size(207, 41);
+            this.btnPartEstadisticas.Size = new System.Drawing.Size(276, 50);
             this.btnPartEstadisticas.TabIndex = 1;
             this.btnPartEstadisticas.Text = "Estadisticas de partidos";
             this.btnPartEstadisticas.UseVisualStyleBackColor = false;
@@ -127,10 +127,10 @@
             this.btnActualizarPartido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnActualizarPartido.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActualizarPartido.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnActualizarPartido.Location = new System.Drawing.Point(175, 593);
-            this.btnActualizarPartido.Margin = new System.Windows.Forms.Padding(2);
+            this.btnActualizarPartido.Location = new System.Drawing.Point(233, 730);
+            this.btnActualizarPartido.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnActualizarPartido.Name = "btnActualizarPartido";
-            this.btnActualizarPartido.Size = new System.Drawing.Size(154, 54);
+            this.btnActualizarPartido.Size = new System.Drawing.Size(205, 66);
             this.btnActualizarPartido.TabIndex = 20;
             this.btnActualizarPartido.Text = "Actualizar Partido";
             this.btnActualizarPartido.UseVisualStyleBackColor = false;
@@ -143,10 +143,10 @@
             this.btnQuitarPartido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnQuitarPartido.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQuitarPartido.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnQuitarPartido.Location = new System.Drawing.Point(752, 593);
-            this.btnQuitarPartido.Margin = new System.Windows.Forms.Padding(2);
+            this.btnQuitarPartido.Location = new System.Drawing.Point(1003, 730);
+            this.btnQuitarPartido.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnQuitarPartido.Name = "btnQuitarPartido";
-            this.btnQuitarPartido.Size = new System.Drawing.Size(154, 54);
+            this.btnQuitarPartido.Size = new System.Drawing.Size(205, 66);
             this.btnQuitarPartido.TabIndex = 19;
             this.btnQuitarPartido.Text = "- Quitar Partido";
             this.btnQuitarPartido.UseVisualStyleBackColor = false;
@@ -155,12 +155,12 @@
             // dgvEntrenadores
             // 
             this.dgvEntrenadores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvEntrenadores.Location = new System.Drawing.Point(178, 306);
-            this.dgvEntrenadores.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvEntrenadores.Location = new System.Drawing.Point(237, 377);
+            this.dgvEntrenadores.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvEntrenadores.Name = "dgvEntrenadores";
             this.dgvEntrenadores.RowHeadersWidth = 51;
             this.dgvEntrenadores.RowTemplate.Height = 24;
-            this.dgvEntrenadores.Size = new System.Drawing.Size(732, 262);
+            this.dgvEntrenadores.Size = new System.Drawing.Size(976, 322);
             this.dgvEntrenadores.TabIndex = 18;
             this.dgvEntrenadores.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEntrenadores_CellContentClick);
             // 
@@ -171,10 +171,10 @@
             this.btnAñaPartido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAñaPartido.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAñaPartido.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnAñaPartido.Location = new System.Drawing.Point(752, 98);
-            this.btnAñaPartido.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAñaPartido.Location = new System.Drawing.Point(1003, 121);
+            this.btnAñaPartido.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAñaPartido.Name = "btnAñaPartido";
-            this.btnAñaPartido.Size = new System.Drawing.Size(154, 54);
+            this.btnAñaPartido.Size = new System.Drawing.Size(205, 66);
             this.btnAñaPartido.TabIndex = 17;
             this.btnAñaPartido.Text = "+ Añadir Partido";
             this.btnAñaPartido.UseVisualStyleBackColor = false;
@@ -183,10 +183,9 @@
             // lblTipoPartido
             // 
             this.lblTipoPartido.AutoSize = true;
-            this.lblTipoPartido.Location = new System.Drawing.Point(176, 180);
-            this.lblTipoPartido.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTipoPartido.Location = new System.Drawing.Point(235, 222);
             this.lblTipoPartido.Name = "lblTipoPartido";
-            this.lblTipoPartido.Size = new System.Drawing.Size(78, 13);
+            this.lblTipoPartido.Size = new System.Drawing.Size(99, 16);
             this.lblTipoPartido.TabIndex = 22;
             this.lblTipoPartido.Text = "Tipo de partido";
             this.lblTipoPartido.Click += new System.EventHandler(this.lblTipoPartido_Click);
@@ -194,10 +193,9 @@
             // lblCategoriaPartido
             // 
             this.lblCategoriaPartido.AutoSize = true;
-            this.lblCategoriaPartido.Location = new System.Drawing.Point(520, 175);
-            this.lblCategoriaPartido.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCategoriaPartido.Location = new System.Drawing.Point(693, 215);
             this.lblCategoriaPartido.Name = "lblCategoriaPartido";
-            this.lblCategoriaPartido.Size = new System.Drawing.Size(52, 13);
+            this.lblCategoriaPartido.Size = new System.Drawing.Size(66, 16);
             this.lblCategoriaPartido.TabIndex = 24;
             this.lblCategoriaPartido.Text = "Categoria";
             this.lblCategoriaPartido.Click += new System.EventHandler(this.lblCategoriaPartido_Click);
@@ -205,10 +203,9 @@
             // lblHorarioPartido
             // 
             this.lblHorarioPartido.AutoSize = true;
-            this.lblHorarioPartido.Location = new System.Drawing.Point(181, 218);
-            this.lblHorarioPartido.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblHorarioPartido.Location = new System.Drawing.Point(241, 268);
             this.lblHorarioPartido.Name = "lblHorarioPartido";
-            this.lblHorarioPartido.Size = new System.Drawing.Size(41, 13);
+            this.lblHorarioPartido.Size = new System.Drawing.Size(52, 16);
             this.lblHorarioPartido.TabIndex = 25;
             this.lblHorarioPartido.Text = "Horario";
             this.lblHorarioPartido.Click += new System.EventHandler(this.lblHorarioPartido_Click);
@@ -216,10 +213,9 @@
             // lblEquipLocalPartidos
             // 
             this.lblEquipLocalPartidos.AutoSize = true;
-            this.lblEquipLocalPartidos.Location = new System.Drawing.Point(181, 256);
-            this.lblEquipLocalPartidos.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEquipLocalPartidos.Location = new System.Drawing.Point(241, 315);
             this.lblEquipLocalPartidos.Name = "lblEquipLocalPartidos";
-            this.lblEquipLocalPartidos.Size = new System.Drawing.Size(65, 13);
+            this.lblEquipLocalPartidos.Size = new System.Drawing.Size(82, 16);
             this.lblEquipLocalPartidos.TabIndex = 26;
             this.lblEquipLocalPartidos.Text = "Equipo local";
             this.lblEquipLocalPartidos.Click += new System.EventHandler(this.lblEquipLocalPartidos_Click);
@@ -227,10 +223,9 @@
             // lblEquipVisitantePartidos
             // 
             this.lblEquipVisitantePartidos.AutoSize = true;
-            this.lblEquipVisitantePartidos.Location = new System.Drawing.Point(520, 218);
-            this.lblEquipVisitantePartidos.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEquipVisitantePartidos.Location = new System.Drawing.Point(693, 268);
             this.lblEquipVisitantePartidos.Name = "lblEquipVisitantePartidos";
-            this.lblEquipVisitantePartidos.Size = new System.Drawing.Size(82, 13);
+            this.lblEquipVisitantePartidos.Size = new System.Drawing.Size(102, 16);
             this.lblEquipVisitantePartidos.TabIndex = 27;
             this.lblEquipVisitantePartidos.Text = "Equipo visitante";
             this.lblEquipVisitantePartidos.Click += new System.EventHandler(this.lblEquipVisitantePartidos_Click);
@@ -238,62 +233,64 @@
             // lblLugar
             // 
             this.lblLugar.AutoSize = true;
-            this.lblLugar.Location = new System.Drawing.Point(530, 260);
-            this.lblLugar.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblLugar.Location = new System.Drawing.Point(707, 320);
             this.lblLugar.Name = "lblLugar";
-            this.lblLugar.Size = new System.Drawing.Size(34, 13);
+            this.lblLugar.Size = new System.Drawing.Size(41, 16);
             this.lblLugar.TabIndex = 28;
             this.lblLugar.Text = "Lugar";
             this.lblLugar.Click += new System.EventHandler(this.lblLugar_Click);
             // 
             // txtEquipoLocalPartidos
             // 
-            this.txtEquipoLocalPartidos.Location = new System.Drawing.Point(267, 256);
-            this.txtEquipoLocalPartidos.Margin = new System.Windows.Forms.Padding(2);
+            this.txtEquipoLocalPartidos.Location = new System.Drawing.Point(356, 315);
+            this.txtEquipoLocalPartidos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtEquipoLocalPartidos.Name = "txtEquipoLocalPartidos";
-            this.txtEquipoLocalPartidos.Size = new System.Drawing.Size(223, 20);
+            this.txtEquipoLocalPartidos.Size = new System.Drawing.Size(296, 22);
             this.txtEquipoLocalPartidos.TabIndex = 30;
             this.txtEquipoLocalPartidos.TextChanged += new System.EventHandler(this.txtEquipoLocalPartidos_TextChanged);
             // 
             // txtEquipoVisitantePart
             // 
-            this.txtEquipoVisitantePart.Location = new System.Drawing.Point(624, 215);
-            this.txtEquipoVisitantePart.Margin = new System.Windows.Forms.Padding(2);
+            this.txtEquipoVisitantePart.Location = new System.Drawing.Point(832, 265);
+            this.txtEquipoVisitantePart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtEquipoVisitantePart.Name = "txtEquipoVisitantePart";
-            this.txtEquipoVisitantePart.Size = new System.Drawing.Size(223, 20);
+            this.txtEquipoVisitantePart.Size = new System.Drawing.Size(296, 22);
             this.txtEquipoVisitantePart.TabIndex = 33;
             this.txtEquipoVisitantePart.TextChanged += new System.EventHandler(this.txtEquipoVisitantePart_TextChanged);
             // 
             // txtLugarPart
             // 
-            this.txtLugarPart.Location = new System.Drawing.Point(624, 253);
-            this.txtLugarPart.Margin = new System.Windows.Forms.Padding(2);
+            this.txtLugarPart.Location = new System.Drawing.Point(832, 311);
+            this.txtLugarPart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtLugarPart.Name = "txtLugarPart";
-            this.txtLugarPart.Size = new System.Drawing.Size(223, 20);
+            this.txtLugarPart.Size = new System.Drawing.Size(296, 22);
             this.txtLugarPart.TabIndex = 34;
             this.txtLugarPart.TextChanged += new System.EventHandler(this.txtLugarPart_TextChanged);
             // 
             // cbxCategoriaPartido
             // 
             this.cbxCategoriaPartido.FormattingEnabled = true;
-            this.cbxCategoriaPartido.Location = new System.Drawing.Point(624, 175);
+            this.cbxCategoriaPartido.Location = new System.Drawing.Point(832, 215);
+            this.cbxCategoriaPartido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbxCategoriaPartido.Name = "cbxCategoriaPartido";
-            this.cbxCategoriaPartido.Size = new System.Drawing.Size(121, 21);
+            this.cbxCategoriaPartido.Size = new System.Drawing.Size(160, 24);
             this.cbxCategoriaPartido.TabIndex = 35;
             // 
             // cbxTipoPartido
             // 
             this.cbxTipoPartido.FormattingEnabled = true;
-            this.cbxTipoPartido.Location = new System.Drawing.Point(267, 177);
+            this.cbxTipoPartido.Location = new System.Drawing.Point(356, 218);
+            this.cbxTipoPartido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbxTipoPartido.Name = "cbxTipoPartido";
-            this.cbxTipoPartido.Size = new System.Drawing.Size(121, 21);
+            this.cbxTipoPartido.Size = new System.Drawing.Size(160, 24);
             this.cbxTipoPartido.TabIndex = 36;
             // 
             // dtpHorarioPartido
             // 
-            this.dtpHorarioPartido.Location = new System.Drawing.Point(267, 218);
+            this.dtpHorarioPartido.Location = new System.Drawing.Point(356, 268);
+            this.dtpHorarioPartido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtpHorarioPartido.Name = "dtpHorarioPartido";
-            this.dtpHorarioPartido.Size = new System.Drawing.Size(200, 20);
+            this.dtpHorarioPartido.Size = new System.Drawing.Size(265, 22);
             this.dtpHorarioPartido.TabIndex = 37;
             // 
             // pnlBarraTitulo
@@ -302,10 +299,10 @@
             this.pnlBarraTitulo.Controls.Add(this.lblProximosEncuentros);
             this.pnlBarraTitulo.Controls.Add(this.lblAdmin);
             this.pnlBarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlBarraTitulo.Location = new System.Drawing.Point(136, 0);
-            this.pnlBarraTitulo.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlBarraTitulo.Location = new System.Drawing.Point(181, 0);
+            this.pnlBarraTitulo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlBarraTitulo.Name = "pnlBarraTitulo";
-            this.pnlBarraTitulo.Size = new System.Drawing.Size(792, 93);
+            this.pnlBarraTitulo.Size = new System.Drawing.Size(1056, 114);
             this.pnlBarraTitulo.TabIndex = 4;
             this.pnlBarraTitulo.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlBarraTitulo_Paint);
             // 
@@ -315,10 +312,9 @@
             this.lblProximosEncuentros.BackColor = System.Drawing.Color.Green;
             this.lblProximosEncuentros.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblProximosEncuentros.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblProximosEncuentros.Location = new System.Drawing.Point(34, 36);
-            this.lblProximosEncuentros.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblProximosEncuentros.Location = new System.Drawing.Point(45, 44);
             this.lblProximosEncuentros.Name = "lblProximosEncuentros";
-            this.lblProximosEncuentros.Size = new System.Drawing.Size(177, 22);
+            this.lblProximosEncuentros.Size = new System.Drawing.Size(214, 27);
             this.lblProximosEncuentros.TabIndex = 14;
             this.lblProximosEncuentros.Text = "Proximos Partidos";
             this.lblProximosEncuentros.Click += new System.EventHandler(this.lblProximosEncuentros_Click);
@@ -329,10 +325,9 @@
             this.lblAdmin.BackColor = System.Drawing.Color.Green;
             this.lblAdmin.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAdmin.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblAdmin.Location = new System.Drawing.Point(708, 36);
-            this.lblAdmin.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAdmin.Location = new System.Drawing.Point(944, 44);
             this.lblAdmin.Name = "lblAdmin";
-            this.lblAdmin.Size = new System.Drawing.Size(69, 22);
+            this.lblAdmin.Size = new System.Drawing.Size(83, 27);
             this.lblAdmin.TabIndex = 13;
             this.lblAdmin.Text = "Admin";
             this.lblAdmin.Click += new System.EventHandler(this.lblAdmin_Click);
@@ -348,9 +343,9 @@
             this.pnlMenu.Controls.Add(this.pnlLogo);
             this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlMenu.Location = new System.Drawing.Point(0, 0);
-            this.pnlMenu.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlMenu.Name = "pnlMenu";
-            this.pnlMenu.Size = new System.Drawing.Size(136, 722);
+            this.pnlMenu.Size = new System.Drawing.Size(181, 889);
             this.pnlMenu.TabIndex = 3;
             this.pnlMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlMenu_Paint);
             // 
@@ -360,10 +355,10 @@
             this.btnPartidos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPartidos.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPartidos.ForeColor = System.Drawing.Color.Green;
-            this.btnPartidos.Location = new System.Drawing.Point(0, 335);
-            this.btnPartidos.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPartidos.Location = new System.Drawing.Point(0, 412);
+            this.btnPartidos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPartidos.Name = "btnPartidos";
-            this.btnPartidos.Size = new System.Drawing.Size(136, 74);
+            this.btnPartidos.Size = new System.Drawing.Size(181, 91);
             this.btnPartidos.TabIndex = 8;
             this.btnPartidos.Text = "Partidos";
             this.btnPartidos.UseVisualStyleBackColor = true;
@@ -376,10 +371,10 @@
             this.btnGestion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGestion.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGestion.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnGestion.Location = new System.Drawing.Point(4, 256);
-            this.btnGestion.Margin = new System.Windows.Forms.Padding(2);
+            this.btnGestion.Location = new System.Drawing.Point(5, 315);
+            this.btnGestion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnGestion.Name = "btnGestion";
-            this.btnGestion.Size = new System.Drawing.Size(132, 74);
+            this.btnGestion.Size = new System.Drawing.Size(176, 91);
             this.btnGestion.TabIndex = 7;
             this.btnGestion.Text = "Gestion";
             this.btnGestion.UseVisualStyleBackColor = true;
@@ -392,10 +387,10 @@
             this.btnJugadores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnJugadores.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnJugadores.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnJugadores.Location = new System.Drawing.Point(4, 177);
-            this.btnJugadores.Margin = new System.Windows.Forms.Padding(2);
+            this.btnJugadores.Location = new System.Drawing.Point(5, 218);
+            this.btnJugadores.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnJugadores.Name = "btnJugadores";
-            this.btnJugadores.Size = new System.Drawing.Size(132, 74);
+            this.btnJugadores.Size = new System.Drawing.Size(176, 91);
             this.btnJugadores.TabIndex = 6;
             this.btnJugadores.Text = "Jugadores";
             this.btnJugadores.UseVisualStyleBackColor = true;
@@ -406,10 +401,10 @@
             this.picBoxUser.BackColor = System.Drawing.SystemColors.MenuText;
             this.picBoxUser.BackgroundImage = global::Vistas.Properties.Resources.green;
             this.picBoxUser.Image = global::Vistas.Properties.Resources.user;
-            this.picBoxUser.Location = new System.Drawing.Point(43, 414);
-            this.picBoxUser.Margin = new System.Windows.Forms.Padding(2);
+            this.picBoxUser.Location = new System.Drawing.Point(57, 510);
+            this.picBoxUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picBoxUser.Name = "picBoxUser";
-            this.picBoxUser.Size = new System.Drawing.Size(56, 57);
+            this.picBoxUser.Size = new System.Drawing.Size(75, 70);
             this.picBoxUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBoxUser.TabIndex = 5;
             this.picBoxUser.TabStop = false;
@@ -422,10 +417,10 @@
             this.btnInventario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInventario.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInventario.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnInventario.Location = new System.Drawing.Point(2, 98);
-            this.btnInventario.Margin = new System.Windows.Forms.Padding(2);
+            this.btnInventario.Location = new System.Drawing.Point(3, 121);
+            this.btnInventario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnInventario.Name = "btnInventario";
-            this.btnInventario.Size = new System.Drawing.Size(132, 74);
+            this.btnInventario.Size = new System.Drawing.Size(176, 91);
             this.btnInventario.TabIndex = 1;
             this.btnInventario.Text = "Inventario";
             this.btnInventario.UseVisualStyleBackColor = true;
@@ -436,17 +431,17 @@
             this.pnlLogo.BackgroundImage = global::Vistas.Properties.Resources.logo;
             this.pnlLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlLogo.Location = new System.Drawing.Point(0, 0);
-            this.pnlLogo.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlLogo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlLogo.Name = "pnlLogo";
-            this.pnlLogo.Size = new System.Drawing.Size(136, 93);
+            this.pnlLogo.Size = new System.Drawing.Size(181, 114);
             this.pnlLogo.TabIndex = 0;
             this.pnlLogo.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlLogo_Paint);
             // 
             // fmlPartidos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(928, 722);
+            this.ClientSize = new System.Drawing.Size(1237, 889);
             this.Controls.Add(this.dtpHorarioPartido);
             this.Controls.Add(this.cbxTipoPartido);
             this.Controls.Add(this.cbxCategoriaPartido);
@@ -467,9 +462,10 @@
             this.Controls.Add(this.pnlBarraTitulo);
             this.Controls.Add(this.pnlMenu);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "fmlPartidos";
             this.Text = "fmlPartidos";
+            this.Load += new System.EventHandler(this.fmlPartidos_Load);
             this.pnlBarraEstado.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvEntrenadores)).EndInit();
             this.pnlBarraTitulo.ResumeLayout(false);

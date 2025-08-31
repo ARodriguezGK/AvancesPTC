@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Administracion_deportivaDataSet4" targetNamespace="http://tempuri.org/Administracion_deportivaDataSet4.xsd" xmlns:mstns="http://tempuri.org/Administracion_deportivaDataSet4.xsd" xmlns="http://tempuri.org/Administracion_deportivaDataSet4.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Administracion_deportivaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Administracion_deportivaConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Vistas.Properties.Settings.GlobalReference.Default.Administracion_deportivaConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ArticulosInventarioTableAdapter" GeneratorDataComponentClassName="ArticulosInventarioTableAdapter" Name="ArticulosInventario" UserDataComponentName="ArticulosInventarioTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Administracion_deportivaConnectionString (Settings)" DbObjectName="Administracion_deportiva.dbo.ArticulosInventario" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Nombre_del_articulo, Cantidad, Fecha_de_Integracion, Tipo_de_Estado FROM dbo.ArticulosInventario</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Nombre_del_articulo" DataSetColumn="Nombre_del_articulo" />
+              <Mapping SourceColumn="Cantidad" DataSetColumn="Cantidad" />
+              <Mapping SourceColumn="Fecha_de_Integracion" DataSetColumn="Fecha_de_Integracion" />
+              <Mapping SourceColumn="Tipo_de_Estado" DataSetColumn="Tipo_de_Estado" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Administracion_deportivaDataSet4" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="Administracion_deportivaDataSet4" msprop:Generator_DataSetName="Administracion_deportivaDataSet4">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ArticulosInventario" msprop:Generator_RowEvHandlerName="ArticulosInventarioRowChangeEventHandler" msprop:Generator_RowDeletedName="ArticulosInventarioRowDeleted" msprop:Generator_RowDeletingName="ArticulosInventarioRowDeleting" msprop:Generator_RowEvArgName="ArticulosInventarioRowChangeEvent" msprop:Generator_TablePropName="ArticulosInventario" msprop:Generator_RowChangedName="ArticulosInventarioRowChanged" msprop:Generator_RowChangingName="ArticulosInventarioRowChanging" msprop:Generator_TableClassName="ArticulosInventarioDataTable" msprop:Generator_RowClassName="ArticulosInventarioRow" msprop:Generator_TableVarName="tableArticulosInventario" msprop:Generator_UserTableName="ArticulosInventario">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Nombre_del_articulo" msprop:Generator_ColumnPropNameInRow="Nombre_del_articulo" msprop:Generator_ColumnPropNameInTable="Nombre_del_articuloColumn" msprop:Generator_ColumnVarNameInTable="columnNombre_del_articulo" msprop:Generator_UserColumnName="Nombre_del_articulo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cantidad" msprop:Generator_ColumnPropNameInRow="Cantidad" msprop:Generator_ColumnPropNameInTable="CantidadColumn" msprop:Generator_ColumnVarNameInTable="columnCantidad" msprop:Generator_UserColumnName="Cantidad" type="xs:int" />
+              <xs:element name="Fecha_de_Integracion" msprop:Generator_ColumnPropNameInRow="Fecha_de_Integracion" msprop:Generator_ColumnPropNameInTable="Fecha_de_IntegracionColumn" msprop:Generator_ColumnVarNameInTable="columnFecha_de_Integracion" msprop:Generator_UserColumnName="Fecha_de_Integracion" type="xs:dateTime" />
+              <xs:element name="Tipo_de_Estado" msprop:Generator_ColumnPropNameInRow="Tipo_de_Estado" msprop:Generator_ColumnPropNameInTable="Tipo_de_EstadoColumn" msprop:Generator_ColumnVarNameInTable="columnTipo_de_Estado" msprop:Generator_UserColumnName="Tipo_de_Estado">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

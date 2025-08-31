@@ -121,34 +121,7 @@ namespace Vistas.Formularios
             if (idx >= 0) cbxEstadoObjeto.SelectedIndex = idx;
         }
 
-        //private void btnQuitarObje_Click(object sender, EventArgs e)
-        //{
-        //    String mensaje = "¿Está seguro de que desea eliminar este inventario?";
-        //    String titulo = "Confirmación de eliminación";
-        //    DialogResult resultado = MessageBox.Show(mensaje, titulo, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-        //    if (resultado == DialogResult.Yes)
-        //    {
-        //        SqlConnection conexionPTC = ConexionDB.AbrirConexion();
-        //        String sqlEliminarJugador = "DELETE FROM dbo.Herramienta WHERE idHerramienta = @idHerramienta";
-        //        SqlCommand eliminar = new SqlCommand(sqlEliminarJugador, conexionPTC);
-        //        eliminar.Parameters.AddWithValue("@idHerramienta", idInventarioSeleccionado);
-        //        try
-        //        {
-        //            eliminar.ExecuteNonQuery();
-        //            LlenarDataGridView();
-        //            LimpiarFormulario();
-        //            MessageBox.Show("Inventario eliminado correctamente");
-        //        }
-        //        catch (Exception ex)
-        //        {
-        //            MessageBox.Show("Error al eliminar: " + ex.Message);
-        //        }
-        //        finally
-        //        {
-        //            conexionPTC.Close();
-        //        }
-        //  }
-        //}
+        
 
         private void lblEstadoInventario_Click(object sender, EventArgs e)
         {
