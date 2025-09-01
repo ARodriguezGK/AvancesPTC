@@ -69,6 +69,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Administracion_deportivaDataSet3.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\fmlEquipos_Gestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\fmlEquipos_Gestion.Designer.cs">
+      <DependentUpon>fmlEquipos_Gestion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\fmlEstadisticasPartidos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,6 +149,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\fmlEquipos_Gestion.resx">
+      <DependentUpon>fmlEquipos_Gestion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\fmlEstadisticasPartidos.resx">
       <DependentUpon>fmlEstadisticasPartidos.cs</DependentUpon>
     </EmbeddedResource>

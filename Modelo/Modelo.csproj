@@ -51,6 +51,7 @@
     <Compile Include="Entidades\Equipo.cs" />
     <Compile Include="Entidades\Estadistica.cs" />
     <Compile Include="Entidades\Estado.cs" />
+    <Compile Include="Entidades\EstadoEntrenador.cs" />
     <Compile Include="Entidades\Horario.cs" />
     <Compile Include="Entidades\Inventario.cs" />
     <Compile Include="Entidades\Jugador.cs" />
